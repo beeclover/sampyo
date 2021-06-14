@@ -10,7 +10,6 @@
   .hero {
     position: relative;
     overflow: hidden;
-    margin-bottom: 130px;
     padding-bottom: 0;
     &:before {
       content: "";
@@ -139,6 +138,12 @@
   }
   .section1 {
     position: relative;
+    background-image: url("./assets/img/3235@3x.png");
+    padding-top: 130px;
+    background-size: 1820px;
+    background-position: calc(50% + 100px) center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     .container {
       position: relative;
     }
@@ -148,19 +153,6 @@
       left: 0;
     }
     .bgLayer {
-      img {
-        position: absolute;
-        opacity: 0;
-        z-index: -1;
-      }
-      .a {
-        top: 140px;
-        left: 0;
-      }
-      .b {
-        right: 0;
-        bottom: 230px;
-      }
     }
     .img-col {
       .img-wrap {
@@ -188,15 +180,14 @@
       }
       &-1 {
         @extend .img-col;
-        padding-top: 500px;
+        padding-top: 310px;
       }
       &-2 {
         @extend .img-col;
-        padding-top: 180px;
       }
       &-3 {
         @extend .img-col;
-        padding-top: 40px;
+        padding-top: 135px;
       }
     }
   }
