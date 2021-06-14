@@ -209,6 +209,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    padding-bottom: 360px;
   }
   .s2 {
     margin-bottom: 210px;
@@ -307,35 +308,26 @@
           img {
             opacity: 0;
           }
-          img:nth-child(1) {
-            margin-bottom: 48px;
-          }
         }
       }
     }
   }
   .s4 {
     overflow: hidden;
+    position: relative;
+    margin-top: -360px;
+    margin-bottom: 120px;
+    .bgLayer {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
     .container {
       position: relative;
       padding-top: 128px;
       padding-bottom: 160px;
-      &:after {
-        content: "";
-        display: block;
-        background-color: #0a3f60;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100vw;
-        height: 100%;
-        z-index: -1;
-      }
     }
     &-content {
-      &-header {
-        position: absolute;
-      }
       &-body {
         padding: 0;
         padding-left: 30px;
@@ -368,6 +360,24 @@
         li:not(:last-child) {
           margin-right: 36px;
         }
+      }
+    }
+  }
+  .s5 {
+    padding-bottom: 120px;
+    position: relative;
+    overflow: hidden;
+    .symbol {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      width: 290px;
+      height: 430px;
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
       }
     }
   }

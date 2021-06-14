@@ -147,30 +147,6 @@ ScrollTrigger.batch(s3_items, {
   scrub: true,
 });
 
-// content
-const s3_items2 = document.querySelectorAll(
-  "[data-scroll-animation-item='3'] img:nth-child(2)"
-);
-ScrollTrigger.batch(s3_items2, {
-  onEnter: (batch) => {
-    const tl = gsap.timeline();
-    tl.to(batch, {
-      autoAlpha: 0,
-      y: 40,
-      duration: 0,
-    });
-    tl.to(batch, {
-      autoAlpha: 1,
-      delay: 0.5,
-      stagger: 0.2,
-      y: 0,
-      duration: 0.3,
-    });
-  },
-  onLeaveBack: (batch) => gsap.to(batch, { autoAlpha: 0, duration: 0 }),
-  scrub: true,
-});
-
 // 인재채용
 const s3_items4 = document.querySelectorAll("[data-scroll-animation-item='4']");
 ScrollTrigger.batch(s3_items4, {
