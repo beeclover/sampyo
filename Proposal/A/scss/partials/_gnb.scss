@@ -1,6 +1,8 @@
 .gnb {
-  background-color: var(--primary);
-  position: relative;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9000;
   height: 120px;
   display: flex;
   align-items: center;
@@ -8,7 +10,7 @@
   padding-left: 50px;
   padding-right: 50px;
 
-  .logo {
+  .menu-gnb {
     position: absolute;
     left: 50%;
     top: 50%;
