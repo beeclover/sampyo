@@ -177,4 +177,41 @@
       }
     }
   }
+  .s2 {
+    padding-top: 128px;
+    position: relative;
+    .bg {
+      position: absolute;
+      top: -226px;
+      z-index: -1;
+    }
+    &-header {
+      margin-bottom: 98px;
+      img {
+        transform: translateX(-50px);
+      }
+    }
+    &-main {
+      display: flex;
+      &-fixed {
+        padding-right: 36px;
+        margin-right: 21px;
+        img {
+          position: sticky;
+          top: 40px;
+        }
+      }
+      &-content {
+        img {
+          margin-bottom: 40px;
+        }
+        .row {
+          --bs-gutter-x: 42px;
+          .col {
+            border-left: 1px solid #ddd;
+          }
+        }
+      }
+    }
+  }
 }
