@@ -1,0 +1,9 @@
+$base: (
+  lighthouse: #f4f4f4,
+  dhusar-grey: #aaaaaa,
+  atmosphere: #009ddf,
+);
+
+:root {
+  @include generate_colors($base);
+}
