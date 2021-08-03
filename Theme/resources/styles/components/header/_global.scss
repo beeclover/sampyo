@@ -3,6 +3,8 @@
     .header-global {
       @apply text-white;
 
+      background-color: transparent;
+
       &::after {
         content: '';
         display: block;
@@ -23,11 +25,12 @@
 
 &-global {
   position: fixed;
-  top: var(--barHeight, 0);
+  top: var(--bar-wp, 0);
   left: 0;
   width: 100vw;
   padding-left: 40px;
   padding-right: 40px;
+  background-color: var(--lighthouse);
 
   &-logo {
     position: absolute;
@@ -39,7 +42,7 @@
   &-inner {
     @apply flex items-center justify-center w-full;
 
-    height: 100px;
+    height: var(--bar-global-height);
     position: relative;
     z-index: 2;
   }

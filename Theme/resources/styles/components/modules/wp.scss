@@ -1,7 +1,7 @@
 body.admin-bar {
-  --barHeight: 46px;
+  --bar-wp: 46px;
 
   @media screen and (min-width: 783px) {
-    --barHeight: 32px;
+    --bar-wp: 32px;
   }
 }
