@@ -1,0 +1,36 @@
+@at-root {
+  :root {
+    --header-nav-height: 70px;
+  }
+}
+
+&-block {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+
+  &-item {
+    @apply flex-1;
+  }
+
+  &-item a {
+    @apply text-white;
+
+    height: var(--header-nav-height);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+    background-color: var(--dhusar-grey);
+    font-size: 1.125rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    will-change: background-color;
+
+    &.current,
+    &:hover {
+      background-color: var(--atmosphere);
+    }
+  }
+}
