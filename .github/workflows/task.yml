@@ -5,7 +5,7 @@ on:
     branches: [Hansanghyeon/issue*]
 
 jobs:
-  build:
+  Auto-Cerate-PR:
     runs-on: ubuntu-latest
     if: ${{ github.event.repository.owner.name == 'beeclover' }}
     steps:
