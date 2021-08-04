@@ -2,6 +2,12 @@
   overflow: hidden;
   padding-top: var(--bar-global-height);
 
+  @media (min-width: 1920px) {
+    overflow: visible;
+    margin: auto;
+    max-width: 1920px;
+  }
+
   &-imgRow {
     background-color: var(--lighthouse);
 
@@ -24,6 +30,10 @@
 
     width: calc(var(--outwidth) + 100%);
     max-width: none;
+
+    @media (min-width: 1920px) {
+      max-width: calc(100% + 448px);
+    }
   }
 
   .container {
