@@ -26,6 +26,9 @@ class Post extends Composer
     {
         return [
             'title' => $this->title(),
+            'thumbnail' => $this->thumbnail(),
+            'permalink' => $this->permalink(),
+            'excerpt' => $this->excerpt(),
         ];
     }
 
@@ -65,5 +68,20 @@ class Post extends Composer
         }
 
         return get_the_title();
+    }
+    
+    public function thumbnail()
+    {
+        return !empty(get_the_post_thumbnail()) ? get_the_post_thumbnail() : '';
+    }
+    
+    public function permalink()
+    {
+        return get_permalink();
+    }
+
+    public function excerpt()
+    {
+        return get_the_excerpt();
     }
 }
