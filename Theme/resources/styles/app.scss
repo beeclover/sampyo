@@ -8,7 +8,11 @@
 @import 'tailwindcss/utilities';
 
 @import 'components/modules/*';
+@import 'layout/*';
 
 // components
 @import 'components/header';
 @import 'components/items';
+@import 'components/card';
+
+@import 'page/newsroom';
