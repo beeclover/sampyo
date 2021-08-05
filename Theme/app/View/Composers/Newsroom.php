@@ -13,6 +13,9 @@ class Newsroom extends Composer
      */
     protected static $views = [
         'partials.content-newsroom',
+        'partials.content-single-blog',
+        'partials.header-archive-newsroom',
+        'taxonomy-blog*'
     ];
 
     /**
@@ -25,6 +28,7 @@ class Newsroom extends Composer
         return [
             'categories' => $this->categories(),
             'like' => $this->like(),
+            'category_label' => $this->category_label(),
         ];
     }
 
@@ -36,5 +40,13 @@ class Newsroom extends Composer
     public function like()
     {
         return do_shortcode('[wp_ulike]');
+    }
+
+    public function category_label()
+    {
+        if (isset(get_queried_object()->taxonomy) && !empty($title = get_queried_object()->taxonomy)) {
+            return $title;
+        }
+        return get_post_type().'_category';
     }
 }

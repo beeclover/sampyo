@@ -12,7 +12,8 @@ class Archive extends Composer
      * @var array
      */
     protected static $views = [
-        'header-archive',
+        'partials.header-archive',
+        'partials.header-archive-*',
         'archive',
         'archive-*',
     ];
@@ -27,7 +28,6 @@ class Archive extends Composer
         return [
             'title' => $this->title(),
             'description' => $this->description(),
-            'category_label' => $this->category_label(),
         ];
     }
 
@@ -49,14 +49,5 @@ class Archive extends Composer
             return $post_type_data->description;
         }
         return get_the_archive_description();
-    }
-
-
-    public function category_label()
-    {
-        if (isset(get_queried_object()->taxonomy) && !empty($title = get_queried_object()->taxonomy)) {
-            return $title;
-        }
-        return get_post_type().'_category';
     }
 }

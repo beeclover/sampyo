@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.header-archive')
+  @include('partials.header-archive-newsroom')
   <main>
     <div class="container lg:max-w-screen-lg mx-auto">
       @if (!have_posts())
