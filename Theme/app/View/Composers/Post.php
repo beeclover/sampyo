@@ -29,6 +29,7 @@ class Post extends Composer
             'thumbnail' => $this->thumbnail(),
             'permalink' => $this->permalink(),
             'excerpt' => $this->excerpt(),
+            'pagination' => $this->pagination(),
         ];
     }
 
@@ -83,5 +84,58 @@ class Post extends Composer
     public function excerpt()
     {
         return get_the_excerpt();
+    }
+
+    public function pagination()
+    {
+        $dom = '<div class="page-pagination-article">';
+        // 이전글
+        $prev_post = get_previous_post();
+        if (!empty($prev_post)) {
+            $link = get_permalink($prev_post->ID);
+            $title = apply_filters('the_title', $prev_post->post_title);
+            $dom .= <<<HTML
+              <div class="page-pagination-article-list prev">
+                <span class="label">이전글</span>
+                <a class="title" href="$link">$title</a>
+              </div>
+HTML;
+        } else {
+            $dom .= <<<HTML
+            <div class="page-pagination-article-list prev">
+              <span class="label">이전글</span>
+              <span></span>
+            </div>
+HTML;
+        }
+
+        // 다음글
+        $next_post = get_next_post();
+        if (!empty($next_post)) {
+            $link = get_permalink($next_post->ID);
+            $title = apply_filters('the_title', $next_post->post_title);
+            $dom .= <<<HTML
+            <div class="page-pagination-article-list next">
+              <span class="label">다음글</span>
+              <a class="title" href="$link">$title</a>
+            </div>
+HTML;
+        } else {
+            $dom .= <<<HTML
+            <div class="page-pagination-article-list next">
+              <span class="label">다음글</span>
+              <span></span>
+            </div>
+HTML;
+        }
+
+        $post_type = get_post_type();
+        $dom .= <<<HTML
+            <a class="page-pagination-article-menu" href="/$post_type">
+              목록보기
+            </a>
+          </div>
+HTML;
+        return $dom;
     }
 }
