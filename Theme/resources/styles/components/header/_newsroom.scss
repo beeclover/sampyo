@@ -1,0 +1,30 @@
+&-newsroom {
+  overflow: hidden;
+  padding-top: var(--bar-global-height);
+
+  &-title {
+    font-size: 4.375rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+  }
+
+  &-content {
+    @apply text-white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    position: relative;
+  }
+
+  &-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
