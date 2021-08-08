@@ -41,4 +41,47 @@
       </div>
     </div>
   </div>
+  <div class="newsroom__blog">
+    <div class="container mx-auto xl:max-w-screen-xl">
+      <div class="newsroom__blog-header">
+        <div class="newsroom__blog-header-title">블로그</div>
+        <div class="newsroom__blog-header-arrow">
+          <div class="btn-arrow prev"></div>
+          <div class="btn-arrow next"></div>
+        </div>
+      </div>
+      <div class="newsroom__blog-body">
+        <div class="swiper-wrapper">
+          @foreach ($blog_posts as $blog)
+          <div class="swiper-slide">
+            <div class="card-col">
+              @if ($blog->thumbnail)
+              <div class="card-col-thumbnail">
+                <img src="{!! $blog->thumbnail !!}" />
+              </div>
+              @endif
+              <div class="card-col-main">
+                @if (!empty($blog->category))
+                  <ul class="card-col-cat">
+                    @foreach ($blog->category as $item)
+                      <li class="card-col-cat-item">
+                        <a href="{{ $item->link }}">{{ $item->name }}</a>
+                      </li>
+                    @endforeach
+                  </ul>
+                @endif
+                <div class="card-col-contentWrap">
+                  <a href="{!! $blog->permalink !!}" class="card-col-title">{!! $blog->post_title !!}</a>
+                  <a href="{!! $blog->permalink !!}" class="card-col-content">
+                    {!! $blog->excerpt !!}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          @endforeach
+        </div>
+      </div>
+    </div>
+  </div>
 @endsection
