@@ -16,6 +16,8 @@
 }
 
 .newsroom__pin_blog {
+  margin-bottom: 130px;
+
   .container {
     height: 520px;
   }
@@ -40,5 +42,29 @@
       word-break: keep-all;
       margin-bottom: 32px;
     }
+  }
+}
+
+.newsroom__blog {
+  &-header {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    gap: 26px;
+    margin-bottom: 50px;
+
+    &-title {
+      font-weight: bold;
+    }
+
+    &-arrow {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+
+  &-body {
+    overflow: hidden;
   }
 }
