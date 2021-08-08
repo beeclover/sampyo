@@ -24,6 +24,7 @@ class Newsroom extends Composer
     {
         return [
           'pin_blog' => $this->get_pin_post("blog"),
+          'blog_posts' => $this->get_posts("blog"),
         ];
     }
 
@@ -34,7 +35,6 @@ class Newsroom extends Composer
         $post->excerpt = get_the_excerpt($post->ID);
         $post->post_content = "";
         // 카테고리 추가
-        $cats = get_the_terms($post->ID, $postType."_category");
         if ($cats = get_the_terms($post->ID, $postType."_category")) {
             $post->category = array_map(function ($cat) use ($postType) {
                 $cat->link = "/{$postType}/category/".$cat->slug;
@@ -73,5 +73,23 @@ class Newsroom extends Composer
         $post = $this->set_post_data($pintpost[0], $postType);
 
         return $post;
+    }
+
+    public function get_posts($postType)
+    {
+        $posts = get_posts(array(
+          'post_type' => $postType,
+          'numberposts' => 10,
+        ));
+
+        if (count($posts) === 0) {
+            return;
+        }
+
+        $posts = array_map(function ($post) use ($postType) {
+            return $this->set_post_data($post, $postType);
+        }, $posts);
+
+        return $posts;
     }
 }
