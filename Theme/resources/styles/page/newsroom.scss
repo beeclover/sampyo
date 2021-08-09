@@ -15,6 +15,13 @@
   }
 }
 
+.newsroom__section {
+  &-2 {
+    background-color: var(--lighthouse);
+    overflow-x: hidden;
+  }
+}
+
 .newsroom__pin_blog {
   margin-bottom: 130px;
 
@@ -45,7 +52,7 @@
   }
 }
 
-.newsroom__blog {
+@mixin arrowHeader {
   &-header {
     display: flex;
     align-items: center;
@@ -63,8 +70,83 @@
       align-items: center;
     }
   }
+}
+
+.newsroom__blog {
+  @include arrowHeader;
 
   &-body {
     overflow: hidden;
+  }
+}
+
+.newsroom__press {
+  padding-top: 130px;
+  margin-bottom: 270px;
+
+  @include arrowHeader;
+
+  &-body {
+    @apply text-white;
+
+    .card-def-cat-item {
+      color: var(--atmosphere);
+    }
+
+    .card-def-cat-item a::after {
+      content: none;
+    }
+  }
+
+  &-thumbnail {
+    position: absolute;
+    width: 50vw;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transform: translateY(100px);
+
+    img {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 960px;
+    }
+
+    &-wrap {
+      flex: 1;
+      align-self: stretch;
+      position: relative;
+    }
+  }
+
+  &-content {
+    min-height: 550px;
+    position: relative;
+
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn {
+      @apply text-white;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 100vw;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 0;
+      position: absolute;
+      background-color: var(--funnel-cloud);
+    }
   }
 }
