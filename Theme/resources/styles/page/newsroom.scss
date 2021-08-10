@@ -136,6 +136,10 @@
     .btn {
       @apply text-white;
     }
+  }
+
+  &-swiper {
+    position: relative;
 
     &::after {
       content: '';
