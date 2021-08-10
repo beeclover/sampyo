@@ -165,19 +165,19 @@
         </div>
         <div class="newsroom__newslater-notice">
           <div class="swiper-wrapper">
-            @for ($i = 0; $i < 2; $i++)
+            @foreach ($notice_posts as $post)
               <div class="newsroom__newslater-notice-item swiper-slide">
-                <a href="/" class="newsroom__newslater-notice-label">
+                <a href="{!! $post->guid !!}" class="newsroom__newslater-notice-label">
                   <div class="icon-wrap">
                     <div class="icon-notice"></div>
-                    <div class="icon-label">정인철 삼표레일웨이 대표, 국토부 장관 표창 수상</div>
+                    <div class="icon-label">{!! $post->post_title !!}</div>
                   </div>
                 </a>
                 <div class="newsroom__newslater-notice-date">
-                  2021.07.19
+                  {!! $post->date !!}
                 </div>
               </div>
-            @endfor
+            @endforeach
           </div>
         </div>
       </div>

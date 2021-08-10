@@ -27,6 +27,7 @@ class Newsroom extends Composer
           'blog_posts' => $this->get_posts("blog"),
           'blog_cat' => $this->get_category("blog"),
           'press_posts' => $this->get_banner_posts("press"),
+          'notice_posts' => $this->get_def_posts("notice-board"),
         ];
     }
 
@@ -125,5 +126,16 @@ class Newsroom extends Composer
             $term->link = "/{$postType}/category/{$term->slug}";
         }
         return $terms;
+    }
+
+    public function get_def_posts($postType)
+    {
+        $posts = get_posts(array(
+          'post_type' => $postType,
+        ));
+        foreach ($posts as $post) {
+            $post->date = get_the_date('Y-m-d', $post->ID);
+        }
+        return $posts;
     }
 }
