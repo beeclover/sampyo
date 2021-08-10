@@ -27,6 +27,17 @@ export default {
         prevEl: '.newsroom__press .btn-arrow.prev',
       },
     });
+
+    // newsroom pin blog
+    new Swiper('.newsroom__newslater-notice', {
+      loop: true,
+      direction: 'vertical',
+      slidesPerView: 1,
+      height: 80,
+      autoplay: {
+        delay: 5000,
+      },
+    });
   },
   finalize() {},
 };

@@ -217,10 +217,15 @@
   &-notice {
     @apply bg-white;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 27px 40px;
+    height: 80px;
+    overflow: hidden;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 27px 40px;
+    }
 
     &-label {
       .icon-wrap {
