@@ -163,6 +163,17 @@
             </div>
           </form>
         </div>
+        <div class="newsroom__newslater-notice">
+          <a href="/" class="newsroom__newslater-notice-label">
+            <div class="icon-wrap">
+              <div class="icon-notice"></div>
+              <div class="icon-label">정인철 삼표레일웨이 대표, 국토부 장관 표창 수상</div>
+            </div>
+          </a>
+          <div class="newsroom__newslater-notice-date">
+            2021.07.19
+          </div>
+        </div>
       </div>
     </div>
   </div>

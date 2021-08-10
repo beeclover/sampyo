@@ -19,6 +19,8 @@
   &-2 {
     background-color: var(--lighthouse);
     overflow-x: hidden;
+    padding-top: 130px;
+    padding-bottom: 150px;
   }
 }
 
@@ -112,7 +114,6 @@
 }
 
 .newsroom__press {
-  padding-top: 130px;
   margin-bottom: 270px;
 
   @include arrowHeader;
@@ -210,6 +211,25 @@
   &-form {
     .input {
       width: 450px;
+    }
+  }
+
+  &-notice {
+    @apply bg-white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 40px;
+
+    &-label {
+      .icon-wrap {
+        gap: 15px;
+      }
+
+      #{$iconSize} {
+        font-size: 22px;
+      }
     }
   }
 }
