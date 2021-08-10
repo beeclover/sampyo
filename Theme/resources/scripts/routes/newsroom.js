@@ -1,7 +1,4 @@
 import Swiper from 'swiper';
-import SwiperCore, { Navigation, Pagination, EffectFade } from 'swiper/core';
-
-SwiperCore.use([Navigation, Pagination, EffectFade]);
 
 export default {
   init() {
