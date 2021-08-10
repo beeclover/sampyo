@@ -17,6 +17,7 @@ export default {
 
     // newsroom pin blog
     new Swiper('.newsroom__press-swiper', {
+      loop: true,
       preloadImages: true,
       updateOnImagesReady: true,
       touchEventsTarget: 'wrapper',

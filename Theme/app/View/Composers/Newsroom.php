@@ -25,6 +25,7 @@ class Newsroom extends Composer
         return [
           'pin_blog' => $this->get_pin_post("blog"),
           'blog_posts' => $this->get_posts("blog"),
+          'press_posts' => $this->get_banner_posts("press"),
         ];
     }
 
@@ -81,6 +82,25 @@ class Newsroom extends Composer
           'post_type' => $postType,
           'numberposts' => 10,
         ));
+
+        if (count($posts) === 0) {
+            return;
+        }
+
+        $posts = array_map(function ($post) use ($postType) {
+            return $this->set_post_data($post, $postType);
+        }, $posts);
+
+        return $posts;
+    }
+
+    public function get_banner_posts($postType)
+    {
+        $posts = get_posts(array(
+        'post_type' => $postType,
+        'numberposts' => 5,
+        'meta_query' => array(array('key' => '_thumbnail_id'))
+      ));
 
         if (count($posts) === 0) {
             return;
