@@ -1,0 +1,11 @@
+.input {
+  padding: 0.625em 1.75em;
+  border: 1px solid var(--steel-wool);
+  color: var(--black-out);
+  display: inline-block;
+  background-color: transparent;
+
+  &::placeholder {
+    color: var(--steam);
+  }
+}
