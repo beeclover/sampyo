@@ -189,6 +189,10 @@
     display: flex;
     flex-wrap: wrap;
 
+    &-body {
+      overflow: hidden;
+    }
+
     .card-def {
       gap: 42px;
 
