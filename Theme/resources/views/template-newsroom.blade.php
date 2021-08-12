@@ -149,6 +149,62 @@
             @endforeach
           </div>
         </div>
+        <div class="newsroom__press-row">
+          <div class="w-1/2">
+            <div class="newsroom__press-header">
+              <div class="newsroom__press-header-title">보도자료</div>
+              <div class="newsroom__press-header-arrow">
+                <a href="javascript:;" class="btn-arrow prev"></a>
+                <a href="javascript:;" class="btn-arrow next"></a>
+              </div>
+            </div>
+            <div class="newsroom__press-body">
+              @php
+              $dump = <<<HTML
+              <div class="card-def">
+                <a href="/" class="card-def-thumbnail">
+                  <img src="https://picsum.photos/200?random=1" />
+                </a>
+                <div class="card-def-main">
+                  <div class="card-def-contentWrap">
+                    <a href="/" class="card-def-title">title</a>
+                    <div class="card-def-content">
+                      excert
+                    </div>
+                  </div>
+                  <div class="card-def-meta">
+                    <div class="card-def-date">
+                      2021.07.01
+                    </div>
+                  </div>
+                </div>
+              </div>
+HTML;
+              @endphp
+              <ul>
+                <li class="mb-16">{!! $dump !!}</li>
+                <li class="mb-16">{!! $dump !!}</li>
+                <li class="mb-16">{!! $dump !!}</li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-1/2">
+            <div class="newsroom__press-header">
+              <div class="newsroom__press-header-title">언론소개</div>
+              <div class="newsroom__press-header-arrow">
+                <a href="javascript:;" class="btn-arrow prev"></a>
+                <a href="javascript:;" class="btn-arrow next"></a>
+              </div>
+            </div>
+            <div class="newsroom__press-body">
+              <ul>
+                <li class="mb-16">{!! $dump !!}</li>
+                <li class="mb-16">{!! $dump !!}</li>
+                <li class="mb-16">{!! $dump !!}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="newsroom__newslater">

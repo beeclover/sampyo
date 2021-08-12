@@ -114,13 +114,9 @@
 }
 
 .newsroom__press {
-  margin-bottom: 270px;
-
   @include arrowHeader;
 
   &-body {
-    @apply text-white;
-
     .card-def-cat-item {
       color: var(--atmosphere);
     }
@@ -157,6 +153,8 @@
   }
 
   &-content {
+    @apply text-white;
+
     min-height: 550px;
     position: relative;
 
@@ -172,6 +170,7 @@
 
   &-swiper {
     position: relative;
+    margin-bottom: 270px;
 
     &::after {
       content: '';
@@ -183,6 +182,31 @@
       z-index: 0;
       position: absolute;
       background-color: var(--funnel-cloud);
+    }
+  }
+
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card-def {
+      gap: 42px;
+
+      &-content {
+        height: 3.6em;
+        min-height: auto;
+        overflow: hidden;
+      }
+
+      &-thumbnail {
+        min-width: 163px;
+        aspect-ratio: 1/1;
+        max-height: 100%;
+      }
+
+      &-title {
+        margin-bottom: 5px;
+      }
     }
   }
 }
