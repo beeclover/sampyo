@@ -1,4 +1,5 @@
 import 'jquery';
+import Alpine from 'alpinejs';
 
 import SwiperCore, {
   Navigation,
@@ -21,4 +22,5 @@ const routes = new Router({
 // Load Events
 jQuery(document).ready(() => {
   routes.loadEvents();
+  Alpine.start();
 });

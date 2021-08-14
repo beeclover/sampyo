@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- end:fonts.google.com -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <?php wp_head(); ?>
   </head>
 
