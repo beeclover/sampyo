@@ -50,14 +50,14 @@ export default {
         prevEl: '#press_release_btn.btn-arrow.prev',
       },
     });
-    new Swiper('#press_feature', {
+    new Swiper('#press_featured', {
       effect: 'fade',
       fadeEffect: {
         crossFade: true,
       },
       navigation: {
-        nextEl: '#press_feature_btn.btn-arrow.next',
-        prevEl: '#press_feature_btn.btn-arrow.prev',
+        nextEl: '#press_featured_btn.btn-arrow.next',
+        prevEl: '#press_featured_btn.btn-arrow.prev',
       },
     });
   },

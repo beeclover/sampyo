@@ -149,82 +149,86 @@
             @endforeach
           </div>
         </div>
-        @php
-        $dump = <<<HTML
-        <div class="card-def">
-          <a href="/" class="card-def-thumbnail">
-            <img src="https://picsum.photos/200?random=1" />
-          </a>
-          <div class="card-def-main">
-            <div class="card-def-contentWrap">
-              <a href="/" class="card-def-title">title</a>
-              <div class="card-def-content">
-                excert
-              </div>
-            </div>
-            <div class="card-def-meta">
-              <div class="card-def-date">
-                2021.07.01
-              </div>
-            </div>
-          </div>
-        </div>
-HTML;
-        @endphp
         <div class="newsroom__press-row">
           <div class="w-1/2">
-            <div class="newsroom__press-header">
-              <div class="newsroom__press-header-title">보도자료</div>
-              <div class="newsroom__press-header-arrow">
-                <a href="javascript:;" id="press_release_btn" class="btn-arrow prev"></a>
-                <a href="javascript:;" id="press_release_btn" class="btn-arrow next"></a>
+            <div class="wrap">
+              <div class="newsroom__press-header">
+                <div class="newsroom__press-header-title">보도자료</div>
+                <div class="newsroom__press-header-arrow">
+                  <a href="javascript:;" id="press_release_btn" class="btn-arrow prev"></a>
+                  <a href="javascript:;" id="press_release_btn" class="btn-arrow next"></a>
+                </div>
               </div>
-            </div>
-            <div id="press_release" class="newsroom__press-row-body">
-              <div class="swiper-wrapper">
-                <ul class="swiper-slide">
-                  <li class="mb-16">{!! $dump !!}</li>
-                  <li class="mb-16">{!! $dump !!}</li>
-                  <li class="mb-16">{!! $dump !!}</li>
-                </ul>
-                <ul class="swiper-slide">
-                  <li class="mb-16">{!! $dump !!}</li>
-                  <li class="mb-16">{!! $dump !!}</li>
-                  <li class="mb-16">{!! $dump !!}</li>
-                </ul>
-                <ul class="swiper-slide">
-                  <li class="mb-16">{!! $dump !!}</li>
-                  <li class="mb-16">{!! $dump !!}</li>
-                  <li class="mb-16">{!! $dump !!}</li>
-                </ul>
+              <div id="press_release" class="newsroom__press-row-body">
+                <div class="swiper-wrapper">
+                  @foreach ($press_cat_release as $press_cat_release_col)
+                    <ul class="swiper-slide">
+                      @foreach ($press_cat_release_col as $post)
+                        <li class="mb-16">
+                          <div class="card-def">
+                            <a href="{!! $post->permalink !!}" class="card-def-thumbnail">
+                              <img src="{!! $post->thumbnail !!}" />
+                            </a>
+                            <div class="card-def-main">
+                              <div class="card-def-contentWrap">
+                                <a href="{!! $post->permalink !!}" class="card-def-title">{!! $post->post_title !!}</a>
+                                <div class="card-def-content">
+                                  {!! $post->excerpt !!}
+                                </div>
+                              </div>
+                              <div class="card-def-meta">
+                                <div class="card-def-date">
+                                  {!! $post->date !!}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      @endforeach
+                    </ul>
+                  @endforeach
+                </div>
               </div>
             </div>
           </div>
-          <div class="w-1/2">
-            <div class="newsroom__press-header">
-              <div class="newsroom__press-header-title">언론소개</div>
-              <div class="newsroom__press-header-arrow">
-                <a href="javascript:;" id="press_feature_btn" class="btn-arrow prev"></a>
-                <a href="javascript:;" id="press_feature_btn" class="btn-arrow next"></a>
+          <div class="w-1/2 flex justify-end">
+            <div class="wrap">
+              <div class="newsroom__press-header">
+                <div class="newsroom__press-header-title">언론소개</div>
+                <div class="newsroom__press-header-arrow">
+                  <a href="javascript:;" id="press_featured_btn" class="btn-arrow prev"></a>
+                  <a href="javascript:;" id="press_featured_btn" class="btn-arrow next"></a>
+                </div>
               </div>
-            </div>
-            <div id="press_feature" class="newsroom__press-row-body">
-              <div class="swiper-wrapper">
-                <ul class="swiper-slide">
-                  <li class="mb-16">{!! $dump !!}</li>
-                  <li class="mb-16">{!! $dump !!}</li>
-                  <li class="mb-16">{!! $dump !!}</li>
-                </ul>
-                <ul class="swiper-slide">
-                  <li class="mb-16">{!! $dump !!}</li>
-                  <li class="mb-16">{!! $dump !!}</li>
-                  <li class="mb-16">{!! $dump !!}</li>
-                </ul>
-                <ul class="swiper-slide">
-                  <li class="mb-16">{!! $dump !!}</li>
-                  <li class="mb-16">{!! $dump !!}</li>
-                  <li class="mb-16">{!! $dump !!}</li>
-                </ul>
+              <div id="press_featured" class="newsroom__press-row-body">
+                <div class="swiper-wrapper">
+                  @foreach ($press_cat_featured as $press_cat_featured_col)
+                    <ul class="swiper-slide">
+                      @foreach ($press_cat_featured_col as $post)
+                        <li class="mb-16">
+                          <div class="card-def">
+                            <a href="{!! $post->permalink !!}" class="card-def-thumbnail">
+                              <img src="{!! $post->thumbnail !!}" />
+                            </a>
+                            <div class="card-def-main">
+                              <div class="card-def-contentWrap">
+                                <a href="{!! $post->permalink !!}" class="card-def-title">{!! $post->post_title !!}</a>
+                                <div class="card-def-content">
+                                  {!! $post->excerpt !!}
+                                </div>
+                              </div>
+                              <div class="card-def-meta">
+                                <div class="card-def-date">
+                                  {!! $post->date !!}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      @endforeach
+                    </ul>
+                  @endforeach
+                </div>
               </div>
             </div>
           </div>

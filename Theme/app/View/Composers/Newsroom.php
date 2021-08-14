@@ -28,6 +28,8 @@ class Newsroom extends Composer
           'blog_cat' => $this->get_category("blog"),
           'press_posts' => $this->get_banner_posts("press"),
           'notice_posts' => $this->get_def_posts("notice-board"),
+          'press_cat_release' => $this->get_press("release"),
+          'press_cat_featured' => $this->get_press("featured"),
         ];
     }
 
@@ -36,9 +38,10 @@ class Newsroom extends Composer
         $post->permalink = get_the_permalink($post->ID);
         $post->thumbnail = get_the_post_thumbnail_url($post->ID);
         $post->excerpt = get_the_excerpt($post->ID);
+        $post->date = get_the_date('Y.m.d', $post->ID);
         $post->post_content = "";
         // 카테고리 추가
-        if ($cats = get_the_terms($post->ID, $postType."_category")) {
+        if (!empty($cats = get_the_terms($post->ID, $postType."_category"))) {
             $post->category = array_map(function ($cat) use ($postType) {
                 $cat->link = "/{$postType}/category/".$cat->slug;
                 return $cat;
@@ -69,7 +72,7 @@ class Newsroom extends Composer
                 array(
                 'post_type' => $postType,
                 'numberposts' => 1,
-            )
+              )
             );
         }
 
@@ -137,5 +140,33 @@ class Newsroom extends Composer
             $post->date = get_the_date('Y-m-d', $post->ID);
         }
         return $posts;
+    }
+
+    public function get_press($cat)
+    {
+        $posts = get_posts(array(
+          "post_type" => "press",
+          "numberposts" => 12,
+          "tax_query" => array(array(
+            "taxonomy" => "press_category",
+            "field" => "slug",
+            "terms" => $cat
+          ))
+        ));
+
+        $posts = array_map(function ($post) {
+            return $this->set_post_data($post, "press");
+        }, $posts);
+        
+        $result = [];
+
+        $cnt = floor(count($posts) / 3) + (floor(count($posts) % 3) > 0 ? 1 : 0);
+
+        for ($i = 0; $i < $cnt; $i++) {
+            $push = array_slice($posts, 3 * $i, 3);
+            array_push($result, $push);
+        }
+
+        return $result;
     }
 }
