@@ -12,11 +12,13 @@ SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
 import Router from './util/router';
 import common from './routes/common';
 import newsroom from './routes/newsroom';
+import home from './routes/home';
 
 const routes = new Router({
   // All pages
   common,
   newsroom,
+  home,
 });
 
 // Load Events
