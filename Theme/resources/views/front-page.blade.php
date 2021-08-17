@@ -64,4 +64,120 @@
     </div>
   </div>
 </div>
+<div class="section home__s1">
+  <div class="container xl:max-w-screen-xl mx-auto relative">
+    <div class="home__s1-header">
+      <div class="home__s1-title text-6xl font-black">사업영역</div>
+      <p class="home__s1-header-content">끊임없는 도전과 창조적인 혁신을 통해 Building Materials 분야의 리더로 자리매김합니다.</p>
+    </div>
+    <div class="flex gap-9">
+      <div class="w-1/3 flex flex-col gap-9 home__s1-imgCol-1">
+        <div class="card-flip" data-scroll-animation>
+          <div class="card-flip-front">
+            <div class="card-flip-title">건설기초소재</div>
+            <div class="card-flip-content">
+              <p>세계 최고 수준의 시멘트 생산과 공급능력을 갖추고 국내 시멘트 업계를 선도하고 있습니다.</p>
+            </div>
+          </div>
+          <div class="card-flip-back">
+            <ul class="card-flip-cat">
+              <li>시멘트</li>
+              <li>레미콘</li>
+              <li>몰탈</li>
+              <li>골재</li>
+              <li>분체</li>
+            </ul>
+          </div>
+          <div class="card-flip-bg">
+            <img src="https://picsum.photos/600?random=1" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="w-1/3 flex flex-col gap-9 home__s1-imgCol-2">
+        <div class="card-flip" data-scroll-animation>
+          <div class="card-flip-front">
+            <div class="card-flip-title">건설기초소재</div>
+            <div class="card-flip-content">
+              <p>세계 최고 수준의 시멘트 생산과 공급능력을 갖추고 국내 시멘트 업계를 선도하고 있습니다.</p>
+            </div>
+          </div>
+          <div class="card-flip-back">
+            <ul class="card-flip-cat">
+              <li>시멘트</li>
+              <li>레미콘</li>
+              <li>몰탈</li>
+              <li>골재</li>
+              <li>분체</li>
+            </ul>
+          </div>
+          <div class="card-flip-bg">
+            <img src="https://picsum.photos/600?random=2" alt="">
+          </div>
+        </div>
+        <div class="card-flip" data-scroll-animation>
+          <div class="card-flip-front">
+            <div class="card-flip-title">건설기초소재</div>
+            <div class="card-flip-content">
+              <p>세계 최고 수준의 시멘트 생산과 공급능력을 갖추고 국내 시멘트 업계를 선도하고 있습니다.</p>
+            </div>
+          </div>
+          <div class="card-flip-back">
+            <ul class="card-flip-cat">
+              <li>시멘트</li>
+              <li>레미콘</li>
+              <li>몰탈</li>
+              <li>골재</li>
+              <li>분체</li>
+            </ul>
+          </div>
+          <div class="card-flip-bg">
+            <img src="https://picsum.photos/600?random=3" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="w-1/3 flex flex-col gap-9 home__s1-imgCol-3">
+        <div class="card-flip" data-scroll-animation>
+          <div class="card-flip-front">
+            <div class="card-flip-title">건설기초소재</div>
+            <div class="card-flip-content">
+              <p>세계 최고 수준의 시멘트 생산과 공급능력을 갖추고 국내 시멘트 업계를 선도하고 있습니다.</p>
+            </div>
+          </div>
+          <div class="card-flip-back">
+            <ul class="card-flip-cat">
+              <li>시멘트</li>
+              <li>레미콘</li>
+              <li>몰탈</li>
+              <li>골재</li>
+              <li>분체</li>
+            </ul>
+          </div>
+          <div class="card-flip-bg">
+            <img src="https://picsum.photos/600?random=4" alt="">
+          </div>
+        </div>
+        <div class="card-flip" data-scroll-animation>
+          <div class="card-flip-front">
+            <div class="card-flip-title">건설기초소재</div>
+            <div class="card-flip-content">
+              <p>세계 최고 수준의 시멘트 생산과 공급능력을 갖추고 국내 시멘트 업계를 선도하고 있습니다.</p>
+            </div>
+          </div>
+          <div class="card-flip-back">
+            <ul class="card-flip-cat">
+              <li>시멘트</li>
+              <li>레미콘</li>
+              <li>몰탈</li>
+              <li>골재</li>
+              <li>분체</li>
+            </ul>
+          </div>
+          <div class="card-flip-bg">
+            <img src="https://picsum.photos/600?random=5" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 @endsection
