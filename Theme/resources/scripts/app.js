@@ -1,5 +1,6 @@
 import 'jquery';
 import Alpine from 'alpinejs';
+import { gsap, ScrollTrigger } from 'gsap/all';
 
 import SwiperCore, {
   Navigation,
@@ -8,6 +9,7 @@ import SwiperCore, {
   Autoplay,
 } from 'swiper/core';
 SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
+gsap.registerPlugin(ScrollTrigger);
 
 import Router from './util/router';
 import common from './routes/common';
