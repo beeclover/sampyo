@@ -72,110 +72,20 @@
     </div>
     <div class="flex gap-9">
       <div class="w-1/3 flex flex-col gap-9 home__s1-imgCol-1">
-        <div class="card-flip" data-scroll-animation>
-          <div class="card-flip-front">
-            <div class="card-flip-title">건설기초소재</div>
-            <div class="card-flip-content">
-              <p>세계 최고 수준의 시멘트 생산과 공급능력을 갖추고 국내 시멘트 업계를 선도하고 있습니다.</p>
-            </div>
-          </div>
-          <div class="card-flip-back">
-            <ul class="card-flip-cat">
-              <li>시멘트</li>
-              <li>레미콘</li>
-              <li>몰탈</li>
-              <li>골재</li>
-              <li>분체</li>
-            </ul>
-          </div>
-          <div class="card-flip-bg">
-            <img src="https://picsum.photos/600?random=1" alt="">
-          </div>
-        </div>
+        @php($cat = $business[0])
+        @include('components.card-flip')
       </div>
       <div class="w-1/3 flex flex-col gap-9 home__s1-imgCol-2">
-        <div class="card-flip" data-scroll-animation>
-          <div class="card-flip-front">
-            <div class="card-flip-title">건설기초소재</div>
-            <div class="card-flip-content">
-              <p>세계 최고 수준의 시멘트 생산과 공급능력을 갖추고 국내 시멘트 업계를 선도하고 있습니다.</p>
-            </div>
-          </div>
-          <div class="card-flip-back">
-            <ul class="card-flip-cat">
-              <li>시멘트</li>
-              <li>레미콘</li>
-              <li>몰탈</li>
-              <li>골재</li>
-              <li>분체</li>
-            </ul>
-          </div>
-          <div class="card-flip-bg">
-            <img src="https://picsum.photos/600?random=2" alt="">
-          </div>
-        </div>
-        <div class="card-flip" data-scroll-animation>
-          <div class="card-flip-front">
-            <div class="card-flip-title">건설기초소재</div>
-            <div class="card-flip-content">
-              <p>세계 최고 수준의 시멘트 생산과 공급능력을 갖추고 국내 시멘트 업계를 선도하고 있습니다.</p>
-            </div>
-          </div>
-          <div class="card-flip-back">
-            <ul class="card-flip-cat">
-              <li>시멘트</li>
-              <li>레미콘</li>
-              <li>몰탈</li>
-              <li>골재</li>
-              <li>분체</li>
-            </ul>
-          </div>
-          <div class="card-flip-bg">
-            <img src="https://picsum.photos/600?random=3" alt="">
-          </div>
-        </div>
+        @php($cat = $business[1])
+        @include('components.card-flip')
+        @php($cat = $business[2])
+        @include('components.card-flip')
       </div>
       <div class="w-1/3 flex flex-col gap-9 home__s1-imgCol-3">
-        <div class="card-flip" data-scroll-animation>
-          <div class="card-flip-front">
-            <div class="card-flip-title">건설기초소재</div>
-            <div class="card-flip-content">
-              <p>세계 최고 수준의 시멘트 생산과 공급능력을 갖추고 국내 시멘트 업계를 선도하고 있습니다.</p>
-            </div>
-          </div>
-          <div class="card-flip-back">
-            <ul class="card-flip-cat">
-              <li>시멘트</li>
-              <li>레미콘</li>
-              <li>몰탈</li>
-              <li>골재</li>
-              <li>분체</li>
-            </ul>
-          </div>
-          <div class="card-flip-bg">
-            <img src="https://picsum.photos/600?random=4" alt="">
-          </div>
-        </div>
-        <div class="card-flip" data-scroll-animation>
-          <div class="card-flip-front">
-            <div class="card-flip-title">건설기초소재</div>
-            <div class="card-flip-content">
-              <p>세계 최고 수준의 시멘트 생산과 공급능력을 갖추고 국내 시멘트 업계를 선도하고 있습니다.</p>
-            </div>
-          </div>
-          <div class="card-flip-back">
-            <ul class="card-flip-cat">
-              <li>시멘트</li>
-              <li>레미콘</li>
-              <li>몰탈</li>
-              <li>골재</li>
-              <li>분체</li>
-            </ul>
-          </div>
-          <div class="card-flip-bg">
-            <img src="https://picsum.photos/600?random=5" alt="">
-          </div>
-        </div>
+        @php($cat = $business[3])
+        @include('components.card-flip')
+        @php($cat = $business[4])
+        @include('components.card-flip')
       </div>
     </div>
   </div>

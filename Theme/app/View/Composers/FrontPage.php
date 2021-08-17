@@ -2,7 +2,6 @@
 
 namespace App\View\Composers;
 
-use DeliciousBrains\WPMDB\Container\DI\Definition\Resolver\ObjectCreator;
 use Roots\Acorn\View\Composer;
 
 class FrontPage extends Composer
@@ -26,6 +25,7 @@ class FrontPage extends Composer
         return [
           'readmore' => $this->readmore(),
           'heroVideo' => $this->heroVideo(),
+          'business' => $this->business(),
         ];
     }
 
@@ -42,5 +42,37 @@ class FrontPage extends Composer
     public function heroVideo()
     {
         return get_theme_file_uri('resources/video/hero-video.mp4');
+    }
+
+    public function setBusiness($term)
+    {
+        $children = get_terms([
+          'taxonomy' => 'business_category',
+          'parent' => $term->term_id,
+          'hide_empty' => false,
+        ]);
+
+        $children = array_map(function ($cat) {
+            $cat->link = "/business/category/".$cat->slug;
+            return $cat;
+        }, $children);
+
+        $term->children = $children;
+        $term->thumbnail = get_field('thumbnail', $term->term_id);
+
+        return $term;
+    }
+
+    public function business()
+    {
+        $terms = get_terms([
+          'taxonomy' => 'business_category',
+          'hide_empty' => false,
+          "parent" => 0
+        ]);
+        $terms = array_map(function ($term) {
+            return $this->setBusiness($term);
+        }, $terms);
+        return $terms;
     }
 }
