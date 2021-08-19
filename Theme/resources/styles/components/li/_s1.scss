@@ -1,0 +1,33 @@
+&__s1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.125rem; // 18px
+
+  &-cat {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  &-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 264px;
+    gap: 1em;
+  }
+
+  &-btn {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 9999px;
+    border: 1px solid currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .svg-icon {
+      width: 1em;
+      height: 1em;
+    }
+  }
+}
