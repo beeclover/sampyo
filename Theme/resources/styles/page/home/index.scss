@@ -1,4 +1,9 @@
 .home {
   @import 'hero';
   @import 'section1';
+  @import 'section2';
+
+  &__s234 {
+    background-color: var(--lighthouse);
+  }
 }
