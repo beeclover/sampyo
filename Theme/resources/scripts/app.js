@@ -7,8 +7,9 @@ import SwiperCore, {
   Pagination,
   EffectFade,
   Autoplay,
+  Controller,
 } from 'swiper/core';
-SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay]);
+SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay, Controller]);
 gsap.registerPlugin(ScrollTrigger);
 
 import Router from './util/router';

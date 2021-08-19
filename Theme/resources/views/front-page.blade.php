@@ -92,36 +92,52 @@
 </div>
 <div class="section home__s234">
   <div class="section home__s2">
+    <div id="card-content-swiper-bg" class="card-content-swiper-bg">
+      <div class="swiper-wrapper">
+        @for ($i = 0; $i < 4; $i++)
+          <div class="swiper-slide">
+            <img class="card-content-thumbnail" src="https://picsum.photos/1920?random={{$i}}" alt="">
+          </div>
+        @endfor
+      </div>
+    </div>
     <div class="container mx-auto">
       <div class="flex py-32">
         <div class="w-2/3 text-white">
           <div class="card-content">
-            <div class="card-content-body"> 
-              <img class="card-content-thumbnail" src="https://picsum.photos/1920" alt="">
-              <div class="card-content-title">
-                삼표그룹, 해양·항만 분야 특수시멘트 개발 기술제휴
-              </div>
-              <div class="card-content-content prose">
-                <p> 
-                  건설기초소재 선두기업 삼표그룹(회장 정도원)이 소파블록에 특화된 조강 시멘트 개발에 나선다. 소파블록은 파도 피해를 줄이기 위해 해안이나 방파제에 설치되는 블록이다.
-                </p>
-                <p> 
-                  삼표그룹은 21일 소파블록 공종 특화업체 미래오션테크와 해양·항만 분야 조강형 특수시멘트 기술제휴를 맺었다. 삼표그룹과 미래오션테크는 특수시멘트를 활용한 해양 소파블록을 개발해 공동 특허출원을 할 계획이다.
-                </p>
-              </div>
-              <div class="card-content-more"> 
-                <a href="#">더보기</a>
+            <div id="card-content-swiper">
+              <div class="swiper-wrapper">
+                @for ($i = 0; $i < 4; $i++)
+                  <div class="swiper-slide">
+                    <div class="card-content-body"> 
+                      <div class="card-content-title">
+                        삼표그룹, 해양·항만 분야 특수시멘트 개발 기술제휴{{$i}}
+                      </div>
+                      <div class="card-content-content prose">
+                        <p> 
+                          건설기초소재 선두기업 삼표그룹(회장 정도원)이 소파블록에 특화된 조강 시멘트 개발에 나선다. 소파블록은 파도 피해를 줄이기 위해 해안이나 방파제에 설치되는 블록이다.
+                        </p>
+                        <p> 
+                          삼표그룹은 21일 소파블록 공종 특화업체 미래오션테크와 해양·항만 분야 조강형 특수시멘트 기술제휴를 맺었다. 삼표그룹과 미래오션테크는 특수시멘트를 활용한 해양 소파블록을 개발해 공동 특허출원을 할 계획이다.
+                        </p>
+                      </div>
+                      <div class="card-content-more"> 
+                        <a href="#">더보기</a>
+                      </div>
+                    </div>
+                  </div>
+                @endfor
               </div>
             </div>
             <div class="card-content-footer"> 
-              <a href="#" class="relative inline-flex items-center pl-0 px-2 py-2">
+              <a href="javascript:;" class="relative inline-flex items-center py-2 prev">
                   <!-- Heroicon name: solid/chevron-left -->
                   <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                     <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
                   </svg>
                   <span>PRE</span>
                 </a>
-                <a href="#" class="relative inline-flex items-center pr-0 px-2 py-2">
+                <a href="javascript:;" class="relative inline-flex items-center py-2 next">
                   <span>NEXT</span>
                   <!-- Heroicon name: solid/chevron-right -->
                   <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

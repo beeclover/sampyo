@@ -111,6 +111,36 @@ export default {
       onLeaveBack: (batch) => gsap.to(batch, { autoAlpha: 0, duration: 0 }),
       scrub: true,
     });
+
+    // 블로그 뉴스 공지
+    const cardContent = new Swiper('#card-content-swiper', {
+      preloadImages: true,
+      updateOnImagesReady: true,
+      touchEventsTarget: 'wrapper',
+      effect: 'fade',
+      allowTouchMove: false,
+      fadeEffect: {
+        crossFade: true,
+      },
+      navigation: {
+        nextEl: '.card-content-footer .next',
+        prevEl: '.card-content-footer .prev',
+      },
+    });
+
+    const cardBg = new Swiper('#card-content-swiper-bg', {
+      preloadImages: true,
+      updateOnImagesReady: true,
+      touchEventsTarget: 'wrapper',
+      effect: 'fade',
+      allowTouchMove: false,
+      fadeEffect: {
+        crossFade: true,
+      },
+    });
+
+    cardContent.controller.control = cardBg;
+    cardBg.controller.control = cardContent;
   },
   finalize() {},
 };
