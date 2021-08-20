@@ -2,6 +2,13 @@
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 1.125rem; // 18px
+  transition: color 0.3s;
+  will-change: color;
+
+  &.active,
+  &:hover {
+    color: var(--atmosphere);
+  }
 
   &-cat {
     margin-bottom: 8px;
