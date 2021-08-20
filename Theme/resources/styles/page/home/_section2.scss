@@ -17,13 +17,26 @@
     }
 
     &-item.active {
-      color: var(--black-outline);
+      color: var(--black-out);
     }
   }
 
   .swiper-slide,
   .swiper-wrapper {
     position: unset;
+  }
+
+  .swiper-button-disabled {
+    opacity: 0.5;
+    cursor: normal;
+  }
+
+  .swiper-root-bg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
   }
 
   .card-content-swiper-bg {
@@ -76,6 +89,14 @@
     &-inner {
       position: relative;
       z-index: 3;
+    }
+  }
+
+  #postBox {
+    display: none;
+
+    &.active {
+      display: block;
     }
   }
 }
