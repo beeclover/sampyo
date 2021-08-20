@@ -47,8 +47,8 @@ function s2() {
   for (let index = 0; index < childrenCount; index++) {
     // set content slider
     const contentEl = childrenContent[index].querySelector('.card-content');
-    const contentSwiper = contentEl.querySelector('[id*="swiperContentChild"]');
-    const postBoxId = contentSwiper.dataset['id'] || index;
+    const contentSwiper = contentEl.querySelector('[id="swiperContentChild"]');
+    const postBoxId = contentSwiper.dataset.id;
     const postBox = document.querySelectorAll(
       `#postBox[data-id="${postBoxId}"] li`
     );
@@ -71,7 +71,7 @@ function s2() {
           const { realIndex, slides } = s;
           const currentPost =
             slides[realIndex].querySelector('.card-content-body');
-          const id = currentPost.dataset['id'];
+          const { id } = currentPost.dataset;
           dynamicClassActive(id, postBox);
         },
       },
@@ -79,7 +79,7 @@ function s2() {
 
     // set background slider
     const bgEl = childrenBg[index];
-    const bg = new Swiper(bgEl.querySelector('[id*="swiperBgChild"]'), {
+    const bg = new Swiper(bgEl.querySelector('[id="swiperBgChild"]'), {
       preloadImages: true,
       updateOnImagesReady: true,
       touchEventsTarget: 'wrapper',
@@ -100,7 +100,7 @@ function s2() {
 
   tabs.forEach((tab) => {
     tab.addEventListener('click', () => {
-      const id = tab.dataset['id'];
+      const { id } = tab.dataset;
 
       // tabs 아이템에 active 클래스 설정
       tabs.forEach((t) => t.classList.remove('active'));
@@ -129,6 +129,30 @@ function s2() {
       tabBody
         .querySelector(`#postBox[data-id="${camelCase(id)}"]`)
         .classList.add('active');
+    });
+  });
+
+  // tab item click
+  tabPostbox.forEach((tpb) => {
+    const { id } = tpb.dataset;
+    const content = document.querySelector(
+      `#swiperContentChild[data-id="${id}"]`
+    );
+    const contents = content.querySelectorAll('.swiper-slide');
+
+    const tabPosts = tpb.querySelectorAll('li[data-id]');
+    tabPosts.forEach((post) => {
+      post.addEventListener('click', () => {
+        const { id } = post.dataset;
+        contents.forEach((b) => {
+          const contentId = b.querySelector('.card-content-body').dataset.id;
+          const { index } = b.dataset;
+          console.log(id, contentId, index);
+          if (id === contentId) {
+            content.swiper.slideTo(index);
+          }
+        });
+      });
     });
   });
 }

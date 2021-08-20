@@ -113,6 +113,7 @@
 
   .li__s1 {
     color: var(--basalt-grey);
+    cursor: pointer;
 
     &:not(:last-child) {
       border-bottom: 1px solid var(--steam);

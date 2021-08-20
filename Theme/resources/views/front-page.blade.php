@@ -123,9 +123,10 @@
                   <div class="card-content">
                     <div id="swiperContentChild" data-id="{{$id}}">
                       <div class="swiper-wrapper">
+                        @php($index = 0)
                         @foreach ($pt as $post)
-                          <div class="swiper-slide">
-                            <div data-id="{{ $post->ID }}" class="card-content-body">
+                          <div class="swiper-slide" data-index="{{$index}}">
+                            <div data-id="{{ $post->ID }}"class="card-content-body">
                               <div class="card-content-title">
                                 {{ $post->post_title }}
                               </div>
@@ -137,7 +138,9 @@
                               </div>
                             </div>
                           </div>
+                          @php($index++)
                         @endforeach
+                        @php($index = 0)
                       </div>
                     </div>
                     <div class="card-content-footer"> 
