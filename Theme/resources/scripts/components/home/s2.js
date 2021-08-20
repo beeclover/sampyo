@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+import camelCase from '../../util/camelCase';
 
 function s2() {
   // Wrap Swiper
@@ -46,36 +47,35 @@ function s2() {
   for (let index = 0; index < childrenCount; index++) {
     // set content slider
     const contentEl = childrenContent[index].querySelector('.card-content');
-    const content = new Swiper(
-      contentEl.querySelector('[id*="swiperContentChild"]'),
-      {
-        preloadImages: true,
-        updateOnImagesReady: true,
-        touchEventsTarget: 'wrapper',
-        effect: 'fade',
-        allowTouchMove: false,
-        fadeEffect: {
-          crossFade: true,
-        },
-        navigation: {
-          nextEl: contentEl.querySelector('.card-content-footer .next'),
-          prevEl: contentEl.querySelector('.card-content-footer .prev'),
-        },
-        on: {
-          init: function () {},
-          slideChange: function (s) {
-            const { realIndex, slides } = s;
-            const currentPost =
-              slides[realIndex].querySelector('.card-content-body');
-            const id = currentPost.dataset['id'];
-            const syncPostBox = document.querySelectorAll(
-              `#postBox[data-id="${index}"] li`
-            );
-            dynamicClassActive(id, syncPostBox);
-          },
-        },
-      }
+    const contentSwiper = contentEl.querySelector('[id*="swiperContentChild"]');
+    const postBoxId = contentSwiper.dataset['id'] || index;
+    const postBox = document.querySelectorAll(
+      `#postBox[data-id="${postBoxId}"] li`
     );
+    const content = new Swiper(contentSwiper, {
+      preloadImages: true,
+      updateOnImagesReady: true,
+      touchEventsTarget: 'wrapper',
+      effect: 'fade',
+      allowTouchMove: false,
+      fadeEffect: {
+        crossFade: true,
+      },
+      navigation: {
+        nextEl: contentEl.querySelector('.card-content-footer .next'),
+        prevEl: contentEl.querySelector('.card-content-footer .prev'),
+      },
+      on: {
+        init: function () {},
+        slideChange: function (s) {
+          const { realIndex, slides } = s;
+          const currentPost =
+            slides[realIndex].querySelector('.card-content-body');
+          const id = currentPost.dataset['id'];
+          dynamicClassActive(id, postBox);
+        },
+      },
+    });
 
     // set background slider
     const bgEl = childrenBg[index];
@@ -107,13 +107,27 @@ function s2() {
       tab.classList.add('active');
 
       // BG 슬라이드 설정
-      swiperBgRoot.slideTo(id);
-      swiperContentRoot.slideTo(id);
+      let slideId;
+      switch (id) {
+        case 'blog':
+          slideId = 0;
+          break;
+        case 'press':
+          slideId = 1;
+          break;
+        case 'notice-board':
+          slideId = 2;
+          break;
+        default:
+          break;
+      }
+      swiperBgRoot.slideTo(slideId);
+      swiperContentRoot.slideTo(slideId);
 
       // tabs 컨텐츠 설정
       tabPostbox.forEach((t) => t.classList.remove('active'));
       tabBody
-        .querySelector(`#postBox[data-id="${id}"]`)
+        .querySelector(`#postBox[data-id="${camelCase(id)}"]`)
         .classList.add('active');
     });
   });

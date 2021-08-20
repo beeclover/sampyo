@@ -94,19 +94,23 @@
   <div class="section home__s2">
     <div id="swiperBgRoot" class="swiper-root-bg">
       <div class="swiper-wrapper">
-        @for ($z = 0; $z < 3; $z++)
-          <div class="swiper-slide" data-hash="{{ $z }}" data-index="{{ $z }}">
-            <div id="swiperBgChild-{{ $z }}" class="card-content-swiper-bg">
+        @foreach ($newsroom as $id => $pt)
+          <div class="swiper-slide">
+            <div id="swiperBgChild" class="card-content-swiper-bg" data-id="{{$id}}">
               <div class="swiper-wrapper">
-                @for ($i = 0; $i < 4; $i++)
+                @foreach ($pt as $post)
                   <div class="swiper-slide">
-                    <img class="card-content-thumbnail" src="https://picsum.photos/1920?random={{$z}}{{$i}}" alt="">
+                    @if(!empty($post->thumbnail))
+                      <img class="card-content-thumbnail" src="{{ $post->thumbnail }}" alt="">
+                    @else
+                      <img class="card-content-thumbnail" src="https://picsum.photos/1920?random={{$post->ID}}" alt="">
+                    @endif
                   </div>
-                @endfor
+                @endforeach
               </div>
             </div>
           </div>
-        @endfor
+        @endforeach
       </div>
     </div>
     <div class="container mx-auto">
@@ -114,31 +118,26 @@
         <div class="w-2/3 text-white">
           <div id="swiperContentRoot" class="h-full">
             <div class="swiper-wrapper">
-              @for ($z = 0; $z < 3; $z++)
+              @foreach ($newsroom as $id => $pt)
                 <div class="swiper-slide">
                   <div class="card-content">
-                    <div id="swiperContentChild-{{ $z }}">
+                    <div id="swiperContentChild" data-id="{{$id}}">
                       <div class="swiper-wrapper">
-                        @for ($i = 0; $i < 4; $i++)
+                        @foreach ($pt as $post)
                           <div class="swiper-slide">
-                            <div data-id="{{ $i }}" class="card-content-body">
+                            <div data-id="{{ $post->ID }}" class="card-content-body">
                               <div class="card-content-title">
-                                {{$z}} 삼표그룹, 해양·항만 분야 특수시멘트 개발 기술제휴{{$i}}
+                                {{ $post->post_title }}
                               </div>
                               <div class="card-content-content prose">
-                                <p> 
-                                  건설기초소재 선두기업 삼표그룹(회장 정도원)이 소파블록에 특화된 조강 시멘트 개발에 나선다. 소파블록은 파도 피해를 줄이기 위해 해안이나 방파제에 설치되는 블록이다.
-                                </p>
-                                <p> 
-                                  삼표그룹은 21일 소파블록 공종 특화업체 미래오션테크와 해양·항만 분야 조강형 특수시멘트 기술제휴를 맺었다. 삼표그룹과 미래오션테크는 특수시멘트를 활용한 해양 소파블록을 개발해 공동 특허출원을 할 계획이다.
-                                </p>
+                                {{ $post->excerpt }}
                               </div>
                               <div class="card-content-more"> 
-                                <a href="#">더보기</a>
+                                <a href="{{ $post->permalink }}">더보기</a>
                               </div>
                             </div>
                           </div>
-                        @endfor
+                        @endforeach
                       </div>
                     </div>
                     <div class="card-content-footer"> 
@@ -159,7 +158,7 @@
                     </div>
                   </div>
                 </div>
-              @endfor
+              @endforeach
             </div>
           </div>
         </div>
@@ -167,31 +166,34 @@
           <div class="box-content py-16 px-20">
             <div class="box-content-inner">
               <ul id="tab" class="flex tab-wrap">
-                <li data-id="0" class="tab-item active">
+                <li data-id="blog" class="tab-item active">
                   <a href="javascript:;">블로그</a>
                 </li>
-                <li data-id="1" class="tab-item">
-                  <a href="javascript:;">미디어</a>
+                <li data-id="press" class="tab-item">
+                  <a href="javascript:;">프레스</a>
                 </li>
-                <li data-id="2" class="tab-item">
-                  <a href="javascript:;">뉴스</a>
+                <li data-id="notice-board" class="tab-item">
+                  <a href="javascript:;">공지사항</a>
                 </li>
               </ul>
               <div id="tab-content">
-                @for ($z = 0; $z < 3; $z++)
-                  <ul id="postBox" data-id="{{$z}}" @if ($z === 0) class="active" @endif>
-                    @for ($i = 0; $i < 4; $i++)
-                      <li data-id="{{$i}}" class="li__s1 @if ($i === 0) active @endif">
-                        <ul class="li__s1-cat">
-                          <li class="li__s1-cat-item">{{$z}} 삼표 스토리</li>
-                        </ul>
+                @foreach ($newsroom as $id => $pt)
+                  <ul id="postBox" data-id="{{$id}}" @if ($id === "blog") class="active" @endif>
+                    @foreach ($pt as $key=>$post)
+                      <li data-id="{{ $post->ID }}" class="li__s1 @if ($key === 0) active @endif">
+                        @if (count($post->category) > 0)
+                          <ul class="li__s1-cat">
+                            @foreach ($post->category as $cat)
+                              <li class="li__s1-cat-item">{{ $cat->name }}</li>
+                            @endforeach
+                          </ul>
+                        @endif
                         <div class="li__s1-body">
                           <div class="li__s1-content">
-                            삼표그룹, 해양·항만 분야 
-                            특수시멘트 개발 기술제휴
+                            {{ $post->post_title }}
                           </div>
                           <div class="li__s1-etc"> 
-                            <a href="#" class="li__s1-btn">
+                            <a href="{{ $post->permalink }}" class="li__s1-btn">
                                 <svg class="svg-icon" viewBox="0 0 20 20" fill="currentColor">
                                   <path d="M1.729,9.212h14.656l-4.184-4.184c-0.307-0.306-0.307-0.801,0-1.107c0.305-0.306,0.801-0.306,1.106,0
                                   l5.481,5.482c0.018,0.014,0.037,0.019,0.053,0.034c0.181,0.181,0.242,0.425,0.209,0.66c-0.004,0.038-0.012,0.071-0.021,0.109
@@ -203,9 +205,9 @@
                           </div>
                         </div>
                       </li>
-                    @endfor
+                    @endforeach
                   </ul>
-                @endfor
+                @endforeach
               </div>
             </div>
           </div>

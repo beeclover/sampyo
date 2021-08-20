@@ -4,6 +4,7 @@
   font-size: 1.125rem; // 18px
   transition: color 0.3s;
   will-change: color;
+  max-width: 264px;
 
   &.active,
   &:hover {
@@ -13,13 +14,15 @@
   &-cat {
     margin-bottom: 8px;
     font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25em;
   }
 
   &-body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 264px;
     gap: 1em;
   }
 
