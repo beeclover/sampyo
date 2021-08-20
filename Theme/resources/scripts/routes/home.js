@@ -1,5 +1,5 @@
-import hero from '../components/home/s2';
-import s1 from '../components/home/s2';
+import hero from '../components/home/hero';
+import s1 from '../components/home/s1';
 import s2 from '../components/home/s2';
 
 export default {
