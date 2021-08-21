@@ -231,7 +231,7 @@
         <div class="flex">
           <div class="w-1/3 flex justify-center">
             <div class="card__s1">
-              <div class="card__s1-thumbnail"><img src={{ get_theme_file_uri('resources/images/53.svg') }}"></div>
+              <div data-scroll-animation-item='3' class="card__s1-thumbnail"><img src={{ get_theme_file_uri('resources/images/53.svg') }}"></div>
               <div class="card__s1-body">
                 <div class="card__s1-title">지속가능발전</div>
                 <div class="card__s1-content">
@@ -255,7 +255,7 @@
           </div>
           <div class="w-1/3 flex justify-center">
             <div class="card__s1">
-              <div class="card__s1-thumbnail"><img src="{{ get_theme_file_uri('resources/images/56.svg') }}"></div>
+              <div data-scroll-animation-item='3' class="card__s1-thumbnail"><img src="{{ get_theme_file_uri('resources/images/56.svg') }}"></div>
               <div class="card__s1-body">
                 <div class="card__s1-title">환경안전보건</div>
                 <div class="card__s1-content">
@@ -279,7 +279,7 @@
           </div>
           <div class="w-1/3 flex justify-center">
             <div class="card__s1">
-              <div class="card__s1-thumbnail"><img src="{{ get_theme_file_uri('resources/images/57.svg') }}"></div>
+              <div data-scroll-animation-item='3' class="card__s1-thumbnail"><img src="{{ get_theme_file_uri('resources/images/57.svg') }}"></div>
               <div class="card__s1-body">
                 <div class="card__s1-title">사회공헌</div>
                 <div class="card__s1-content">
