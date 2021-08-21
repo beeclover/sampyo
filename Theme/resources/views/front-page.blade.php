@@ -218,5 +218,92 @@
       </div>
     </div>
   </div>
+  <div class="section home__s3">
+    <div class="container xl:max-w-screen-xl mx-auto">
+      <div class="home__s3-header">
+        <div class="home__s3-title">삼표의 책임경영</div>
+        <div class="home__s3-description">
+          삼표는 인간과 생명을 중시하는 경영철학을 바탕으로<br/>
+          풍요로운 미래를 위한 지속적인 노력을 아끼지 않고 있습니다.
+        </div>
+      </div>
+      <div class="home__s3-body">
+        <div class="flex">
+          <div class="w-1/3 flex justify-center">
+            <div class="card__s1">
+              <div class="card__s1-thumbnail"><img src={{ get_theme_file_uri('resources/images/53.svg') }}"></div>
+              <div class="card__s1-body">
+                <div class="card__s1-title">지속가능발전</div>
+                <div class="card__s1-content">
+                  정부의 탄소중립 선언과 그린뉴딜 정책에<br/>
+                  발맞춰 ‘친환경 기업’으로 도약해 나가는<br/>
+                  삼표의 미래를 위한 이야기
+                </div>
+                <div class="card__s1-etc">
+                  <a href="#" class="card__s1-btn">
+                    <svg class="svg-icon" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M1.729,9.212h14.656l-4.184-4.184c-0.307-0.306-0.307-0.801,0-1.107c0.305-0.306,0.801-0.306,1.106,0
+                    l5.481,5.482c0.018,0.014,0.037,0.019,0.053,0.034c0.181,0.181,0.242,0.425,0.209,0.66c-0.004,0.038-0.012,0.071-0.021,0.109
+                    c-0.028,0.098-0.075,0.188-0.143,0.271c-0.021,0.026-0.021,0.061-0.045,0.085c-0.015,0.016-0.034,0.02-0.051,0.033l-5.483,5.483
+                    c-0.306,0.307-0.802,0.307-1.106,0c-0.307-0.305-0.307-0.801,0-1.105l4.184-4.185H1.729c-0.436,0-0.788-0.353-0.788-0.788
+                    S1.293,9.212,1.729,9.212z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/3 flex justify-center">
+            <div class="card__s1">
+              <div class="card__s1-thumbnail"><img src="{{ get_theme_file_uri('resources/images/56.svg') }}"></div>
+              <div class="card__s1-body">
+                <div class="card__s1-title">환경안전보건</div>
+                <div class="card__s1-content">
+                  자원과 에너지의 근원적 제어를 통해<br/>
+                  자원·에너지의 효율적 이용과 환경오염물질<br/>
+                  배출저감을 위한 노력을
+                </div>
+                <div class="card__s1-etc">
+                  <a href="#" class="card__s1-btn">
+                    <svg class="svg-icon" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M1.729,9.212h14.656l-4.184-4.184c-0.307-0.306-0.307-0.801,0-1.107c0.305-0.306,0.801-0.306,1.106,0
+                    l5.481,5.482c0.018,0.014,0.037,0.019,0.053,0.034c0.181,0.181,0.242,0.425,0.209,0.66c-0.004,0.038-0.012,0.071-0.021,0.109
+                    c-0.028,0.098-0.075,0.188-0.143,0.271c-0.021,0.026-0.021,0.061-0.045,0.085c-0.015,0.016-0.034,0.02-0.051,0.033l-5.483,5.483
+                    c-0.306,0.307-0.802,0.307-1.106,0c-0.307-0.305-0.307-0.801,0-1.105l4.184-4.185H1.729c-0.436,0-0.788-0.353-0.788-0.788
+                    S1.293,9.212,1.729,9.212z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/3 flex justify-center">
+            <div class="card__s1">
+              <div class="card__s1-thumbnail"><img src="{{ get_theme_file_uri('resources/images/57.svg') }}"></div>
+              <div class="card__s1-body">
+                <div class="card__s1-title">사회공헌</div>
+                <div class="card__s1-content">
+                  ‘기업과 사회가 함께하는 것이<br/>
+                  진정한 행복’이라는 믿음 아래 실천중인<br/>
+                  삼표의 ‘나눔경영’
+                </div>
+                <div class="card__s1-etc">
+                  <a href="#" class="card__s1-btn">
+                    <svg class="svg-icon" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M1.729,9.212h14.656l-4.184-4.184c-0.307-0.306-0.307-0.801,0-1.107c0.305-0.306,0.801-0.306,1.106,0
+                    l5.481,5.482c0.018,0.014,0.037,0.019,0.053,0.034c0.181,0.181,0.242,0.425,0.209,0.66c-0.004,0.038-0.012,0.071-0.021,0.109
+                    c-0.028,0.098-0.075,0.188-0.143,0.271c-0.021,0.026-0.021,0.061-0.045,0.085c-0.015,0.016-0.034,0.02-0.051,0.033l-5.483,5.483
+                    c-0.306,0.307-0.802,0.307-1.106,0c-0.307-0.305-0.307-0.801,0-1.105l4.184-4.185H1.729c-0.436,0-0.788-0.353-0.788-0.788
+                    S1.293,9.212,1.729,9.212z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 @endsection

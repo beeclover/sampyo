@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252.607" height="127.708">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke-linejoin:round;stroke-width:3px;stroke:#6b6e6f}
+        </style>
+    </defs>
+    <g id="그룹_53" data-name="그룹 53" transform="translate(-744.945 -554.159)">
+        <g id="그룹_50" data-name="그룹 50" transform="translate(809.023 555.849)">
+            <path id="패스_7" data-name="패스 7" class="cls-1" d="m884.928 598.38-46.689-32.365a16.9 16.9 0 0 0-16.9 0l-46.691 32.365" transform="translate(-774.648 -546.435)"/>
+            <path id="패스_8" data-name="패스 8" class="cls-1" d="m884.928 606.279-46.689-32.363a16.9 16.9 0 0 0-16.9 0l-46.687 32.363" transform="translate(-774.648 -537.021)"/>
+            <path id="패스_9" data-name="패스 9" class="cls-1" d="m884.928 614.181-46.689-32.365a16.9 16.9 0 0 0-16.9 0l-46.687 32.365" transform="translate(-774.648 -527.607)"/>
+            <path id="패스_10" data-name="패스 10" d="m884.928 622.08-46.689-32.363a16.9 16.9 0 0 0-16.9 0l-46.691 32.363" transform="translate(-774.648 -518.193)" style="stroke:#64cc6e;fill:none;stroke-linejoin:round;stroke-width:3px"/>
+            <path id="패스_11" data-name="패스 11" class="cls-1" d="m884.928 629.982-46.689-32.365a16.9 16.9 0 0 0-16.9 0l-46.687 32.365" transform="translate(-774.648 -508.779)"/>
+            <path id="선_12" data-name="선 12" class="cls-1" transform="translate(55.14 86.573)" d="M0 0v39.445"/>
+            <g id="그룹_49" data-name="그룹 49">
+                <path id="패스_12" data-name="패스 12" class="cls-1" d="m884.928 590.478-46.689-32.363a16.9 16.9 0 0 0-16.9 0l-46.687 32.363" transform="translate(-774.648 -555.849)"/>
+                <path id="선_13" data-name="선 13" class="cls-1" transform="translate(90.118)" d="M0 20.653V0"/>
+            </g>
+        </g>
+        <g id="그룹_51" data-name="그룹 51" transform="translate(919.303 600.804)">
+            <path id="패스_13" data-name="패스 13" class="cls-1" d="M902.364 600.665 869.6 577.951a11.862 11.862 0 0 0-11.863 0l-32.766 22.714" transform="translate(-824.968 -576.362)"/>
+            <path id="선_14" data-name="선 14" class="cls-1" transform="translate(63.246 .001)" d="M0 14.494V0"/>
+        </g>
+        <g id="그룹_52" data-name="그룹 52" transform="translate(745.8 622.644)">
+            <path id="패스_14" data-name="패스 14" class="cls-1" d="m809.023 606.18-26.766-18.554a9.69 9.69 0 0 0-9.691 0L745.8 606.18" transform="translate(-745.8 -586.327)"/>
+            <path id="선_15" data-name="선 15" class="cls-1" transform="translate(51.663)" d="M0 11.84V0"/>
+        </g>
+    </g>
+</svg>
