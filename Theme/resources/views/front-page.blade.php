@@ -384,22 +384,26 @@
     <div class="container xl:max-w-screen-xl mx-auto mt-14">
       <div class="-mx-2 flex">
         <div class="w-1/2 px-2">
-          <div class="card__s3">
-            <div class="card__s3-body">
-              <div class="card__s3-title">사업장 정보</div>
-              <div class="card__s3-content">삼표삼표그룹 계열사들의 사업장 정보를 조회하실 수 있습니다.</div>
+          <a href="#">
+            <div class="card__s3">
+              <div class="card__s3-body">
+                <div class="card__s3-title">사업장 정보</div>
+                <div class="card__s3-content">삼표삼표그룹 계열사들의 사업장 정보를 조회하실 수 있습니다.</div>
+              </div>
+              <div class="card__s3-bg"><img src="https://picsum.photos/640?ramdom=1"></div>
             </div>
-            <div class="card__s3-bg"><img src="https://picsum.photos/640?ramdom=1"></div>
-          </div>
+          </a>
         </div>
         <div class="w-1/2 px-2">
-          <div class="card__s3">
-            <div class="card__s3-body">
-              <div class="card__s3-title">SMART 삼표</div>
-              <div class="card__s3-content">자체시험성적표/제품 주문 등 다양한 자료와 정보를 제공합니다.</div>
+          <a href="#">
+            <div class="card__s3">
+              <div class="card__s3-body">
+                <div class="card__s3-title">SMART 삼표</div>
+                <div class="card__s3-content">자체시험성적표/제품 주문 등 다양한 자료와 정보를 제공합니다.</div>
+              </div>
+              <div class="card__s3-bg"><img src="https://picsum.photos/640?ramdom=2"></div>
             </div>
-            <div class="card__s3-bg"><img src="https://picsum.photos/640?ramdom=2"></div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
