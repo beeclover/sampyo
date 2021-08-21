@@ -3,8 +3,10 @@
   @import 'section1';
   @import 'section2';
   @import 'section3';
+  @import 'section4';
 
-  &__s234 {
+  &__s23 {
     background-color: var(--lighthouse);
+    padding-bottom: 346px;
   }
 }
