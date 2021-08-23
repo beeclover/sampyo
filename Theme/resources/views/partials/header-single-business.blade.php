@@ -15,7 +15,9 @@
       <div class="header-archive-nav" style="transform: translateY(50%); background-color: transparent">
         <ul>
           <li class="items-block-item-2">
-            <a href="{!! $outLink !!}" class="disabled:opacity-50" @if(empty($outLink)) disabled @endif>홈페이지 바로가기</a>
+            <button class="disabled:text-gray-300 text-white" @if(empty($acf['outlink'])) disabled @endif>
+              <a @if(!empty($acf['outlink'])) href="{!! $acf['outlink'] !!}" @endif>홈페이지 바로가기</a>
+            </button>
           </li>
         </ul>
       </div>

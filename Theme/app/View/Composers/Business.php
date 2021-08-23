@@ -23,14 +23,9 @@ class Business extends Composer
     public function override()
     {
         return [
-          'outLink' => $this->outLink(),
-          'fixedMenu' => $this->fixedMenu()
+          'fixedMenu' => $this->fixedMenu(),
+          'acf' => $this->get_business_info(),
         ];
-    }
-
-    public function outLink()
-    {
-        return get_field('outlink');
     }
 
     public function sort_terms_hierarchically(array &$posts, array &$into, $parentId = 0)
@@ -60,5 +55,16 @@ class Business extends Composer
         ]);
         $this->sort_terms_hierarchically($posts, $termsHierarchy);
         return $termsHierarchy;
+    }
+
+    public function get_business_info()
+    {
+        $outlink = get_field('outlink');
+        $area = get_field('business-establishment');
+        
+        return [
+          'outlink' => $outlink,
+          'area' => $area
+        ];
     }
 }
