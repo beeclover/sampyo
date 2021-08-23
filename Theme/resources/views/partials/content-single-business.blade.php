@@ -2,3 +2,4 @@
 <main class="page">
 
 </main>
+@include('partials.footer-single-business')
