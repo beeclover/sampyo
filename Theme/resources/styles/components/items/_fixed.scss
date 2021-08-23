@@ -8,16 +8,24 @@
     padding-right: 270px;
     display: flex;
     flex-direction: column;
-    gap: 1.2em;
+    gap: 20px;
+    font-size: 2.125rem;
+
+    .current {
+      color: var(--black-out);
+    }
   }
 
   &-item {
-    font-size: 2.125rem;
     color: var(--quicksilver);
     font-weight: bold;
+  }
 
-    &.current {
-      color: var(--black-out);
-    }
+  &-child {
+    margin-top: 20px;
+    font-size: 1.375rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 }
