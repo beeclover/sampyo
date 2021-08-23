@@ -23,12 +23,19 @@
   </header>
 </div>
 <nav class="items-fixed">
-  <ul class="items-fixed-wrap">
+  <ul class="items-fixed-wrap" x-data="{
+    selected: {!! wp_get_post_parent_id(get_the_ID()) !!}
+  }">
     @foreach ($fixedMenu as $item)
       <li class="items-fixed-item">
-        <div @if ($item->ID === wp_get_post_parent_id(get_the_ID())) class="current" @endif>{{ $item->post_title }}</div>
+        <a href="javascript:;" 
+          @click="selected !== {!! $item->ID !!} ? selected = {!! $item->ID !!} : selected = null"
+          @if ($item->ID === wp_get_post_parent_id(get_the_ID())) class="current" @endif
+        >
+          {{ $item->post_title }}
+        </a>
         @if (count($item->children) > 0)
-            <ul class="items-fixed-child">
+            <ul class="items-fixed-child" x-show="selected === {!! $item->ID !!} || @if ($item->ID === wp_get_post_parent_id(get_the_ID())) true @else false @endif">
               @foreach ($item->children as $child)
                 <li class="items-fixed-item">
                   <a href="{{ $child->permalink }}" @if ($child->ID === get_the_ID()) class="current" @endif>{{ $child->post_title }}</a>

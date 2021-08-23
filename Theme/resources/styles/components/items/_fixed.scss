@@ -5,7 +5,8 @@
   transform: translate(calc(-100% + -512px));
 
   &-wrap {
-    padding-right: 270px;
+    margin-right: 270px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     gap: 20px;
