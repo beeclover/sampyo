@@ -9,9 +9,12 @@
   }
 
   &-imgRow {
-    background-color: var(--lighthouse);
+    --outwidth: calc((100vw - 100%) / 2);
 
-    &::after {
+    background-color: var(--lighthouse);
+    height: 500px;
+
+    &::before {
       content: '';
       display: block;
       width: 100vw;
@@ -23,13 +26,29 @@
       background-color: var(--lighthouse);
       z-index: -1;
     }
+
+    &::after {
+      content: '';
+      display: block;
+      width: calc(var(--outwidth) + 100%);
+      height: 100vw;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(#000, 0.5);
+
+      @media (min-width: 1920px) {
+        max-width: calc(100% + 448px);
+      }
+    }
   }
 
   &-img {
-    --outwidth: calc((100vw - 100%) / 2);
-
     width: calc(var(--outwidth) + 100%);
     max-width: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 
     @media (min-width: 1920px) {
       max-width: calc(100% + 448px);
