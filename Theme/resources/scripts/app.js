@@ -16,12 +16,14 @@ import Router from './util/router';
 import common from './routes/common';
 import newsroom from './routes/newsroom';
 import home from './routes/home';
+import business from './routes/business';
 
 const routes = new Router({
   // All pages
   common,
   newsroom,
   home,
+  singleBusiness: business,
 });
 
 // Load Events
