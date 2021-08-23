@@ -19,13 +19,4 @@
     </div>
   </div>
 </header>
-<nav class="items-fixed">
-  <ul class="items-fixed-wrap">
-    <li class="items-fixed-item">
-      <a href="/blog">블로그</a>
-    </li>
-    <li class="items-fixed-item">
-      <a href="/press">프레스</a>
-    </li>
-  </ul>
-</nav>
+@include('partials.nav-fixed')
