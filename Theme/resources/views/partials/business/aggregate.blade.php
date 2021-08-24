@@ -40,7 +40,7 @@
     </div>
   </div>
   <div class="mb-32"></div>
-  <div class="coverbox-leftFull-fixedHeight">
+  <div class="coverbox-full-fixedHeight left pt-24">
     <div class="business__page-title mb-4">
       안정적인 골재 공급 능력 보유
     </div>

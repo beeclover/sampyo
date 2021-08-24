@@ -30,7 +30,7 @@
     alt=""
   >
   <div class="mb-32"></div>
-  <div class="coverbox-leftFull mb-28">
+  <div class="coverbox-full left pb-32 pt-24 mb-28">
     <div class="business__page-title mb-11">
       사회적, 환경적 책임을 존중합니다.
     </div>

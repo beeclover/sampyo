@@ -18,9 +18,7 @@
 }
 
 .coverbox {
-  &-leftFull {
-    padding-top: 100px;
-    padding-bottom: 130px;
+  &-full {
     position: relative;
 
     > * {
@@ -34,16 +32,22 @@
       width: 100vw;
       height: 100%;
       position: absolute;
-      right: 0;
       top: 0;
-      transform: translateX(100px);
       background-color: var(--lighthouse);
     }
 
-    &-fixedHeight {
-      @extend .coverbox-leftFull;
+    &.left::before {
+      right: 0;
+      transform: translateX(100px);
+    }
 
-      padding-bottom: 0;
+    &.right::before {
+      left: 0;
+      transform: translateX(-100px);
+    }
+
+    &-fixedHeight {
+      @extend .coverbox-full;
 
       &::before {
         height: 402px;
