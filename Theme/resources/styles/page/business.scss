@@ -68,3 +68,10 @@
     }
   }
 }
+
+.pointUnderLine {
+  --bs: var(--RGB-bermudagrass);
+
+  box-shadow: rgba(var(--bs), 0.4) 0 -8px 0 0 inset;
+  display: inline-block;
+}
