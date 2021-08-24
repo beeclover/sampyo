@@ -17,6 +17,7 @@ import common from './routes/common';
 import newsroom from './routes/newsroom';
 import home from './routes/home';
 import business from './routes/business';
+import readyMix from './routes/readyMix';
 
 const routes = new Router({
   // All pages
@@ -24,6 +25,7 @@ const routes = new Router({
   newsroom,
   home,
   singleBusiness: business,
+  readyMix,
 });
 
 // Load Events

@@ -1,5 +1,6 @@
 &-fixed {
   position: fixed;
+  z-index: 900;
   top: 270px;
   left: 50%;
   transform: translate(calc(-100% + -512px));

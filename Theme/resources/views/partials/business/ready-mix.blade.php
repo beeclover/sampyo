@@ -95,6 +95,16 @@
       </div>
     </div>
   </div>
+  <div class="mb-28"></div>
+  <div id="readyMix" class="overflow-hidden">
+    <div class="swiper-wrapper">
+      @foreach (['바닥 콘크리트', '내한 콘크리트', '조강 콘크리트', '자기충전 콘크리트', '20mm 콘크리트'] as $index => $item)
+        <div class="swiper-slide">
+          @include('partials.card__s4')
+        </div>
+      @endforeach
+    </div>
+  </div>
   <div class="mb-32"></div>
   <div class="coverbox-full left py-28">
     <div class="flex -mx-4">
