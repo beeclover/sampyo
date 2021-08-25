@@ -1,0 +1,22 @@
+&__quotation {
+  &-body {
+    width: 100%;
+    padding: 37px 40px 32px;
+    background-color: var(--lighthouse, #f4f4f4);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+    color: var(--carbon);
+    margin-bottom: 20px;
+  }
+
+  &-link {
+    @apply text-white;
+
+    font-size: 1.25rem;
+    background-color: var(--funnel-cloud);
+    font-weight: bold;
+    text-align: center;
+  }
+}
