@@ -27,7 +27,9 @@
     </header>
   
     <div class="entry-content prose">
-      @php(the_content())
+      <div class="mx-auto" style="max-width: 820px">
+        @php(the_content())
+      </div>
     </div>
   
     <footer>
