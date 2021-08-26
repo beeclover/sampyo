@@ -1,4 +1,5 @@
 @include('partials.header-archive-noticeBoard')
+@include('partials.nav-fixed')
 <div class="container mx-auto lg:max-w-screen-lg">
   <article @php(post_class())>
     <header>
