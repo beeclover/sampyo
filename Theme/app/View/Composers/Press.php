@@ -38,8 +38,6 @@ class Press extends Composer
     public function getAttechedFiles()
     {
         $attechedFiles = get_field('attached_files');
-
-        var_dump($attechedFiles);
         return $attechedFiles;
     }
 }
