@@ -15,3 +15,21 @@
     font-weight: 300;
   }
 }
+
+&__archive__atteched {
+  &-item {
+    border-bottom: 1px solid var(--super-silver);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &-link {
+    text-decoration: underline;
+    font-weight: 300;
+  }
+}
