@@ -37,7 +37,7 @@
           @php($file = $item['file'])
           <li class="py-6 px-3 items__attached-item">
             <span class="items__attached-title font-bold">첨부파일</span>
-            <a href="{!! $file['url'] !!}" class="items__attached-link">{!! $file['filename'] !!}</a>
+            <a href="{!! $file['url'] !!}" class="items__attached-link" target="_blank" download>{!! $file['filename'] !!}</a>
           </li>
         @endforeach
       </ul>
