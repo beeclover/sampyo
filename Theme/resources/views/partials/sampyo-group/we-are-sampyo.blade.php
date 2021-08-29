@@ -1,3 +1,4 @@
+<main class="sampyoGroup__page business__page">
 <div class="container lg:max-w-screen-lg mx-auto">
   <div class="coverbox-full left pb-20">
     <div class="transform" style="--tw-translate-y: -80px">
@@ -130,3 +131,4 @@
     </div>
   </div>
 </div>
+</main>

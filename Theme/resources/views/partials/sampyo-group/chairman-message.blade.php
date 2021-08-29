@@ -1,3 +1,5 @@
+
+<main class="sampyoGroup__page business__page">
 <div class="container lg:max-w-screen-lg mx-auto">
   <div class="business__page-title mb-20">
     고객과 사회의 어려운 과제 해결에 힘이 되는 기업이 되겠습니다. 
@@ -51,3 +53,4 @@
   </p>
   <p class="text-lg font-bold">삼표그룹 회장 | 정도원 </p>
 </div>
+</main>
