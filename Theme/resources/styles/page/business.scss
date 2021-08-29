@@ -36,21 +36,32 @@
       background-color: var(--lighthouse);
     }
 
-    &.left::before {
-      right: 0;
-      transform: translateX(100px);
+    @mixin direction() {
+      &.left::before {
+        right: 0;
+        transform: translateX(100px);
+      }
+
+      &.right::before {
+        left: 0;
+        transform: translateX(-100px);
+      }
     }
 
-    &.right::before {
-      left: 0;
-      transform: translateX(-100px);
-    }
+    @include direction();
 
     &-fixedHeight {
       @extend .coverbox-full;
 
       &::before {
-        height: 402px;
+        height: var(--h, 402px);
+      }
+
+      @include direction();
+
+      &.bottom::before {
+        top: auto;
+        bottom: 0;
       }
     }
   }

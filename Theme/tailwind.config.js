@@ -17,6 +17,7 @@ module.exports = {
       },
       borderColor: {
         dugong: 'var(--dugong, #707070)',
+        orochimaru: 'var(--orochimaru, #d9d9d9)',
       },
       typography: {
         DEFAULT: {
