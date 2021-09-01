@@ -1,0 +1,53 @@
+&__house {
+  $p: &;
+
+  clip-path: polygon(100% 100%, 50% 100%, 0% 100%, 0% 33%, 50% 0%, 100% 33%);
+  overflow: hidden;
+
+  &.half {
+    clip-path: polygon(
+      100% 100%,
+      50% 100%,
+      0% 100%,
+      0% 16.5%,
+      50% 0%,
+      100% 16.5%
+    );
+
+    #{$p}-inner {
+      margin-top: 3rem;
+    }
+  }
+
+  &-root {
+    position: relative;
+
+    &[data-label]::after {
+      content: attr(data-label);
+      display: flex;
+      align-items: center;
+      padding-left: 56px;
+      position: absolute;
+      left: 100%;
+      bottom: 0;
+      width: 100vw;
+      height: calc(100% - 33%);
+      background-color: var(--lighthouse);
+      color: var(--covered-in-platinum);
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+
+    &[data-label].half::after {
+      height: calc(100% - 16.5%);
+    }
+
+    &[data-label].rootless::after {
+      height: 100%;
+    }
+  }
+
+  &-inner {
+    margin-top: 6rem;
+  }
+}
