@@ -1,2 +1,2 @@
 @include('partials.header-single-career')
-{{-- @include('partials.career.'. $slug) --}}
+@includeFirst(['partials.career.'. $slug, 'partials.content-single'])
