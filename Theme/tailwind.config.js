@@ -19,6 +19,11 @@ module.exports = {
         dugong: 'var(--dugong, #707070)',
         orochimaru: 'var(--orochimaru, #d9d9d9)',
       },
+      backgroundColor: {
+        mistyLawn: 'var(--misty-lawn, #DEF7E0)',
+        hospitalGreen: 'var(--hospital-green, #9AE3A1)',
+        bermudagrass: 'var(--bermudagrass, #64CC6E)',
+      },
       typography: {
         DEFAULT: {
           css: {
