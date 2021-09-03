@@ -10,7 +10,12 @@
       </div>
       <div class="header-archive-content">
         <h1 class="header-archive-title">{!! $title !!}</h1>
-        <span class="header-archive-description">{!! $excerpt !!}</span>
+        @if (!empty($excerpt))
+          <span class="header-archive-description">{!! $excerpt !!}</span>
+        @endif
+        @if (!empty($description))
+          <span class="header-archive-description">{!! $description !!}</span>
+        @endif
       </div>
       @if ($queriedCat)
         <div class="header-archive-nav" style="--atmosphere: var(--bermudagrass)">

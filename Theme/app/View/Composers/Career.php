@@ -13,6 +13,8 @@ class career extends Composer
      */
     protected static $views = [
         'partials.content-single-career',
+        'archive-job-opportunities',
+        'partials.content-single-job-opportunities',
     ];
 
     /**
@@ -23,19 +25,20 @@ class career extends Composer
     public function override()
     {
         return [
-            'queriedCat' => $this->queriedCat(),
-            'fixedMenu' => $this->fixedMenu(),
-            'selected' => $this->selected(),
-        ];
+          'queriedCat' => $this->queriedCat(),
+          'fixedMenu' => $this->jobsArchiveSetMenu($this->fixedMenu()),
+          'selected' => $this->selected(),
+      ];
     }
 
     public function queriedCat()
     {
-        $post = get_post();
-        $cat = get_the_terms($post, 'career_category');
-        if (!empty($cat)) {
+        if ($this->view->name() !== 'partials.content-single-career') {
+            return false;
+        }
+        if (!empty($cat = get_the_terms(get_post(), 'career_category'))) {
             $posts = get_posts([
-              'post_type' => 'career',
+              "post_type" => "career",
               "tax_query" => array(array(
                 "taxonomy" => "career_category",
                 "field" => "slug",
@@ -91,7 +94,6 @@ class career extends Composer
             }
         }
     }
-
     public function fixedMenu()
     {
         $termsHierarchy = array();
@@ -112,10 +114,26 @@ class career extends Composer
 
     public function selected()
     {
+        if ($this->view->name() !== 'partials.content-single-career') {
+            return 0;
+        }
         $post = get_post();
         if ($terms = get_the_terms($post->ID, 'career_category')) {
             return $terms[0]->term_id;
         }
         return 0;
+    }
+
+    public function jobsArchiveSetMenu($fixedMenu)
+    {
+        $origin_jobs = get_post_type_object('job-opportunities');
+        $jobs = new \stdClass();
+        $jobs->ID = false;
+        $jobs->term_taxonomy_id = false;
+        $jobs->post_title = $origin_jobs->label;
+        $jobs->permalink = "/{$origin_jobs->has_archive}";
+        array_push($fixedMenu, $jobs);
+
+        return $fixedMenu;
     }
 }
