@@ -23,7 +23,7 @@ class Business extends Composer
     public function override()
     {
         return [
-          'fixedMenu' => $this->BusinessArchiveSetMenu(),
+          'fixedMenu' => $this->fixedMenu(),
           'selected' => $this->selected(),
           'acf' => $this->get_business_info(),
         ];
@@ -91,21 +91,6 @@ class Business extends Composer
         $t = array();
         self::set_terms_hierarchically($termsHierarchy, $t);
         return $t;
-    }
-
-    public static function BusinessArchiveSetMenu()
-    {
-        $fixedMenu = self::fixedMenu();
-        
-        $origin_jobs = get_post_type_object('business');
-        $jobs = new \stdClass();
-        $jobs->ID = false;
-        $jobs->term_taxonomy_id = false;
-        $jobs->post_title = $origin_jobs->label;
-        $jobs->permalink = "/{$origin_jobs->has_archive}";
-        array_push($fixedMenu, $jobs);
-
-        return $fixedMenu;
     }
 
     public function selected()

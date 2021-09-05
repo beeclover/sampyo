@@ -66,7 +66,7 @@ class SampyoGroup extends Composer
 
     public function getBusinessTable()
     {
-        $p = Business::BusinessArchiveSetMenu();
+        $p = Business::fixedMenu();
         foreach ($p as $term) {
             if (isset($term->children)) {
                 foreach ($term->children as $key => $child) {
