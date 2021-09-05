@@ -66,26 +66,21 @@ class SampyoGroup extends Composer
 
     public function getBusinessTable()
     {
-        $termsHierarchy = array();
-        $posts = get_posts([
-          'post_type' => 'business',
-          'hide_empty' => false,
-          'numberposts' => 99,
-        ]);
-        $this->sort_terms_hierarchically($posts, $termsHierarchy, 0, function ($post, $parentId) {
-            if ($parentId == 0) {
-                return $post;
+        $p = Business::BusinessArchiveSetMenu();
+        foreach ($p as $term) {
+            if (isset($term->children)) {
+                foreach ($term->children as $key => $child) {
+                    $miniThumbnail = get_field('sampyo_thumbnail', $child->ID);
+                    if ($miniThumbnail) {
+                        $child->miniThumbnail = $miniThumbnail;
+                    } else {
+                        unset($term->children[$key]);
+                    }
+                }
             }
-            
-            $miniThumbnail = get_field('sampyo_thumbnail', $post->ID);
-            if ($miniThumbnail) {
-                $post->miniThumbnail = $miniThumbnail;
-            } else {
-                $post = null;
-            }
-            return $post;
-        });
-        return $termsHierarchy;
+        }
+
+        return $p;
     }
 
     public function history()
