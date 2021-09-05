@@ -13,8 +13,6 @@
           <h1 class="header-archive-title">{!! $title !!}</h1>
           <span class="header-archive-description">{!! $excerpt !!}</span>
         </div>
-        <div class="header-archive-nav" style="transform: translateY(50%); background-color: transparent">
-        </div>
       </div>
     </header>
   </div>
