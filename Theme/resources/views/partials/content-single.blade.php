@@ -1,19 +1,23 @@
-<article @php(post_class())>
-  <header>
-    <h1 class="entry-title">
-      {!! $title !!}
-    </h1>
+<main class="business__page pb-0">
+<div class="container lg:max-w-screen-lg mx-auto">
+  <article @php(post_class())>
+    <header>
+      <h1 class="entry-title">
+        {!! $title !!}
+      </h1>
 
-    @include('partials/entry-meta')
-  </header>
+      @include('partials/entry-meta')
+    </header>
 
-  <div class="entry-content">
-    @php(the_content())
-  </div>
+    <div class="entry-content">
+      @php(the_content())
+    </div>
 
-  <footer>
-    {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
-  </footer>
+    <footer>
+      {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
+    </footer>
 
-  @php(comments_template())
-</article>
+    @php(comments_template())
+  </article>
+</div>
+</main>
