@@ -3,8 +3,6 @@
     .header-global {
       @apply text-white;
 
-      background-color: transparent;
-
       &::after {
         content: '';
         display: block;
@@ -19,23 +17,48 @@
           rgba(0, 0, 0, 0)
         );
       }
+
+      &.shrink::after {
+        content: none;
+      }
+
+      &-search {
+        color: #fff;
+      }
     }
   }
 }
 
 &-global {
+  $p: &;
+
+  --px: 40px;
+
+  @mixin dark {
+    #{$p}-inner {
+      background-color: #fff;
+      color: var(--black-out);
+    }
+
+    #{$p}-search {
+      color: var(--black-out);
+    }
+  }
+
+  &.shrink,
+  &:hover {
+    @include dark;
+  }
+
   position: fixed;
   z-index: 9000;
   top: var(--bar-wp, 0);
   left: 0;
   width: 100vw;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: var(--lighthouse);
 
   &-logo {
     position: absolute;
-    left: 0;
+    left: var(--px);
     top: 50%;
     transform: translateY(-50%);
   }
@@ -43,9 +66,12 @@
   &-inner {
     @apply flex items-center justify-center w-full;
 
+    padding-left: var(--px);
+    padding-right: var(--px);
     height: var(--bar-global-height);
     position: relative;
     z-index: 2;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   }
 
   &-nav {
@@ -54,9 +80,14 @@
 
   &-search {
     position: absolute;
-    right: 0;
+    right: var(--px);
     top: 50%;
     transform: translateY(-50%);
     text-decoration: underline;
+    transition: color 0.2s ease-in-out;
+
+    a {
+      color: inherit;
+    }
   }
 }
