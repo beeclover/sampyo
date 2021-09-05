@@ -23,13 +23,13 @@ class Business extends Composer
     public function override()
     {
         return [
-          'fixedMenu' => $this->BusinessArchiveSetMenu($this->fixedMenu()),
+          'fixedMenu' => $this->BusinessArchiveSetMenu(),
           'selected' => $this->selected(),
           'acf' => $this->get_business_info(),
         ];
     }
 
-    public function sort_terms_hierarchically(array &$posts, array &$into)
+    public static function sort_terms_hierarchically(array &$posts, array &$into)
     {
         foreach ($posts as $i => $post) {
             $post->permalink = get_the_permalink($post->ID);
@@ -54,7 +54,7 @@ class Business extends Composer
         }
     }
 
-    public function set_terms_hierarchically(array &$posts, array &$into, $parentId = 0)
+    public static function set_terms_hierarchically(array &$posts, array &$into, $parentId = 0)
     {
         foreach ($posts as $i => $post) {
             if ($post->term_id === $parentId || $post->term_taxonomy_id === $parentId) {
@@ -70,12 +70,12 @@ class Business extends Composer
         foreach ($into as $parentPost) {
             $parentPost->children = array();
             if ($parentPost->term_taxonomy_id) {
-                $this->set_terms_hierarchically($posts, $parentPost->children, $parentPost->term_taxonomy_id);
+                self::set_terms_hierarchically($posts, $parentPost->children, $parentPost->term_taxonomy_id);
             }
         }
     }
 
-    public function fixedMenu()
+    public static function fixedMenu()
     {
         $termsHierarchy = array();
         $posts = get_posts([
@@ -83,17 +83,20 @@ class Business extends Composer
           'hide_empty' => false,
           'numberposts' => 99,
         ]);
-        $this->sort_terms_hierarchically($posts, $termsHierarchy);
+        self::sort_terms_hierarchically($posts, $termsHierarchy);
         $cat = get_terms([
           'taxonomy' => 'business_category',
         ]);
-        $this->sort_terms_hierarchically($cat, $termsHierarchy);
+        self::sort_terms_hierarchically($cat, $termsHierarchy);
         $t = array();
-        $this->set_terms_hierarchically($termsHierarchy, $t);
+        self::set_terms_hierarchically($termsHierarchy, $t);
         return $t;
     }
-    public function BusinessArchiveSetMenu($fixedMenu)
+
+    public static function BusinessArchiveSetMenu()
     {
+        $fixedMenu = self::fixedMenu();
+        
         $origin_jobs = get_post_type_object('business');
         $jobs = new \stdClass();
         $jobs->ID = false;
