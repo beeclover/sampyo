@@ -1,6 +1,5 @@
 &-archive {
   overflow: hidden;
-  padding-top: var(--bar-global-height);
 
   @media (min-width: 1920px) {
     overflow: visible;
@@ -8,24 +7,32 @@
     max-width: 1920px;
   }
 
+  &-root {
+    margin-top: var(--bar-global-height);
+  }
+
+  &-root2 {
+    position: relative;
+  }
+
+  &-root2::before {
+    content: '';
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: calc(100% - var(--header-nav-height));
+    background-color: var(--lighthouse);
+    position: absolute;
+    z-index: -1;
+  }
+
   &-imgRow {
     --outwidth: calc((100vw - 100%) / 2);
 
     background-color: var(--lighthouse);
     height: 500px;
-
-    &::before {
-      content: '';
-      display: block;
-      width: 100vw;
-      top: calc(var(--bar-global-height) * -1);
-      left: 50%;
-      transform: translateX(-50%);
-      height: calc(100% - var(--header-nav-height) + var(--bar-global-height));
-      position: absolute;
-      background-color: var(--lighthouse);
-      z-index: -1;
-    }
 
     &::after {
       content: '';
@@ -78,6 +85,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: var(--header-nav-height);
     background-color: var(--lighthouse);
   }
 }
