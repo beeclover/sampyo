@@ -22,10 +22,13 @@
 
   &-slide {
     max-width: calc(50vw + 840px);
-    max-width: 1750px;
+    margin: 0 auto;
     position: relative;
-    margin: 0;
     overflow: visible;
+
+    @media (max-width: 1920px) {
+      max-width: 1750px;
+    }
 
     &-pagination {
       width: auto;
