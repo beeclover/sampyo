@@ -4,7 +4,23 @@
       <img src="{!! $siteLogo !!}" alt="{{ $siteName }}"/>
     </a>
     @if (has_nav_menu('primary_navigation'))
-      {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'header-global-nav', 'echo' => false]) !!}
+      <div class="header-global-menu">
+        {!! wp_nav_menu([
+            'theme_location' => 'primary_navigation', 
+            'menu_class' => 'header-global-nav', 
+            'container' => false,
+            'echo' => false,
+            'depth' => 1
+        ]) !!}
+        <div class="header-global-subnav-wrap">
+          {!! wp_nav_menu([
+            'theme_location' => 'primary_navigation', 
+            'menu_class' => 'header-global-subnav', 
+            'container' => false,
+            'echo' => false,
+          ]) !!}
+        </div>
+      </div>
     @endif
     <div class="header-global-search">
       <a href="javascript:;">Search</a>

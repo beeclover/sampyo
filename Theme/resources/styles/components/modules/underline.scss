@@ -11,3 +11,9 @@
   text-underline-position: under;
   text-decoration-thickness: var(--uph, 3px);
 }
+
+@mixin pointUnderLine {
+  box-shadow: rgba(var(--bs, var(--RGB-bermudagrass)), var(--op, 0.4)) 0
+    var(--h, -8px) 0 0 inset;
+  display: inline-block;
+}

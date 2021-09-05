@@ -33,11 +33,28 @@
   $p: &;
 
   --px: 40px;
+  --background-color: transparent;
+
+  position: fixed;
+  z-index: 9000;
+  top: var(--bar-wp, 0);
+  left: 0;
+  width: 100vw;
 
   @mixin dark {
     #{$p}-inner {
-      background-color: #fff;
       color: var(--black-out);
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--background-color);
+      }
     }
 
     #{$p}-search {
@@ -47,17 +64,13 @@
 
   &.shrink,
   &:hover {
+    --background-color: #fff;
     @include dark;
   }
 
-  position: fixed;
-  z-index: 9000;
-  top: var(--bar-wp, 0);
-  left: 0;
-  width: 100vw;
-
   &-logo {
     position: absolute;
+    z-index: 10;
     left: var(--px);
     top: 50%;
     transform: translateY(-50%);
@@ -71,15 +84,97 @@
     height: var(--bar-global-height);
     position: relative;
     z-index: 2;
+    background-color: var(--background-color);
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   }
 
+  &-menu {
+    height: 100%;
+
+    &:hover #{$p}-subnav-wrap {
+      transform: translateY(0);
+    }
+  }
+
   &-nav {
-    @apply flex gap-12;
+    @apply flex gap-12 items-center;
+
+    position: relative;
+    z-index: 2;
+    height: 100%;
+  }
+
+  &-subnav {
+    --py: 48px;
+
+    display: flex;
+    gap: 80px;
+    padding-top: var(--py);
+    padding-bottom: var(--py);
+
+    &-wrap {
+      top: 0;
+      left: 0;
+      margin-top: var(--bar-global-height);
+      position: absolute;
+      width: 100vw;
+      display: grid;
+      justify-content: center;
+      overflow-y: scroll;
+      max-height: calc(100vh - var(--bar-global-height, 0));
+      background-color: #fff;
+      border-top: 1px solid rgba(#000, 0.1);
+      border-bottom: 1px solid rgba(#000, 0.1);
+      transform: translateY(-1000px);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    // level1
+    > li {
+      min-width: 150px;
+
+      &:last-child,
+      &:first-child {
+        min-width: auto;
+      }
+
+      > a {
+        --bs: var(--RGB-stonewall-grey);
+        --op: 0.3;
+        --h: -0.5em;
+        @include pointUnderLine;
+
+        margin-bottom: 26px;
+      }
+
+      &.point > a {
+        --bs: var(--RGB-atmosphere);
+      }
+
+      &.is-grid > ul > li {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        gap: 1em;
+
+        > ul {
+          font-weight: 300;
+          display: flex;
+          gap: 1em;
+          flex-direction: column;
+        }
+      }
+
+      > ul {
+        display: flex;
+        gap: 1em;
+        flex-direction: column;
+      }
+    }
   }
 
   &-search {
     position: absolute;
+    z-index: 10;
     right: var(--px);
     top: 50%;
     transform: translateY(-50%);
