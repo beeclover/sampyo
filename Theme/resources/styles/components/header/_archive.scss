@@ -80,7 +80,7 @@
     @apply text-white;
 
     position: absolute;
-    top: calc(50% - (var(--header-nav-height) / 2));
+    top: calc(50% - (var(--header-nav-height) / 4));
     transform: translateY(-50%);
     left: 180px;
   }

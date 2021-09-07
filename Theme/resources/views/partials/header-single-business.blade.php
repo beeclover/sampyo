@@ -2,26 +2,26 @@
   <div class="overflow-hidden header-archive-root">
     <header class="header-archive">
       <div class="container lg:max-w-screen-lg mx-auto">
-        <div class="header-archive-imgRow" style="margin-bottom: 75px">
+        <div class="header-archive-imgRow" @if(!empty($acf['outlink'])) style="margin-bottom: 75px" @endif>
           @if (!empty($thumbnail))
               <img src="{!! $thumbnail !!}" alt="" class="header-archive-img">
           @else
               <img src="https://picsum.photos/1920?random=10" alt="" class="header-archive-img">
           @endif
         </div>
-        <div class="header-archive-content">
+        <div class="header-archive-content @if(empty($acf['outlink'])) top-1/2 @endif">
           <h1 class="header-archive-title">{!! $title !!}</h1>
           <span class="header-archive-description">{!! $excerpt !!}</span>
         </div>
-        <div class="header-archive-nav" style="transform: translateY(50%); background-color: transparent">
-          <ul>
-            <li class="items-block-item-2">
-              <button class="disabled:text-gray-300 text-white" @if(empty($acf['outlink'])) disabled @endif>
-                <a @if(!empty($acf['outlink'])) href="{!! $acf['outlink'] !!}" @endif>홈페이지 바로가기</a>
-              </button>
-            </li>
-          </ul>
-        </div>
+        @if(!empty($acf['outlink']))
+          <div class="header-archive-nav" style="transform: translateY(50%); background-color: transparent">
+            <ul>
+              <li class="items-block-item-2">
+                <a class="text-white" href="{!! $acf['outlink'] !!}">홈페이지 바로가기</a>
+              </li>
+            </ul>
+          </div>
+        @endif
       </div>
     </header>
   </div>
