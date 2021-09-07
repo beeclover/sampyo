@@ -102,14 +102,31 @@ class Business extends Composer
         return 0;
     }
 
+    public function filter_addr(&$addr)
+    {
+        foreach ($addr as $key => $value) {
+            if ($key === 'acf_fc_layout') {
+                unset($addr[$key]);
+            }
+            if (is_array($value)) {
+                $this->filter_addr($addr[$key]);
+            }
+        }
+    }
+
     public function get_business_info()
     {
         $outlink = get_field('outlink');
         $area = get_field('business-establishment');
-        
-        return [
+        $address = get_field('addr');
+        if ($address) {
+            $this->filter_addr($address);
+        }
+
+        return !is_null($outlink) || !is_null($area) || !is_null($address) ? [
           'outlink' => $outlink,
-          'area' => $area
-        ];
+          'area' => $area,
+          'address' => $address,
+        ] : false;
     }
 }

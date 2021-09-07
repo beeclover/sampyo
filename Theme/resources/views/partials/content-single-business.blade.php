@@ -2,4 +2,6 @@
 <main class="business__page">
   @includeFirst(['partials.business.'. $slug, 'partials.content-single'])
 </main>
-@include('partials.footer-single-business')
+@if ($acf)
+  @include('partials.footer-single-business')
+@endif
