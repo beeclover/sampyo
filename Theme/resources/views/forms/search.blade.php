@@ -10,7 +10,7 @@
 
     <input
       type="search"
-      class="w-full text-2xl px-10 py-7 border-none bg-transparent focus:ring-0 placeholder-current placeholder-opacity-50"
+      class="w-full text-2xl px-10 py-7 border-none bg-transparent focus:ring-0 placeholder-current placeholder-opacity-50 font-light"
       placeholder="{!! esc_attr_x('Search &hellip;', 'placeholder', 'sage') !!}"
       value="{{ get_search_query() }}"
       name="s"
