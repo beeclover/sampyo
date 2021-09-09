@@ -11,6 +11,10 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
+      placeholderColor: {
+        current:
+          '--tw-placeholder-opacity: 1; color: currentColor; opacity: var(--tw-placeholder-opacity)',
+      },
       screens: {
         lg: '1050px',
       },
@@ -22,6 +26,7 @@ module.exports = {
         dugong: 'var(--dugong, #707070)',
         orochimaru: 'var(--orochimaru, #d9d9d9)',
         blackout: 'var(--black-out, #222222)',
+        superSilver: 'var(--super-silver, #eeeeee)',
       },
       backgroundColor: {
         mistyLawn: 'var(--misty-lawn, #DEF7E0)',
