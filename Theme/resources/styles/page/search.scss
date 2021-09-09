@@ -24,4 +24,10 @@
   article > .border-superSilver:last-child {
     border-bottom: 0;
   }
+
+  .card-def-content .bsearch_highlight {
+    --h: -1.6em;
+    --bs: var(--RGB-atmosphere);
+    @include pointUnderLine();
+  }
 }
