@@ -27,10 +27,18 @@
           class="header-global-search py-2 px-4 text-center focus:outline-none">
           Search
       </button>
-      <div x-show.transition.opacity="open"
-          class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50 h-screen">
-          <div x-show.transition="open"
-              x-on:click.away="open = false"
+      <div x-show="open"
+          x-cloak
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 transform"
+          x-transition:enter-end="opacity-100 transform"
+          x-transition:leave="transition ease-in duration-300"
+          x-transition:leave-start="opacity-100 transform"
+          x-transition:leave-end="opacity-0 transform"
+          class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50 h-screen"
+          style="display: none"
+          >
+          <div x-on:click.away="open = false"
               class="container max-w-3xl max-h-full bg-white shadow-lg overflow-auto">
               {!! get_search_form(false) !!}
           </div>
