@@ -25,7 +25,7 @@ class FrontPage extends Composer
         return [
           'readmore' => $this->readmore(),
           'heroVideo' => $this->heroVideo(),
-          'business' => $this->business(),
+          'business' => Business::fixedMenu(),
           'newsroom' => $this->getNewsroom(),
         ];
     }
@@ -66,19 +66,6 @@ class FrontPage extends Composer
             $parentPost->children = array();
             $this->sort_terms_hierarchically($posts, $parentPost->children, $parentPost->ID);
         }
-    }
-
-    public function business()
-    {
-        $termsHierarchy = array();
-        $posts = get_posts([
-          'post_type' => 'business',
-          'hide_empty' => false,
-          'numberposts' => 99,
-        ]);
-        $this->sort_terms_hierarchically($posts, $termsHierarchy);
-        
-        return $termsHierarchy;
     }
 
     public function setPostData($post, $postType)
