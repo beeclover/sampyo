@@ -23,6 +23,7 @@
     position: absolute;
 
     path {
+      /* stylelint-disable */
       transition: stroke-dasharray var(--duration, 0.85s) var(--easing, ease)
           var(--delay, 0s),
         stroke-dashoffset var(--duration, 0.85s) var(--easing, ease)
@@ -30,6 +31,7 @@
       stroke-dasharray: var(--array-1, 26px) var(--array-2, 100px);
       stroke-dashoffset: var(--offset, 126px);
       transform: translateZ(0);
+      /* stylelint-enable */
 
       &:nth-child(2) {
         --duration: 0.7s;
