@@ -72,21 +72,15 @@
     </div>
     <div class="flex gap-9">
       <div class="w-1/3 flex flex-col gap-9 home__s1-imgCol-1">
-        
-        @php($cat = array_shift($business))
-        @include('partials.card-flip')
+        @include('partials.card-flip', ['cat' => array_shift($business)])
       </div>
       <div class="w-1/3 flex flex-col gap-9 home__s1-imgCol-2">
-        @php($cat = array_shift($business))
-        @include('partials.card-flip')
-        @php($cat = array_shift($business))
-        @include('partials.card-flip')
+        @include('partials.card-flip', ['cat' => array_shift($business)])
+        @include('partials.card-flip', ['cat' => array_shift($business)])
       </div>
       <div class="w-1/3 flex flex-col gap-9 home__s1-imgCol-3">
-        @php($cat = array_shift($business))
-        @include('partials.card-flip')
-        @php($cat = array_shift($business))
-        @include('partials.card-flip')
+        @include('partials.card-flip', ['cat' => array_shift($business)])
+        @include('partials.card-flip', ['cat' => array_shift($business)])
       </div>
     </div>
   </div>

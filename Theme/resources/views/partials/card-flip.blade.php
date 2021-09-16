@@ -1,6 +1,6 @@
 <div class="card-flip" data-scroll-animation>
   <div class="card-flip-front">
-    <div class="card-flip-title">{!! $cat->post_title !!}</div>
+    <div class="card-flip-title">{!! $cat->name !!}</div>
     <div class="card-flip-content">
       <p>{!! $cat->description !!}</p>
     </div>
