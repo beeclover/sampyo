@@ -176,9 +176,8 @@
     position: absolute;
     z-index: 10;
     right: var(--px);
-    top: 50%;
-    transform: translateY(-50%);
-    text-decoration: underline;
+    // top: 50%;
+    // transform: translateY(-50%);
     transition: color 0.2s ease-in-out;
 
     a {
