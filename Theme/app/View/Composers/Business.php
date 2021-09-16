@@ -39,6 +39,7 @@ class Business extends Composer
             } else {
                 // taxnomoy를 포스트 배열에 추가
                 $post->term_id = 0;
+                $post->thumbnail = get_field('thumbnail', $post->taxonomy . '_' . $post->term_taxonomy_id);
                 $into['term_'.$post->term_taxonomy_id] = $post;
                 unset($posts[$i]);
                 continue;
