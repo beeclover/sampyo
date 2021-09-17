@@ -9,4 +9,8 @@
   &--unpinned {
     transform: translateY(-100%);
   }
+
+  &.menu-open {
+    transform: translateY(0%);
+  }
 }

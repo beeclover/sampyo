@@ -12,7 +12,10 @@
     <?php wp_head(); ?>
   </head>
 
-  <body <?php body_class(); ?>>
+  <body <?php body_class(); ?>
+    x-data="{m_menu: false}"
+    :class="{'overflow-hidden': m_menu}"
+  >
     <?php wp_body_open(); ?>
     <?php do_action('get_header'); ?>
 

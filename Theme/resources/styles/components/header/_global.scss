@@ -32,8 +32,12 @@
 &-global {
   $p: &;
 
-  --px: 40px;
+  --px: 20px;
   --background-color: transparent;
+
+  @media (min-width: theme('screens.sm')) {
+    --px: 40px;
+  }
 
   position: fixed;
   z-index: 9000;
@@ -62,6 +66,7 @@
     }
   }
 
+  &.menu-open,
   &.shrink,
   &:hover {
     --background-color: #fff;
@@ -91,8 +96,10 @@
   &-menu {
     height: 100%;
 
-    &:hover #{$p}-subnav-wrap {
-      transform: translateY(0);
+    @media (min-width: theme('screens.lg')) {
+      &:hover #{$p}-subnav-wrap {
+        transform: translateY(0);
+      }
     }
   }
 
@@ -106,13 +113,30 @@
 
   &-subnav {
     --py: 48px;
+    @media (max-width: theme('screens.sm')) {
+      --py: 13px;
+
+      gap: 0;
+    }
 
     display: flex;
-    gap: 80px;
-    padding-top: var(--py);
-    padding-bottom: var(--py);
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 80px 20px;
+    @media (min-width: theme('screens.lg')) {
+      padding: var(--py) 0;
+      gap: 80px;
+    }
 
     &-wrap {
+      @media (max-width: theme('screens.lg')) {
+        &.active {
+          transform: translateY(0);
+          color: var(--black-out);
+        }
+      }
+
       top: 0;
       left: 0;
       margin-top: var(--bar-global-height);
@@ -131,11 +155,27 @@
 
     // level1
     > li {
-      min-width: 150px;
+      @media (max-width: theme('screens.sm')) {
+        margin-bottom: 0;
+        padding: var(--py) var(--px) 0;
+        border-top: 1px solid rgba(#000, 0.1);
+      }
 
-      &:last-child,
-      &:first-child {
-        min-width: auto;
+      flex: 1 1 0%;
+      min-width: 100%;
+      @media (min-width: theme('screens.sm')) {
+        min-width: 50%;
+      }
+      @media (min-width: theme('screens.md')) {
+        min-width: 33%;
+      }
+      @media (min-width: theme('screens.lg')) {
+        min-width: 150px;
+
+        &:last-child,
+        &:first-child {
+          min-width: auto;
+        }
       }
 
       > a {
@@ -143,31 +183,124 @@
         --op: 0.3;
         --h: -0.5em;
         @include pointUnderLine;
+        @media (max-width: theme('screens.sm')) {
+          pointer-events: none;
+          font-weight: bold;
+        }
 
-        margin-bottom: 26px;
-      }
+        margin-bottom: 13px;
+        @media (min-width: theme('screens.sm')) {
+          margin-bottom: 26px;
+        }
 
-      &.point > a {
-        --bs: var(--RGB-atmosphere);
-      }
+        + ul.sub-menu {
+          @media (max-width: theme('screens.sm')) {
+            margin-left: calc(-1 * var(--px));
+            margin-right: calc(-1 * var(--px));
+            background-color: var(--bleached-silk);
+            gap: 0;
 
-      &.is-grid > ul > li {
-        display: grid;
-        grid-template-columns: 0.5fr 1fr;
-        gap: 1em;
+            &::after {
+              content: '';
+              display: block;
+              height: 1px;
+              left: 0;
+              width: 100vw;
+              position: absolute;
+              background-color: rgba(#000, 0.1);
+            }
 
-        > ul {
-          font-weight: 300;
+            // level 2
+            > li {
+              padding: 0 var(--px);
+
+              > a {
+                display: inline-block;
+                padding: var(--py) 0;
+                font-weight: 500;
+              }
+
+              @media (max-width: theme('screens.sm')) {
+                &:not(:last-child)::after {
+                  content: '';
+                  display: block;
+                  height: 1px;
+                  left: 0;
+                  width: 100vw;
+                  position: absolute;
+                  background-color: rgba(#000, 0.1);
+                }
+              }
+            }
+          }
+
           display: flex;
           gap: 1em;
           flex-direction: column;
         }
       }
 
-      > ul {
-        display: flex;
-        gap: 1em;
-        flex-direction: column;
+      &.point > a {
+        --bs: var(--RGB-atmosphere);
+      }
+
+      &.is-grid {
+        li {
+          @media (max-width: theme('screens.sm')) {
+            padding: 0 var(--px) !important;
+          }
+        }
+
+        > ul.sub-menu > li {
+          display: grid;
+          grid-template-columns: 0.5fr 1fr;
+
+          &:first-child::after {
+            content: none !important;
+          }
+
+          &:last-child::after {
+            content: '';
+            display: block;
+            height: 1px;
+            left: 0;
+            width: 100vw;
+            position: absolute;
+            background-color: rgba(#000, 0.1);
+          }
+
+          @media (min-width: theme('screens.sm')) {
+            gap: 1em;
+          }
+
+          a {
+            display: inline-block;
+            padding: var(--py) 0;
+          }
+
+          > ul {
+            @media (max-width: theme('screens.sm')) {
+              gap: 0;
+
+              li:not(:last-child)::after {
+                content: '';
+                display: block;
+                height: 1px;
+                left: 0;
+                width: 100vw;
+                position: absolute;
+                background-color: rgba(#000, 0.1);
+              }
+            }
+
+            display: flex;
+            gap: 1em;
+            flex-direction: column;
+            @media (min-width: theme('screens.sm')) {
+              font-weight: 300;
+            }
+          }
+        }
       }
     }
   }

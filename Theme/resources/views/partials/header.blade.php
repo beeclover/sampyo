@@ -1,20 +1,25 @@
+{{-- 
+  # state data (use alpinejs)
+  - m_menu: body에서 global state로 사용중
+--}}
 <header id="global" class="header-global text-xl"
-  x-data="{m_menu: false, pop_search: false}"
+  x-data="{pop_search: false}"
+  :class="{'menu-open' : m_menu}"
 >
   <div class="header-global-inner">
     <a class="header-global-logo" href="{{ home_url('/') }}">
       <img src="{!! $siteLogo !!}" alt="{{ $siteName }}"/>
     </a>
     @if (has_nav_menu('primary_navigation'))
-      <div class="header-global-menu hidden lg:block">
+      <div class="header-global-menu">
         {!! wp_nav_menu([
             'theme_location' => 'primary_navigation', 
-            'menu_class' => 'header-global-nav', 
+            'menu_class' => 'header-global-nav hidden lg:flex', 
             'container' => false,
             'echo' => false,
             'depth' => 1
         ]) !!}
-        <div class="header-global-subnav-wrap">
+        <div class="header-global-subnav-wrap" :class="{'active' : m_menu}">
           {!! wp_nav_menu([
             'theme_location' => 'primary_navigation', 
             'menu_class' => 'header-global-subnav', 
