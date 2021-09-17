@@ -20,12 +20,7 @@
             'depth' => 1
         ]) !!}
         <div class="header-global-subnav-wrap" :class="{'active' : m_menu}">
-          {!! wp_nav_menu([
-            'theme_location' => 'primary_navigation', 
-            'menu_class' => 'header-global-subnav', 
-            'container' => false,
-            'echo' => false,
-          ]) !!}
+          {!! $siteSubMenu !!}
         </div>
       </div>
     @endif
