@@ -42,7 +42,7 @@
       }
     }
 
-    &::after {
+    &.dim::after {
       content: '';
       display: block;
       width: calc(var(--outwidth) + 100%);
