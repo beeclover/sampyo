@@ -135,6 +135,12 @@ class WPDocs_Walker_Nav_Menu extends Walker_Nav_Menu
             default: $dapth_alpinejs = '';
         }
 
+        if (in_array('current-menu-ancestor', $item->classes)) {
+            $dapth_alpinejs = <<<EOD
+              x-data="{open: true}"
+            EOD;
+        }
+
         // Passed classes.
         $classes = empty($item->classes) ? array() : (array) $item->classes;
         $class_names = esc_attr(implode(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item)));
