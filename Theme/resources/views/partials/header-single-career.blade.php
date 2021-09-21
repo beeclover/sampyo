@@ -4,7 +4,7 @@
       <div class="container lg:max-w-screen-lg mx-auto">
         <div class="header-archive-imgRow">
           @if (!empty($thumbnail))
-              <img src="{!! $thumbnail !!}" alt="" class="header-archive-img">
+              {!! $thumbnail !!}
           @else
               <img src="https://picsum.photos/1920?random=10" alt="" class="header-archive-img">
           @endif

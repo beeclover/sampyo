@@ -4,11 +4,7 @@
       <div class="container lg:max-w-screen-lg mx-auto">
         <div class="header-archive-imgRow">
           @if ($thumbnail)
-            <img
-              src="{!! $thumbnail !!}"
-              alt=""
-              class="header-archive-img"
-            >
+            {!! $thumbnail !!}
           @else
             @include('partials.img', ['ex' => 'jpg', 'name' => 'header-blog', 'class' => 'header-archive-img'])
           @endif

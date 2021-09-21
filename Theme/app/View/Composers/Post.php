@@ -75,7 +75,8 @@ class Post extends Composer
     
     public function thumbnail()
     {
-        return !empty(get_the_post_thumbnail()) ? get_the_post_thumbnail() : '';
+        $post_id = get_the_ID();
+        return !empty($thmbnail = get_the_post_thumbnail($post_id, 'post-thumbnail', array( 'class' => 'header-archive-img'))) ? $thmbnail : '';
     }
     
     public function permalink()
