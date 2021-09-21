@@ -27,7 +27,30 @@ class FrontPage extends Composer
           'heroVideo' => $this->heroVideo(),
           'business' => Business::fixedMenu(),
           'newsroom' => $this->getNewsroom(),
+          'heroSlide' => $this->heroSlide(),
         ];
+    }
+
+    public function heroSlide()
+    {
+        $blog = get_posts(array(
+          'post_type' => array('blog', 'media'),
+          "numberposts" => 10,
+          'meta_query'	=> array(
+            'relation' => 'AND',
+              array(
+                'key' => 'exposure',
+                'value' => '1',
+              )
+          )
+        ));
+
+        foreach ($blog as $key => $post) {
+            $blog[$key]->title = get_field('title', $post->ID);
+            $blog[$key]->description = get_field('description', $post->ID);
+        }
+
+        return array_splice($blog, 0, 3);
     }
 
     public function readmore()

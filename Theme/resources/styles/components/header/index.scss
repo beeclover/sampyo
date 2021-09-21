@@ -1,6 +1,9 @@
 @at-root {
   :root {
-    --bar-global-height: 100px;
+    --bar-global-height: 80px;
+    @media (min-width: theme('screens.sm')) {
+      --bar-global-height: 60px;
+    }
   }
 }
 
