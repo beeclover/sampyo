@@ -4,22 +4,35 @@
   // @apply text-white;
   color: white;
   position: relative;
-  height: 580px;
+  height: 353px;
+
+  @media (min-width: theme('screens.sm')) {
+    height: 580px;
+  }
 
   &:hover {
-    #{$parent}-front {
-      opacity: 0;
-    }
-
-    #{$parent}-back {
-      opacity: 1;
+    @media (min-width: theme('screens.sm')) {
+      #{$parent}-front {
+        opacity: 0;
+      }
+      #{$parent}-back {
+        opacity: 1;
+      }
     }
   }
 
   &-front,
   &-back {
+    --py: 36px;
+    --px: 36px;
+
     z-index: 2;
-    padding: 48px 56px;
+    padding: var(--py) var(--px);
+
+    @media (min-width: theme('screens.sm')) {
+      --py: 48px;
+      --px: 56px;
+    }
   }
 
   &-front {
@@ -27,27 +40,40 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 100%;
+
+    @media (min-width: theme('screens.sm')) {
+      height: 100%;
+    }
   }
 
   &-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    background-color: rgba(#009ddf, 0.7);
-    transition: opacity 0.3s;
-    will-change: opacity;
-    overflow-y: scroll;
+    padding-top: 0;
+    position: relative;
+
+    @media (min-width: theme('screens.sm')) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#009ddf, 0.7);
+      transition: opacity 0.3s;
+      will-change: opacity;
+      overflow-y: scroll;
+      padding-top: var(--py);
+    }
   }
 
   &-title {
-    font-size: 2.125rem;
+    font-size: 1.75rem;
     font-weight: 900;
     margin-bottom: 10px;
     line-height: 1.4;
+
+    @media (min-width: theme('screens.sm')) {
+      font-size: 2.125rem;
+    }
   }
 
   &-content {
@@ -72,7 +98,7 @@
       transform: translate(-50%, -50%);
     }
 
-    &.dim::after {
+    &::after {
       content: '';
       display: block;
       position: absolute;
@@ -86,10 +112,28 @@
   }
 
   &-cat {
-    font-size: 1.625rem;
+    list-style: none;
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    gap: 3.6rem;
+    gap: 0.2rem;
+    @media (min-width: theme('screens.sm')) {
+      gap: 3.6rem;
+      font-size: 1.625rem;
+    }
+  }
+
+  &-area {
+    height: 100%;
+    overflow-y: scroll;
+
+    @media (max-width: theme('screens.sm')) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    @media (min-width: theme('screens.sm')) {
+      overflow-y: unset;
+    }
   }
 }
