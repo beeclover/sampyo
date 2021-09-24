@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="section hero">
-  <div class="container mx-auto">
+  <div class="container mx-auto px-0">
     <div class="swiper-container hero-slide">
       <div class="swiper-wrapper">
         @foreach ($heroSlide as $item)
@@ -36,18 +36,16 @@
       <div class="home__s1-title text-6xl font-black">비즈니스</div>
       <p class="home__s1-header-content">끊임없는 도전과 창조적인 혁신을 통해 Building Materials 분야의 리더로 자리매김합니다.</p>
     </div>
-    <div class="lg:grid lg:grid-cols-3 lg:gap-9">
-      <div class="flex flex-col gap-9 home__s1-imgCol-1">
-        @include('partials.card-flip', ['cat' => array_shift($business)])
-      </div>
-      <div class="flex flex-col gap-9 home__s1-imgCol-2">
-        @include('partials.card-flip', ['cat' => array_shift($business)])
-        @include('partials.card-flip', ['cat' => array_shift($business)])
-      </div>
-      <div class="flex flex-col gap-9 home__s1-imgCol-3">
-        @include('partials.card-flip', ['cat' => array_shift($business)])
-        @include('partials.card-flip', ['cat' => array_shift($business)])
-      </div>
+    <div id="macy-container">
+      <div class="home__s1-imgCol-1"></div>
+      @include('partials.card-flip', ['cat' => array_shift($business), 'order' => 0, ])
+      <div class="home__s1-imgCol-3 hidden xl:block"></div>
+      @include('partials.card-flip', ['cat' => array_shift($business), 'order' => 0, ])
+      @include('partials.card-flip', ['cat' => array_shift($business), 'order' => 0, ])
+      @include('partials.card-flip', ['cat' => array_shift($business), 'order' => 0, ])
+      @include('partials.card-flip', ['cat' => array_shift($business), 'order' => 0, ])
+    </div>
+    <div id="swiper-container">
     </div>
   </div>
 </div>

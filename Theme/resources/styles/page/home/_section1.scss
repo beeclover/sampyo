@@ -1,7 +1,13 @@
 &__s1 {
   position: relative;
-  margin-top: 130px;
-  margin-bottom: 130px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  overflow-x: hidden;
+
+  @media (min-width: theme('screens.sm')) {
+    margin-top: 130px;
+    margin-bottom: 130px;
+  }
 
   &-header {
     position: absolute;
@@ -62,11 +68,50 @@
 
   &-imgCol {
     &-1 {
-      padding-top: 310px;
+      padding-top: 540px;
+
+      @media (min-width: theme('screens.sm')) {
+        padding-top: 310px;
+      }
     }
 
     &-3 {
       padding-top: 135px;
+    }
+  }
+
+  #macy-container {
+    z-index: 2;
+
+    > .card-flip {
+      display: none;
+
+      @media (min-width: theme('screens.sm')) {
+        display: block;
+      }
+    }
+  }
+
+  #swiper-container {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: calc(100% - (var(--mpx) * 2));
+    visibility: visible;
+    z-index: 2;
+
+    --mpx: 1rem;
+    @media (min-width: theme('screens.md')) {
+      z-index: 1;
+      visibility: hidden;
+    }
+
+    #macy-container > .card-flip {
+      display: block;
+      width: 250px;
+      height: 353px;
     }
   }
 }
