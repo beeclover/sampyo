@@ -3,9 +3,13 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 210px;
+  margin-bottom: 60px;
   max-width: 1920px;
   overflow: hidden;
+
+  @media (min-width: theme('screens.sm')) {
+    margin-bottom: 210px;
+  }
 
   .tab {
     &-wrap {

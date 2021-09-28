@@ -7,7 +7,9 @@
   @import 'section5';
 
   &__s23 {
-    background-color: var(--lighthouse);
-    padding-bottom: 346px;
+    @media (min-width: theme('screens.sm')) {
+      background-color: var(--lighthouse);
+      padding-bottom: 346px;
+    }
   }
 }

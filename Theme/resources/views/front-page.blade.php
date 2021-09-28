@@ -187,8 +187,8 @@
         </div>
       </div>
       <div class="home__s3-body">
-        <div class="flex">
-          <div class="w-1/3 flex justify-center">
+        <div id="originalS3" class="hidden sm:flex">
+          <div id="cardWrap" class="w-1/3 flex justify-center">
             @php($post = array_shift($sustainability))
             <div class="card__s1">
               <div data-scrollreveal class="card__s1-thumbnail"><img src="{{ get_theme_file_uri('resources/images/53.svg') }}"></div>
@@ -213,7 +213,7 @@
               </div>
             </div>
           </div>
-          <div class="w-1/3 flex justify-center">
+          <div id="cardWrap" class="w-1/3 flex justify-center">
             @php($post = array_shift($sustainability))
             <div class="card__s1">
               <div data-scrollreveal data-sr-delay="300" class="card__s1-thumbnail"><img src="{{ get_theme_file_uri('resources/images/56.svg') }}"></div>
@@ -238,7 +238,7 @@
               </div>
             </div>
           </div>
-          <div class="w-1/3 flex justify-center">
+          <div id="cardWrap" class="w-1/3 flex justify-center">
             @php($post = array_shift($sustainability))
             <div class="card__s1">
               <div data-scrollreveal class="card__s1-thumbnail"><img src="{{ get_theme_file_uri('resources/images/57.svg') }}"></div>
@@ -263,6 +263,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div id="swipercontainerS3" class="block sm:hidden overflow-hidden">
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
