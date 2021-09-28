@@ -4,6 +4,15 @@ const colorReset = {
   color: null,
 };
 
+function px(min, max) {
+  let result = {};
+  for (let i = min; i < max + 1; i++) {
+    const key = i < 0 ? `-px-${i}` : `px-${i}`;
+    result[key] = `${i}px`;
+  }
+  return result;
+}
+
 module.exports = {
   purge: {
     content: ['./app/**/*.php', './resources/**/*.{php,vue,js}'],
@@ -24,6 +33,8 @@ module.exports = {
           '2xl': '7.1875rem',
         },
       },
+      height: px(0, 300),
+      margin: px(0, 80),
       colors: {
         point: 'var(--atmosphere, #009ddf)',
         funnelCloud: 'var(--funnel-cloud, #113a66)',
@@ -44,6 +55,7 @@ module.exports = {
         atmosphere: 'var(--atmosphere, #009ddf)',
         winterWizard: 'var(--winter-wizard, #9de2ff)',
         glitterLake: 'var(--glitter-lake, #4AC1F2)',
+        blackout: 'var(--black-out, #222222)',
       },
       gradientColorStops: {
         glitterLake: 'var(--glitter-lake, #4AC1F2)',
