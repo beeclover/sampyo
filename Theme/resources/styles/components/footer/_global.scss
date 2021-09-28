@@ -1,17 +1,18 @@
 &-global {
-  @apply text-white;
-
-  padding: 60px 50px;
-  background-color: var(--black-out);
-
   &-nav {
-    @apply flex gap-12;
+    @media (max-width: theme('screens.sm')) {
+      font-size: 14px;
+    }
   }
 
   &-navSub {
     display: flex;
     font-weight: 100;
     margin-bottom: 4px;
+
+    @media (max-width: theme('screens.sm')) {
+      font-size: 12px;
+    }
 
     > li:not(:last-child) {
       padding-right: 1em;
@@ -34,6 +35,10 @@
 
   &-copylight {
     font-weight: 100;
+
+    @media (max-width: theme('screens.sm')) {
+      font-size: 12px;
+    }
   }
 
   &-sns {
