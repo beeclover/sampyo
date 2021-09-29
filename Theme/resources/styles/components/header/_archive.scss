@@ -1,16 +1,18 @@
 &-archive {
-  overflow: hidden;
-
-  @media (min-width: 1920px) {
-    overflow: visible;
-    margin: auto;
-    max-width: 1920px;
+  @media (min-width: theme('screens.sm')) {
+    overflow: hidden;
   }
 
   @media (min-width: theme('screens.lg')) {
     .container.xl\:max-w-screen-xl {
       transform: translateX(var(--absolute-margin-left));
     }
+  }
+
+  @media (min-width: 1920px) {
+    overflow: visible;
+    margin: auto;
+    max-width: 1920px;
   }
 
   &-root {

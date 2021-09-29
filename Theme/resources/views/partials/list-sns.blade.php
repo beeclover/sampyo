@@ -1,6 +1,6 @@
 <ul class="flex gap-6 footer-global-sns">
   <li>
-    <a href="#">
+    <a href="https://instagram.com/sampyopr" target="_blank" rel="noopener noreferrer">
       <div class="icon-wrap">
         <div class="icon-insta"></div>
       </div>
