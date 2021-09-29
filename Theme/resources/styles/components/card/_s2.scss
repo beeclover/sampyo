@@ -5,12 +5,16 @@
   flex-direction: column;
   justify-content: space-between;
   aspect-ratio: 1/1;
-  padding: 50px;
+  padding: 30px;
   color: #fff;
   transition: all 0.3s;
   will-change: border-color;
   position: relative;
   box-sizing: border-box;
+
+  @media (min-width: theme('screens.sm')) {
+    padding: 50px;
+  }
 
   &:hover {
     .arrow {
@@ -53,8 +57,18 @@
   }
 
   &-title {
-    font-size: 2.125rem;
+    font-size: 1.5625rem;
     font-weight: 900;
+
+    @media (min-width: theme('screens.sm')) {
+      font-size: 2.125rem;
+    }
+  }
+
+  &-content {
+    @media (max-width: theme('screens.sm')) {
+      font-size: 12px;
+    }
   }
 
   &-bg {

@@ -1,7 +1,11 @@
 &__s4 {
-  --pT: 160px;
+  --pT: 60px;
+
+  overflow-x: hidden;
 
   @media (min-width: theme('screens.sm')) {
+    --pT: 160px;
+
     transform: translateY(-50%);
     margin-bottom: -120px;
   }
@@ -29,8 +33,11 @@
       right: 0;
       top: 0;
       width: 100vw;
-      height: 100%;
       background-color: var(--funnel-cloud);
+      height: calc(100% - var(--pT) - 125px);
+      @media (min-width: theme('screens.sm')) {
+        height: 100%;
+      }
     }
   }
 
@@ -41,7 +48,6 @@
   }
 
   &-title {
-    font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 16px;
   }
@@ -49,5 +55,10 @@
   &-description {
     font-size: 1.375rem;
     font-weight: 300;
+  }
+
+  #swipercontainerS4 .swiper-slide {
+    aspect-ratio: 1/1;
+    width: 250px;
   }
 }
