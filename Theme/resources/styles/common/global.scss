@@ -1,5 +1,9 @@
 body {
   font-family: 'Noto Sans KR', sans-serif;
+
+  @media (max-width: theme('screens.sm')) {
+    font-size: 14px;
+  }
 }
 
 [x-cloak] {
