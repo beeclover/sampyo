@@ -3,7 +3,7 @@
 @section('content')
   @include('partials.header-archive-newsroom')
   @include('partials.nav-fixed')
-  <main>
+  <main class="page__layout p-0">
     <div class="container xl:max-w-screen-xl mx-auto">
       @if (!have_posts())
         <div class="alert alert-warning">
