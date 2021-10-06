@@ -29,6 +29,7 @@ module.exports = {
       },
       // pixel token
       height: px(0, 300),
+      width: px(0, 1000),
       margin: px(0, 300),
       fontSize: px(0, 120),
       padding: px(0, 300),
