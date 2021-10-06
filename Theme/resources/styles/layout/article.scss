@@ -1,17 +1,32 @@
 article {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: theme('screens.sm')) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
   header {
-    padding-bottom: 50px;
-    margin-bottom: 80px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
     border-bottom: 1px solid var(--super-silver);
+
+    @media (min-width: theme('screens.sm')) {
+      padding-bottom: 50px;
+      margin-bottom: 80px;
+    }
 
     .entry-title {
       @apply text-black;
 
-      font-size: 2.5rem;
       margin-bottom: 21px;
+      font-size: 24px;
+      line-height: 1.2;
+
+      @media (min-width: theme('screens.sm')) {
+        font-size: 2.5rem;
+      }
     }
   }
 
