@@ -4,11 +4,21 @@ export default {
   init() {
     // newsroom pin blog
     new Swiper('.newsroom__blog-body', {
-      slidesPerView: 3,
-      spaceBetween: 50,
+      slidesPerView: 1,
+      spaceBetween: 20,
       navigation: {
         nextEl: '.newsroom__blog .btn-arrow.next',
         prevEl: '.newsroom__blog .btn-arrow.prev',
+      },
+      breakpoints: {
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
       },
     });
 
@@ -33,9 +43,14 @@ export default {
       loop: true,
       direction: 'vertical',
       slidesPerView: 1,
-      height: 80,
+      height: 140,
       autoplay: {
         delay: 5000,
+      },
+      breakpoints: {
+        640: {
+          height: 80,
+        },
       },
     });
 
