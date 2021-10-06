@@ -57,6 +57,7 @@ export default {
     // newsroom media row
     new Swiper('#media_release', {
       effect: 'fade',
+      allowTouchMove: false,
       fadeEffect: {
         crossFade: true,
       },
@@ -67,6 +68,7 @@ export default {
     });
     new Swiper('#media_featured', {
       effect: 'fade',
+      allowTouchMove: false,
       fadeEffect: {
         crossFade: true,
       },
