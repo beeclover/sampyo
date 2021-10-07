@@ -305,8 +305,8 @@
     </div>
   </div>
   <div class="section home__s5 mt-10px sm:mt-0 max:sm:pb-2.5">
-    <div class="newsroom__newslater">
-      <div class="container mx-auto">
+    <div class="newsroom__newsletter">
+      <div class="container mx-auto mb-30px">
         <x-Newsletter />
       </div>
     </div>

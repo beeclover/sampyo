@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="https://s3.ap-northeast-2.amazonaws.com/resource.stibee.com/subscribe/stb_subscribe_form_style.css">
-<div class="newsroom__newslater-body py-38px sm:py-52px gap-0 sm:gap-4
+<div class="newsroom__newsletter-body py-38px sm:py-52px gap-0 sm:gap-4
   @if ($border)
       border-t-4 border-b-4 border-blackout
   @endif
 ">
-  <div class="newsroom__newslater-title text-36px sm:text-62px">{!! $title !!}</div>
-  <form action="https://stibee.com/api/v1.0/lists/f2eqTU7I64dCpLpErO92czVDIsF_nA==/public/subscribers" method="POST" target="_blank" accept-charset="utf-8" class="stb_form newsroom__newslater-form" name="stb_subscribe_form" id="stb_subscribe_form" novalidate="">
+  <div class="newsroom__newsletter-title text-36px sm:text-62px">{!! $title !!}</div>
+  <form action="https://stibee.com/api/v1.0/lists/f2eqTU7I64dCpLpErO92czVDIsF_nA==/public/subscribers" method="POST" target="_blank" accept-charset="utf-8" class="stb_form newsroom__newsletter-form" name="stb_subscribe_form" id="stb_subscribe_form" novalidate="">
     <div class="grid grid-cols-2 gap-y-4 gap-x-0 sm:gap-x-2">
       <div class="col-span-3 text-right">
         <div class="stb_form_msg_error" id="stb_policy_error"></div>

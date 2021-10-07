@@ -221,22 +221,22 @@
         </div>
       </div>
     </div>
-    <div class="newsroom__newslater">
-      <div class="container mx-auto xl:max-w-screen-xl">
-        @include('partials.newsletter')
+    <div class="newsroom__newsletter">
+      <div class="container mx-auto xl:max-w-screen-xl mb-30px">
+        <x-Newsletter />
       </div>
       <div class="container mx-auto xl:max-w-screen-xl max:sm:px-0">
-        <div class="newsroom__newslater-notice">
+        <div class="newsroom__newsletter-notice">
           <div class="swiper-wrapper">
             @foreach ($notice_posts as $post)
-              <div class="newsroom__newslater-notice-item swiper-slide max:sm:flex-col max:sm:items-start">
-                <a href="{!! $post->guid !!}" class="newsroom__newslater-notice-label">
+              <div class="newsroom__newsletter-notice-item swiper-slide max:sm:flex-col max:sm:items-start">
+                <a href="{!! $post->guid !!}" class="newsroom__newsletter-notice-label">
                   <div class="icon-wrap max:sm:flex-col max:sm:items-start">
                     <div class="icon-notice"></div>
                     <div class="icon-label">{!! $post->post_title !!}</div>
                   </div>
                 </a>
-                <div class="newsroom__newslater-notice-date">
+                <div class="newsroom__newsletter-notice-date">
                   {!! $post->date !!}
                 </div>
               </div>

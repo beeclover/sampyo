@@ -39,7 +39,7 @@ export default {
     });
 
     // newsroom pin blog
-    new Swiper('.newsroom__newslater-notice', {
+    new Swiper('.newsroom__newsletter-notice', {
       loop: true,
       direction: 'vertical',
       slidesPerView: 1,
