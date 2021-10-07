@@ -273,7 +273,7 @@
 </div>
 <div class="section home__s45">
   <div class="section home__s4 sm:mb-32">
-    <div class="container mx-auto flex flex-wrap sm:block mb-150px">
+    <div class="container mx-auto flex flex-wrap sm:block sm:mb-150px">
       <ul id="originalS4" class="home__s4-container hidden sm:flex relative z-10">
         @foreach ($career as $item)
           <li data-scrollreveal id="cardWrap" class="w-1/3">
