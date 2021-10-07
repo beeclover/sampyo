@@ -244,15 +244,10 @@
   &-body {
     @apply gap-4;
 
-    padding-top: 52px;
-    padding-bottom: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-top: 4px solid var(--black-out);
-    border-bottom: 4px solid var(--black-out);
-    margin-bottom: 30px;
   }
 
   &-title {

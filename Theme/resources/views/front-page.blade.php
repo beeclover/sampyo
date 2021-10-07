@@ -307,7 +307,7 @@
   <div class="section home__s5 mt-10px sm:mt-0 max:sm:pb-2.5">
     <div class="newsroom__newslater">
       <div class="container mx-auto">
-        @include('partials.newsletter')
+        <x-Newsletter />
       </div>
     </div>
     <div class="container mx-auto mt-14 max:sm:px-0">
