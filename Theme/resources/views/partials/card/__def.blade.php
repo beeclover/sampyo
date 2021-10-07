@@ -2,8 +2,8 @@
   @if ($thumbnail)
     <div class="sm:col-span-1 lg:col-auto max:sm:aspect-w-16 max:sm:aspect-h-9">
       <div class="card-def-thumbnail lg:min-w-350px h-full">
-        @if(preg_match("#(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))#", $thumbnail))
-            <img src="{!! $thumbnail !!}" alt="" />
+        @if(preg_match("#^[http|https]?://.+#",$thumbnail))
+          <img src="{!! $thumbnail !!}" alt="" />
         @else
           {!! $thumbnail !!}
         @endif
