@@ -327,7 +327,7 @@
           <div class="card__s3 max:sm:py-54px max:sm:px-30px">
             <div class="card__s3-body">
               <div class="card__s3-title text-2xl sm:text-32px">사업장 정보</div>
-              <div class="card__s3-content text-12px sm:text-base">삼표삼표그룹 계열사들의 사업장 정보를 조회하실 수 있습니다.</div>
+              <div class="card__s3-content text-12px sm:text-base">삼표그룹 계열사들의 사업장 정보를 조회하실 수 있습니다.</div>
             </div>
             <div class="card__s3-bg nonDim">
               @include('partials.img', ['ex' => 'jpg', 'name' => '3340'])

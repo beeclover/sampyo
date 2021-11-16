@@ -15,13 +15,13 @@
     <div class="page__level-title mb-30px sm:mb-11">
       철스크랩 사업
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px sm:gap-y-16">
-      <div class="prose max:sm:order-1">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px sm:gap-y-40px">
+      <div class="prose max:sm:order-1 sm:mb-30px">
         <p>
           삼표는 철강산업의 중요 원료인 철스크랩을 수집·가공·판매하면서 철스크랩을 안정적으로 제강사에 공급함으로써 철강산업 발전에 기여하고 있으며 자원 순환을 통한 환경보전에 앞장서고 있습니다.
         </p>
       </div>
-      <div class="prose max:sm:order-2">
+      <div class="prose max:sm:order-2 sm:mb-30px">
         <p>
           국내 최대 규모의 슈레더(Shredder)로 폐자동차를 철과 비철금속으로 선별하고, 길로틴(Guillotine) 설비 3기 및 압축기 1기를 활용하여 노폐 스크랩을 가공하는 등 기계화 공정을 통한 대량 일괄 생산체계를 구축하여 연간 70만톤 이상의 철스크랩을 제강사에 원료로 공급합니다.
         </p>
@@ -57,24 +57,8 @@
           길로틴 시어(Guillotine Shear)
         </h3>
         <p>
-          폐자동차, 폐가전제품 등을 파쇄(shredding) 하여 슈레더 제품을 생산하고 파쇄 공정에서 발생한 비철금속을 선별하는 설비입니다.
+          장척의 중/경량 철스크랩을 1㎡의 크기로 압축 절단하는 설비로 제강사의 로(爐) 투입시 장입성을 높여, 전기로 작업의 효율성을 높여줍니다
         </p>
-      </div>
-      <div class="max:sm:order-6">
-        <div id="ti" class="coverbox-label">
-          @include('partials.img', ['ex' => 'jpg', 'name' => 'business-recycling-2'])
-          <span class="label text-white" style="background: transparent">
-            Shredder Plant
-          </span>
-        </div>
-      </div>
-      <div id="ti" class="max:sm:order-8">
-        <div class="coverbox-label">
-          @include('partials.img', ['ex' => 'jpg', 'name' => 'business-recycling-3'])
-          <span class="label text-white" style="background: transparent">
-            Guilotine Shear
-          </span>
-        </div>
       </div>
     </div>
   </section>
@@ -156,28 +140,24 @@
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px sm:gap-y-12 mb-30px sm:mb-70px">
       <div>
-        <div class="prose">
-          <p>
-            일상 생활 및 산업 활동으로 인하여 발생하는 쓰레기는 매립 또는 소각 처리됩니다. 매립된 쓰레기가 썩는 기간은 일회용 컵 20년, 플라스틱병과 일회용기저귀 100년, 스티로폼 500년 이상의 시간이 소요되며 또한 토양오염, 수질오염 등의 원인이 되어 소각이 대안으로 사용되고 있습니다.
-          </p>
+        <div class="coverbox-label" style="height: 500px">
+          @include('partials.img', ['ex' => 'jpg', 'name' => 'business-recycling-8', 'class' => 'object-cover h-full'])
+          <span class="label text-white nonFixed">
+            소각설비
+          </span>
         </div>
       </div>
       <div>
         <div class="prose">
+          <p>
+            일상 생활 및 산업 활동으로 인하여 발생하는 쓰레기는 매립 또는 소각 처리됩니다. 매립된 쓰레기가 썩는 기간은 일회용 컵 20년, 플라스틱병과 일회용기저귀 100년, 스티로폼 500년 이상의 시간이 소요되며 또한 토양오염, 수질오염 등의 원인이 되어 소각이 대안으로 사용되고 있습니다.
+          </p>
           <p>
             당사는 생활 및 산업현장에서 발생되는 폐기물을 보다 안전하게 소각하기 위하여 최신설비를 도입했으며, 철저한 사후관리를 통해 철저한 사후 관리를 통하여 환경오염을 방지하고 있습니다. 
           </p>
           <p>
             또한 소각과정에서 발생되는 오염물질을 실시간 모니터링하는 TMS(Tele-Monitoring System)시스템 운영으로 한국환경공단(영남관제센터)로 오염물질 발생 현황을 자동전송하는 등 철저하게 관리하고 있습니다.
           </p>
-        </div>
-      </div>
-      <div class="sm:col-span-2">
-        <div class="coverbox-label">
-          @include('partials.img', ['ex' => 'jpg', 'name' => 'business-recycling-8'])
-          <span class="label text-white nonFixed">
-            슬래그, 소각/건조, 대체연료/원료 등 다양한 환경사업
-          </span>
         </div>
       </div>
     </div>
@@ -189,7 +169,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px mb-30px sm:mb-70px">
       <div class="prose">
         <p>
-          소각 처리과정에서 발생하는 소각열을 이용해 각종 슬러지류를 건조해 매립되는 폐기물의 양을 최소화합니다. 이를 통해 폐기물 매립비용을 절감하고 환경보전에 기여하고 있습니다.
+          소각 처리과정에서 발생하는 소각열을 이용해 각종 슬러지류를 건조해 폐기물의 양을 최소화합니다. 이를 통해 폐기물 처리비용을 절감하고 환경보전에 기여하고 있습니다.
         </p>
       </div>
       <div class="prose">
@@ -201,7 +181,7 @@
         <div class="coverbox-label">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'business-recycling-9'])
           <span class="label text-white">
-            영천 건조설비
+            건조설비
           </span>
         </div>
       </div>
@@ -230,7 +210,7 @@
         </div>
         <div class="prose">
           <p>
-            철 스크랩, STS 스크랩, Pig Iron, 부원료(Sli-Mn, Fe-Si 등), 반제품(Billet 등), 철제품(H빔, Sheet File, 철근, Angle, Rail 등)
+            철 스크랩, STS 스크랩, Pig Iron, 부원료(Sli-Mn, Fe-Si 등), 반제품(Billet 등), 철제품(H빔, Sheet Pile, 철근, Angle, Rail 등)
           </p>
         </div>
       </div>

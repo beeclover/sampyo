@@ -108,7 +108,7 @@
     </div>
     <h3 class="font-black text-2xl mb-8">
       <span class="underline power">
-        철도 궤도 시공
+        철도궤도 시공
       </span>
     </h3>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px sm:gap-y-16 mb-30px sm:mb-16">

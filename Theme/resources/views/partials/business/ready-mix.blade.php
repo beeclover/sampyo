@@ -23,7 +23,7 @@
     <div>
       <div class="coverbox-label">
         @include('partials.img', ['ex' => 'jpg', 'name' => 'ready-mix-1'])
-        <span class="label text-white">수도권 최고의 생산능력 (2,068만 m3/년)</span>
+        <span class="label text-white">수도권 최고의 생산능력 (2,068만 m³/년)</span>
       </div>
     </div>
     <div>

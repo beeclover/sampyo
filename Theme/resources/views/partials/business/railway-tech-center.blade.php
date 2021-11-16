@@ -49,25 +49,25 @@
         <div class="coverbox-label">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'business-'. get_post()->post_name .'-2'])
           <span class="label text-white">
-            접착절연레일
+            접착절연레일
           </span>
         </div>
         <div class="coverbox-label">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'business-'. get_post()->post_name .'-3'])
           <span class="label text-white">
-            텅레일 마모방지용 가드레일
+            텅레일 마모방지용 가드레일
           </span>
         </div>
         <div class="coverbox-label">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'business-'. get_post()->post_name .'-4'])
           <span class="label text-white">
-            폭발경화 망간크로싱
+            폭발경화 망간크로싱
           </span>
         </div>
         <div class="coverbox-label">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'business-'. get_post()->post_name .'-5'])
           <span class="label text-white">
-            광폭침목
+            광폭침목
           </span>
         </div>
       </div>
