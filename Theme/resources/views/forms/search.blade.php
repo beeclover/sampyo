@@ -42,7 +42,7 @@
           </g>
         </svg>
       </button>
-      <button type="reset" class="w-14px sm:w-28px h-14px sm:h-28px border-none focus:ring-0 outline-none focus:outline-none" >
+      <button @click.prevent="pop_search = false" class="w-14px sm:w-28px h-14px sm:h-28px border-none focus:ring-0 outline-none focus:outline-none" >
         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
           <path d="M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717

@@ -3,11 +3,18 @@
 
   --triangle: 100px;
 
-  clip-path: polygon(100% 100%, 0% 100%, 0% var(--triangle), 50% 0%, 100% var(--triangle));
+  clip-path: polygon(
+    100% 100%,
+    0% 100%,
+    0% var(--triangle),
+    50% 0%,
+    100% var(--triangle)
+  );
   overflow: hidden;
 
   @media (max-width: theme('screens.sm')) {
     --triangle: 50px;
+
     &.max\:sm\:rootless {
       clip-path: none !important;
       #{$p}-inner {
@@ -19,11 +26,19 @@
   // bottom
   @mixin bottom {
     --triangle: 48px;
+
     @media (min-width: theme('screens.sm')) {
       --triangle: 80px;
     }
-    
-    clip-path: polygon(100% calc(100% - var(--triangle)), 50% 100%, 0% calc(100% - var(--triangle)), 0% 25%, 0 0%, 100% 0);
+
+    clip-path: polygon(
+      100% calc(100% - var(--triangle)),
+      50% 100%,
+      0% calc(100% - var(--triangle)),
+      0% 25%,
+      0 0%,
+      100% 0
+    );
 
     #{$p}-inner:not([class*='mb-']) {
       margin-top: 0;
@@ -61,7 +76,14 @@
 
   @mixin right {
     --triangle: 80px;
-    clip-path: polygon(0 0, calc(100% - var(--triangle)) 0, 100% 50%, calc(100% - var(--triangle)) 100%, 0 100%);
+
+    clip-path: polygon(
+      0 0,
+      calc(100% - var(--triangle)) 0,
+      100% 50%,
+      calc(100% - var(--triangle)) 100%,
+      0 100%
+    );
 
     #{$p}-inner {
       margin-top: 0;
@@ -87,11 +109,12 @@
 
   &-root {
     --triangle: 50px;
+
     @media (min-width: theme('screens.sm')) {
       --triangle: 100px;
     }
-    position: relative;
 
+    position: relative;
 
     &[data-label]::after {
       content: attr(data-label);
