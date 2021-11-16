@@ -93,7 +93,7 @@
       <div class="prose">
         <p>
           이러한 전국 물류 네트워크을 토대로 발전소, 제철소 등 대형 외부거래처와의 운송 수주를 확대하고, 연계운송을 통한 물류 효율화로 화주 원가 절감에 기여합니다. <br/>
-          IT 기술을 활용한 차량 관제 시스템으로 물류 네트워크를 효율화해 국내 BCT 물류사업을 선도하고 있습니다.
+          IT 기술을 활용한 차량 관제 시스템으로 물류 네트워크를 효율화해 국내 건자재 물류 사업부문을 선도하고 있습니다.
         </p>
       </div>
     </div>
@@ -108,7 +108,7 @@
               <div class="card__s4-body">
                 <div class="card__s4-title text-16px text-center font-bold">
                   BCT부문<br/>
-                  (벌크트레일러)
+                  (벌크시멘트트레일러)
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@
           <div class="swiper-slide">
             <div class="card__s4 w-auto">
               <div class="card__s4-thumbnail border w-210px h-210px">
-                @include('partials.img', ['ex' => 'jpg', 'name' => 'business-distribution-7'])
+                @include('partials.img', ['ex' => 'jpg', 'name' => 'business-distribution-8'])
               </div>
               <div class="card__s4-body">
                 <div class="card__s4-title text-16px text-center font-bold">
@@ -142,7 +142,7 @@
           <div class="swiper-slide">
             <div class="card__s4 w-auto">
               <div class="card__s4-thumbnail border w-210px h-210px">
-                @include('partials.img', ['ex' => 'jpg', 'name' => 'business-distribution-8'])
+                @include('partials.img', ['ex' => 'jpg', 'name' => 'business-distribution-7'])
               </div>
               <div class="card__s4-body">
                 <div class="card__s4-title text-16px text-center font-bold">
@@ -154,6 +154,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="page__level-title mb-30px sm:mb-40px">
+      해상 및 철도 운송
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-50px gap-y-30px mb-30px sm:mb-70px">
       @include('partials.img', ['ex' => 'jpg', 'name' => 'business-distribution-9', 'class' => 'order-1 sm:order-none'])

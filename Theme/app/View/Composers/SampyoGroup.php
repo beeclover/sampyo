@@ -103,7 +103,7 @@ class SampyoGroup extends Composer
             ),
             3 => array(
               "date" => "2015 . 09",
-              "title" => "동양시멘트㈜, 삼표그룹사 계열사 폅입 (現 ㈜삼표시멘트)"
+              "title" => "동양시멘트㈜, 삼표그룹사 계열사 편입 (現 ㈜삼표시멘트)"
             ),
             4 => array(
               "date" => "2013 . 10",
@@ -143,11 +143,11 @@ class SampyoGroup extends Composer
           "1990" => [
             0 => array(
               "date" => "1999 . 12",
-              "title" => "한국사이버물류주식회사 설립 (現 삼표-물류사업부문)"
+              "title" => "한국사이버물류주식회사 설립 (現 삼표물류사업부문)"
             ),
             1 => array(
               "date" => "1994 . 07",
-              "title" => "삼표궤도㈜ 설립 (現 삼표레일웨이㈜"
+              "title" => "삼표궤도㈜ 설립 (現 삼표레일웨이㈜)"
             ),
             2 => array(
               "date" => "1993 . 07",
@@ -191,7 +191,7 @@ class SampyoGroup extends Composer
             ),
             3 => array(
               "date" => "1974 . 07",
-              "title" => "삼강운수㈜, 삼표산업㈜ 로 상호변경"
+              "title" => "삼강운수㈜, 삼표산업㈜ 으로 상호변경"
             ),
           ],
           "1960" => [
