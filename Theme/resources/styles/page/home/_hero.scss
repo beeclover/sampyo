@@ -191,11 +191,15 @@
     &-title {
       &-1 {
         word-break: keep-all;
-        font-size: 50px;
+        font-size: 32px;
         font-weight: 900;
         opacity: 0;
         margin-bottom: 18px;
         line-height: 1.2;
+
+        @media (min-width: theme('screens.lg')) {
+          font-size: 50px;
+        }
 
         @media (min-width: theme('screens.xl')) {
           font-size: 60px;

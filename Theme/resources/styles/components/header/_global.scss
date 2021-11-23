@@ -74,6 +74,10 @@
     left: var(--px);
     top: 50%;
     transform: translateY(-50%);
+
+    @media (max-width: theme('screens.sm')) {
+      left: 2rem;
+    }
   }
 
   &-inner {
