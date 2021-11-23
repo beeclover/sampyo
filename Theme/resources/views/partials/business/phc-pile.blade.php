@@ -50,13 +50,13 @@
               </div>
             </div>
             <div>
-              <div class="grid bg-white gap-y-px">
-                <div class="bg-hospitalGreen py-3 h-36 flex items-center justify-center">원스톱 토탈 솔루션 제공</div>
-                <div class="bg-kiwiSqueeze py-3 h-12 flex items-center justify-center">고강도파일</div>
-                <div class="bg-kiwiSqueeze py-3 h-12 flex items-center justify-center">초고강도파일</div>
-                <div class="bg-kiwiSqueeze py-3 h-12 flex items-center justify-center">대구경파일</div>
-                <div class="bg-kiwiSqueeze py-3 h-12 flex items-center justify-center">초고강도 대구경파일</div>
-                <div class="bg-kiwiSqueeze py-3 h-12 flex items-center justify-center">PHC탑다운용 파일</div>
+              <div class="grid bg-white gap-y-px font-bold" style="color: #2d7232">
+                <div class="bg-hospitalGreen py-3 h-36 flex items-center justify-center text-18px">원스톱 토탈 솔루션 제공</div>
+                <div class="bg-kiwiSqueeze py-3 h-12 flex items-center justify-center text-15px">고강도파일</div>
+                <div class="bg-kiwiSqueeze py-3 h-12 flex items-center justify-center text-15px">초고강도파일</div>
+                <div class="bg-kiwiSqueeze py-3 h-12 flex items-center justify-center text-15px">대구경파일</div>
+                <div class="bg-kiwiSqueeze py-3 h-12 flex items-center justify-center text-15px">초고강도 대구경파일</div>
+                <div class="bg-kiwiSqueeze py-3 h-12 flex items-center justify-center text-15px">PHC탑다운용 파일</div>
               </div>
             </div>
           </div>
