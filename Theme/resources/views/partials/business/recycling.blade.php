@@ -140,7 +140,7 @@
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px sm:gap-y-12 mb-30px sm:mb-70px">
       <div>
-        <div class="coverbox-label" style="height: 500px">
+        <div class="coverbox-label sm:h-500px">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'business-recycling-8', 'class' => 'object-cover h-full'])
           <span class="label text-white nonFixed">
             소각설비
