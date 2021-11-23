@@ -21,7 +21,8 @@
       footerShown: false, 
       famMenuOpen: false, 
     }"
-    :class="{'overflow-hidden': m_menu || menuHover || pop_search, 'relative': footerShown}"
+    :class="{'relative': footerShown}"
+    x-effect="bodyScrollLock(m_menu || menuHover || pop_search)"
   >
     <?php wp_body_open(); ?>
     <?php do_action('get_header'); ?>

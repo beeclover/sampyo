@@ -3,7 +3,7 @@
   - m_menu: body에서 global state로 사용중
 --}}
 <header id="global" class="header-global text-xl"
-  :class="{'menu-open' : m_menu}"
+  :class="{'menu-open' : m_menu, 'sm:pr-15px bg-white': m_menu || menuHover || pop_search}"
 >
   <div class="header-global-inner">
     <a class="header-global-logo" href="{{ home_url('/') }}">
