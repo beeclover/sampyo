@@ -20,59 +20,56 @@
     성과관리 프로세스
   </div>
   <div class="mb-16"></div>
-  <div id="swiper" class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="card__house bg-mistyLawn right mb-10" style="--triangle: 28px">
-          <div class="card__house-inner h-24 flex flex-col items-center justify-center p-8">
-            <div class="text-xl font-normal">
-              목표수립
-            </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10px">
+    <div>
+      <div class="card__house bg-mistyLawn right mb-10px sm:mb-10" style="--triangle: 28px">
+        <div class="card__house-inner h-24 flex flex-col items-center justify-center p-8">
+          <div class="text-xl font-normal">
+            목표수립
           </div>
         </div>
-        <div class="prose mr-8">
-          <p>
-            사업부문 별 KPI Pool 토대로 조직/개인의 목표수립, 임원/팀장/팀원 상호 협의
-          </p>
-        </div>
       </div>
-      <div class="swiper-slide">
-        <div class="card__house bg-hospitalGreen right text-white mb-10" style="--triangle: 28px">
-          <div class="card__house-inner h-24 flex flex-col items-center justify-center p-8">
-            <div class="text-xl font-bold">
-              중간점검/코칭
-            </div>
-          </div>
-        </div>
-        <div class="prose mr-8">
-          <p>
-            중간면담을 통해 계획 실천, 계획 실천 및 목표대비 실적 확인 / 목표달성을 위한 장애요인 파악 및 지도/조언
-          </p>
-        </div>
+      <div class="prose mr-8">
+        <p>
+          사업부문 별 KPI Pool 토대로 조직/개인의 목표수립, 임원/팀장/팀원 상호 협의
+        </p>
       </div>
-      <div class="swiper-slide">
-        <div class="card__house bg-bermudagrass right text-white mb-10" style="--triangle: 28px">
-          <div class="card__house-inner h-24 flex flex-col items-center justify-center p-8">
-            <div class="text-xl font-bold">
-              평가
-            </div>
-          </div>
-        </div>
-        <div class="prose mr-8">
-          <p>연초 목표/KPI 대비 달성도에 대한 평가, 본인평가, 평가면담, 상사평가, 조정 및 확정</p>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="flex flex-col items-center justify-center p-8 bg-bermudagrass h-24 text-white mb-10">
+    </div>
+    <div>
+      <div class="card__house bg-hospitalGreen right text-white mb-10px sm:mb-10" style="--triangle: 28px">
+        <div class="card__house-inner h-24 flex flex-col items-center justify-center p-8">
           <div class="text-xl font-bold">
-            Feedback
+            중간점검/코칭
           </div>
         </div>
-        <div class="prose">
-          <p>평가 결과에 대한 피드백, 필요 시, 이의 신청 , 프로세스 미흡 성과 및 취약 역량에 대한 면담/코칭</p>
+      </div>
+      <div class="prose mr-8">
+        <p>
+          중간면담을 통해 계획 실천, 계획 실천 및 목표대비 실적 확인 / 목표달성을 위한 장애요인 파악 및 지도/조언
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="card__house bg-bermudagrass right text-white mb-10px sm:mb-10" style="--triangle: 28px">
+        <div class="card__house-inner h-24 flex flex-col items-center justify-center p-8">
+          <div class="text-xl font-bold">
+            평가
+          </div>
         </div>
       </div>
-      <div class="swiper-pagination pagination__s1 static mt-7 pt-0.5 visible sm:invisible"></div>
+      <div class="prose mr-8">
+        <p>연초 목표/KPI 대비 달성도에 대한 평가, 본인평가, 평가면담, 상사평가, 조정 및 확정</p>
+      </div>
+    </div>
+    <div>
+      <div class="flex flex-col items-center justify-center p-8 bg-bermudagrass h-24 text-white mb-10px sm:mb-10">
+        <div class="text-xl font-bold">
+          Feedback
+        </div>
+      </div>
+      <div class="prose">
+        <p>평가 결과에 대한 피드백, 필요 시, 이의 신청 , 프로세스 미흡 성과 및 취약 역량에 대한 면담/코칭</p>
+      </div>
     </div>
   </div>
   <div class="pb-70px sm:pb-24"></div>

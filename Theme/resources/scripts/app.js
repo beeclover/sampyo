@@ -37,7 +37,6 @@ const routes = new Router({
   blueCon: readyMix,
   csr,
   mindset,
-  evaluation,
   talentDev,
   distribution: evaluation,
 });
