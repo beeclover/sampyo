@@ -21,7 +21,7 @@
           <div class="card__s1-content prose">
             <ul>
               <li>가치경영체계</li>
-              <li>룹 Biz 이해</li>
+              <li>그룹 Biz 이해</li>
             </ul>
           </div>
         </div>
@@ -110,7 +110,7 @@
   </div>
   <div class="mb-70px sm:mb-32"></div>
   <div class="font-bold underline power text-2xl mb-5">
-    삼표 사이버 연수원
+    삼표 사이버연수원
   </div>
   <p>
     삼표는 사이버연수원을 통해 시간과 공간의 제약없이 학습할 수 있는 온라인 교육 시스템을 운영하고 있습니다.

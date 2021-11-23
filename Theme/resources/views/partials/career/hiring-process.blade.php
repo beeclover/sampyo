@@ -27,7 +27,7 @@
     @foreach ([
       [
         "title" => "지원서 접수",
-        "content" => "대졸신입 채용 지원자는 정해진 기간에 채용홈페이지를 접속하여 온라인 입사지원서를 접수시켜야 합니다. 지원서 접수 시 본인의 적성과 흥미에 따른 관심 직무를 선정하고, 해당 직무가 속한 직무군을 선택하여 지원서를 최종 접수합니다."
+        "content" => "대졸신입 채용 지원자는 정해진 기간에 채용홈페이지에 접속하여 온라인 입사지원서를 접수시켜야 합니다. 지원서 접수 시 본인의 적성과 흥미에 따른 관심 직무를 선정하고, 해당 직무가 속한 직무군을 선택하여 지원서를 최종 접수합니다."
       ],
       [
         "title" => "서류전형",
@@ -81,7 +81,7 @@
     </p>
   </div>
   <div class="pb-70px sm:pb-24"></div>
-  <a href="{!! $recruiter !!}" class="inline-block p-16 bg-artificialTurf text-white font-black text-lg">채용공고 바로가기</a>
+  <a href="{!! $recruiter !!}" target="_blank" rel="noopener noreferrer" class="inline-block p-16 bg-artificialTurf text-white font-black text-lg">채용공고 바로가기</a>
   <div class="pb-70px sm:pb-24"></div>
 </div>
 </main>
