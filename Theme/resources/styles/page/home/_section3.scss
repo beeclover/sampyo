@@ -38,4 +38,10 @@
       max-width: 180px;
     }
   }
+
+  .card__s1-content br {
+    @media (max-width: theme('screens.lg')) {
+      display: none;
+    }
+  }
 }
