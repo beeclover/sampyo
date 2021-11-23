@@ -16,6 +16,13 @@ function s4() {
   new Swiper(targetS4, {
     slidesPerView: 'auto',
     spaceBetween: 20,
+    breakpoints: {
+      640: {
+        spaceBetween: 28,
+        centeredSlides: true,
+        initialSlide: 1,
+      },
+    },
   });
 }
 

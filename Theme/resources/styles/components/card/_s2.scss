@@ -12,7 +12,7 @@
   position: relative;
   box-sizing: border-box;
 
-  @media (min-width: theme('screens.sm')) {
+  @media (min-width: theme('screens.lg')) {
     padding: 50px;
   }
 
