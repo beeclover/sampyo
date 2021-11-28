@@ -1,17 +1,17 @@
 <div class="labtop:overflow-x-hidden header-archive-root2">
   <div class="labtop:overflow-hidden header-archive-root">
     <header class="header-archive">
-      <div class="container xl:max-w-screen-xl mx-auto max:labtop:px-0 max:labtop:mb-70px">
+      <div class="container xl:max-w-screen-xl mx-auto max:labtop:px-0 max:labtop:mb-[70px]">
         <div class="header-archive-imgRow">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'header-'.get_post_type(), 'class' => 'header-archive-img'])
         </div>
         <div class="header-archive-content max:labtop:px-8 max:labtop:w-full">
-          <div x-data="select({label: '{!! $fixedMenuLabel !!}', selected: {!! $selected !!}})" class="w-full relative mb-30px labtop:hidden flex">
+          <div x-data="select({label: '{!! $fixedMenuLabel !!}', selected: {!! $selected !!}})" class="w-full relative mb-[30px] labtop:hidden flex">
             <div class="depth-1 relative flex-1">
               <button class="flex items-center justify-between w-full px-3 py-3 text-left border focus:outline-none @if (get_post_type() !== 'notice-board') border-r-0 @endif"
                 @click="toggle()"
                 @click.away="close()">
-                <span x-text="label" class="text-16px"></span>
+                <span x-text="label" class="text-[16px]"></span>
                 <svg width="11.107" height="11.107">
                   <path d="M0 .067 7.345 0l-.068 7.345" transform="rotate(135 4.297 4.826)" style="fill:none;stroke:#fff"/>
                 </svg>
@@ -48,9 +48,9 @@
                           @click="dropdown = !dropdown"
                           @click.away="dropdown = false">
                           <template x-if="label2">
-                            <span x-text="label2" class="text-16px"></span>
+                            <span x-text="label2" class="text-[16px]"></span>
                           </template>
-                          <span x-text="placeholder" class="text-16px"></span>
+                          <span x-text="placeholder" class="text-[16px]"></span>
                           <svg width="11.107" height="11.107">
                             <path d="M0 .067 7.345 0l-.068 7.345" transform="rotate(135 4.297 4.826)" style="fill:none;stroke:#fff"/>
                           </svg>
@@ -73,7 +73,7 @@
               </div>
             @endif
           </div>
-          <h1 class="header-archive-title text-36px sm:text-70px mb-5px sm:mb-18px">@if (is_archive()) {!! $title !!} @else {!! $title !!} @endif</h1>
+          <h1 class="header-archive-title text-[36px] sm:text-[70px] mb-[5px] sm:mb-[18px]">@if (is_archive()) {!! $title !!} @else {!! $title !!} @endif</h1>
           <span class="header-archive-description">{!! $description !!}</span>
         </div>
         @if (get_post_type() !== 'notice-board')

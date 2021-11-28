@@ -1,7 +1,7 @@
 <footer id="global" class="footer-global sm:px-12 sm:py-14 bg-blackout text-white" x-data="{pop_newsletter: false}" x-intersect:enter="footerShown = true" x-intersect:leave="footerShown = false">
-  <div class="flex flex-wrap justify-between sm:mb-6 mb-30px gap-y-14px">
+  <div class="flex flex-wrap justify-between sm:mb-6 mb-[30px] gap-y-[14px]">
     <div class="w-full sm:w-auto order-2 px-8 pt-8 sm:p-0 sm:order-1">
-      <div class="block sm:hidden mb-21px">
+      <div class="block sm:hidden mb-[21px]">
         @include('partials.list-sns')
       </div>
       <div class="flex">
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="w-full sm:w-auto order-1 sm:order-2">
-      <div class="grid grid-cols-1 sm:flex gap-px sm:gap-10 h-60px sm:h-auto bg-white bg-opacity-20 pb-px sm:pb-0 sm:bg-transparent">
+      <div class="grid grid-cols-1 sm:flex gap-px sm:gap-10 h-[60px] sm:h-auto bg-white bg-opacity-20 pb-px sm:pb-0 sm:bg-transparent">
         {{-- <button class="w-full h-full flex items-center justify-center sm:inline bg-blackout whitespace-nowrap focus:outline-none" x-on:click.prevent="pop_newsletter = true">뉴스레터 구독신청</button> --}}
         <div x-show="pop_newsletter"
             x-cloak
@@ -27,7 +27,7 @@
             class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50 h-screen"
             >
             <div x-on:click.away="pop_newsletter = false"
-                class="container max-w-3xl max-h-full bg-white shadow-lg overflow-auto px-30px sm:px-52px text-black relative">
+                class="container max-w-3xl max-h-full bg-white shadow-lg overflow-auto px-[30px] sm:px-[52px] text-black relative">
                 <button class="absolute right-4 top-4 focus:outline-none" x-on:click.prevent="pop_newsletter = false">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
                       <defs>
@@ -91,7 +91,7 @@
       </div>
     </div>
   </div>
-  <div class="flex items-center justify-between flex-wrap gap-y-14px">
+  <div class="flex items-center justify-between flex-wrap gap-y-[14px]">
     <div class="w-full sm:w-auto px-8 pb-8 sm:p-0">
       {!! wp_nav_menu(['menu' => 'footer sub', 'menu_class' => 'footer-global-navSub flex-wrap gap-y-1', 'echo' => false]) !!}
       <div class="footer-global-copylight">
@@ -108,12 +108,12 @@
   class="
     max:sm:hidden sm:flex
     fixed max:xxl:right-0 xxl:left-1/2
-    w-90px h-90px bg-blackout text-white flex-col items-center justify-center
+    w-[90px] h-[90px] bg-blackout text-white flex-col items-center justify-center
   "
   :class="{'absolute bottom-72': footerShown, 'bottom-0 xxl:bottom-10': !footerShown, '-z-10': famMenuOpen, 'z-50': !famMenuOpen}"
 >
   <svg xmlns="http://www.w3.org/2000/svg" width="15.556" height="15.556" viewBox="0 0 15.556 15.556">
     <path d="M0 10h10V0" transform="rotate(-135 7.11 6.167)" style="fill:none;stroke:#fff;stroke-width:2px"/>
   </svg>
-  <span class="text-20px font-black">TOP</span>
+  <span class="text-[20px] font-black">TOP</span>
 </button>

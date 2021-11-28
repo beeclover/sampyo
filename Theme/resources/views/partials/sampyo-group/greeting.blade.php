@@ -1,10 +1,10 @@
 
 <main class="sampyoGroup__page page__layout">
 <div class="container xl:max-w-screen-xl mx-auto">
-  <div class="page__level-title mb-30px sm:mb-20">
+  <div class="page__level-title mb-[30px] sm:mb-20">
     고객과 사회의 지속가능한 발전에 힘이 되는 기업이 되겠습니다
   </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-7 sm:gap-y-28 mb-30px sm:mb-20">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-7 sm:gap-y-28 mb-[30px] sm:mb-20">
     <div class="prose">
       <p class="mb-10">
         삼표그룹은 1966년 창립 이래 ‘개척 정신’을 바탕으로 우리나라 기간 산업의 한 축으로서 굳건히 자리매김해왔습니다. 지난 반세기 이상 지속적인 변화와 도전을 통해 고객과 사회 및 국가 발전에 이바지하며 성장을 이어왔습니다.  

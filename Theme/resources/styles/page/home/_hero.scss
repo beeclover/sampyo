@@ -13,7 +13,7 @@
   padding-bottom: 0;
 
   > [class*='container'] {
-    @media (min-width: theme('screens.2xl')) {
+    @media (min-width: theme('screens.xxl')) {
       max-width: 1920px;
       padding-left: 0;
       padding-right: 0;
@@ -206,7 +206,7 @@
           font-size: 60px;
           margin-bottom: 32px;
         }
-        @media (min-width: theme('screens.2xl')) {
+        @media (min-width: theme('screens.xxl')) {
           font-size: 80px;
         }
         @media (min-width: 1700px) {

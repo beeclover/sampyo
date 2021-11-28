@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  @apply font-sans;
 
   &.overflow-hidden {
     touch-action: none;
@@ -28,30 +28,42 @@ body {
 
 :root {
   --container-px: 2rem;
+
   @media (min-width: theme('screens.lg')) {
     --container-px: 4rem;
   }
+
   @media (min-width: theme('screens.xl')) {
     --container-px: 5rem;
   }
-  @media (min-width: theme('screens.2xl')) {
+
+  @media (min-width: theme('screens.xxl')) {
     --container-px: 7.1875rem;
   }
 
   --container-width: 100%;
+
   @media (min-width: theme('screens.sm')) {
     --container-width: 640px;
   }
+
   @media (min-width: theme('screens.md')) {
     --container-width: 768px;
   }
+
   @media (min-width: theme('screens.lg')) {
     --container-width: 1024px;
   }
+
   @media (min-width: theme('screens.xl')) {
     --container-width: 1280px;
   }
-  @media (min-width: theme('screens.2xl')) {
+
+  @media (min-width: theme('screens.labtop')) {
+    --container-width: 1440px;
+  }
+
+  @media (min-width: theme('screens.xxl')) {
     --container-width: 1536px;
   }
 }

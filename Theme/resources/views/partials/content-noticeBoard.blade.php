@@ -1,4 +1,4 @@
-<li class="flex justify-between py-5 px-3 border-b font-light text-lg max:sm:flex-col gap-y-10px">
+<li class="flex justify-between py-5 px-3 border-b font-light text-lg max:sm:flex-col gap-y-[10px]">
   <a href="{!! $permalink !!}">{!! $title !!}</a>
   <div class="more flex gap-x-10 items-center max:sm:justify-between">
     <div class="date">{{ get_the_date('Y.m.d') }}</div>

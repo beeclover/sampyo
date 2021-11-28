@@ -1,10 +1,10 @@
 <div>
-  <div class="sm:hidden mb-10px">
+  <div class="sm:hidden mb-[10px]">
     <a href="{!! $permalink !!}" class="card-def-title">{!! $title !!}</a>
   </div>
-  <div class="card-def flex gap-x-24px lg:gap-x-48px gap-y-30px">
+  <div class="card-def flex gap-x-[24px] lg:gap-x-[48px] gap-y-[30px]">
     @if ($thumbnail)
-      <div class="w-110px h-110px sm:w-163px sm:h-163px">
+      <div class="w-[110px] h-[110px] sm:w-[163px] sm:h-[163px]">
         <div class="card-def-thumbnail h-full w-full">
           @if(preg_match("#(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))#", $thumbnail))
               <img src="{!! $thumbnail !!}" alt="" />

@@ -1,7 +1,7 @@
 <div class="labtop:overflow-x-hidden header-archive-root2">
   <div class="labtop:overflow-hidden header-archive-root">
     <header class="header-archive">
-      <div class="container xl:max-w-screen-xl mx-auto max:labtop:px-0 @isset($acf['outlink']) max:sm:mb-60px max:labtop:mb-150px @endisset">
+      <div class="container xl:max-w-screen-xl mx-auto max:labtop:px-0 @isset($acf['outlink']) max:sm:mb-[60px] max:labtop:mb-[150px] @endisset">
         <div class="header-archive-imgRow">
           @if (!empty($thumbnail))
               {!! $thumbnail !!}
@@ -10,7 +10,7 @@
           @endif
         </div>
         <div class="header-archive-content max:labtop:px-8 max:labtop:w-full @if(empty($acf['outlink'])) top-1/2 @endif">
-          <div x-data="select({label: '{!! $fixedMenuLabel !!}', selected: {!! $selected !!}})" class="w-full relative mb-30px labtop:hidden flex">
+          <div x-data="select({label: '{!! $fixedMenuLabel !!}', selected: {!! $selected !!}})" class="w-full relative mb-[30px] labtop:hidden flex">
             <div class="depth-1 relative flex-1">
               <button class="flex items-center justify-between w-full px-3 py-3 text-left border focus:outline-none border-r-0"
                 @click="toggle()"
@@ -84,7 +84,7 @@
               @endforeach
             </div>
           </div>
-          <h1 class="header-archive-title text-36px sm:text-70px mb-5px sm:mb-18px">{!! $title !!}</h1>
+          <h1 class="header-archive-title text-[36px] sm:text-[70px] mb-[5px] sm:mb-[18px]">{!! $title !!}</h1>
           <span class="header-archive-description">{!! $excerpt !!}</span>
         </div>
         @isset($acf['outlink'])

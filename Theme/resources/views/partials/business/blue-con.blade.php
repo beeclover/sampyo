@@ -1,7 +1,7 @@
 <main class="page__layout pb-0">
 <div class="container xl:max-w-screen-xl mx-auto">
   <section>
-    <div class="page__level-title mb-30px sm:mb-11">
+    <div class="page__level-title mb-[30px] sm:mb-11">
       삼표의 특수 콘크리트 <span class="text-point">블루콘(BLUECON)</span>
     </div>
     <div class="prose mb-20">
@@ -52,7 +52,7 @@
         <a href="{{ $bluecon['g0']['brochure'] }}" class="inline-flex items-center px-7 py-2.5 border border-gray-600 shadow-sm font-bold bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2" target="_blank">
           브로슈어 다운로드
         </a>
-        <div class="pb-30px sm:pb-20"></div>
+        <div class="pb-[30px] sm:pb-20"></div>
       @endif
       @if ($bluecon['g0']['youtube'])
         <div class="aspect-w-16 aspect-h-9">
@@ -88,7 +88,7 @@
         <a href="{{ $bluecon['g1']['brochure'] }}" class="inline-flex items-center px-7 py-2.5 border border-gray-600 shadow-sm font-bold bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2" target="_blank">
           브로슈어 다운로드
         </a>
-        <div class="pb-30px sm:pb-20"></div>
+        <div class="pb-[30px] sm:pb-20"></div>
       @endif
       @if ($bluecon['g1']['youtube'])
         <div class="aspect-w-16 aspect-h-9">
@@ -124,7 +124,7 @@
         <a href="{{ $bluecon['g2']['brochure'] }}" class="inline-flex items-center px-7 py-2.5 border border-gray-600 shadow-sm font-bold bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2" target="_blank">
           브로슈어 다운로드
         </a>
-        <div class="pb-30px sm:pb-20"></div>
+        <div class="pb-[30px] sm:pb-20"></div>
       @endif
       @if ($bluecon['g2']['youtube'])
         <div class="aspect-w-16 aspect-h-9">
@@ -163,7 +163,7 @@
         <a href="{{ $bluecon['g3']['brochure'] }}" class="inline-flex items-center px-7 py-2.5 border border-gray-600 shadow-sm font-bold bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2" target="_blank">
           브로슈어 다운로드
         </a>
-        <div class="pb-30px sm:pb-20"></div>
+        <div class="pb-[30px] sm:pb-20"></div>
       @endif
       @if ($bluecon['g3']['youtube'])
         <div class="aspect-w-16 aspect-h-9">
@@ -199,7 +199,7 @@
         <a href="{{ $bluecon['g4']['brochure'] }}" class="inline-flex items-center px-7 py-2.5 border border-gray-600 shadow-sm font-bold bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2" target="_blank">
           브로슈어 다운로드
         </a>
-        <div class="pb-30px sm:pb-20"></div>
+        <div class="pb-[30px] sm:pb-20"></div>
       @endif
       @if ($bluecon['g4']['youtube'])
         <div class="aspect-w-16 aspect-h-9">

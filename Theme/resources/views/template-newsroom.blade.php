@@ -10,11 +10,11 @@
     <div class="container mx-auto flex">
       <div class="grid grid-cols-1 sm:grid-cols-2">
         <div>
-          <div class="newsroom__pin_blog-thumbnail max:sm:pt-40px max:sm:pb-30px">
+          <div class="newsroom__pin_blog-thumbnail max:sm:pt-[40px] max:sm:pb-[30px]">
             <img src="{!! $pin_blog->thumbnail !!}" alt="">
           </div>
         </div>
-        <div class="sm:pl-80px sm:pt-80px">
+        <div class="sm:pl-[80px] sm:pt-[80px]">
           <div class="newsroom__pin_blog-content flex flex-col justify-between h-full">
             <div class="card-def-main">
               @if (!empty($pin_blog->category))
@@ -61,7 +61,7 @@
               @continue
             @endif
             <div class="swiper-slide" data-test="{!! $key !!}">
-              <div class="card-col gap-y-30px sm:gap-y-10">
+              <div class="card-col gap-y-[30px] sm:gap-y-10">
                 @if ($post->thumbnail)
                 <div class="card-col-thumbnail">
                   <img src="{!! $post->thumbnail !!}" />
@@ -80,7 +80,7 @@
                     </ul>
                   @endif
                   <div class="card-col-contentWrap">
-                    <a href="{!! $post->permalink !!}" class="card-col-title text-20px sm:text-2xl">{!! $post->post_title !!}</a>
+                    <a href="{!! $post->permalink !!}" class="card-col-title text-[20px] sm:text-2xl">{!! $post->post_title !!}</a>
                     <a href="{!! $post->permalink !!}" class="card-col-content">
                       {!! $post->excerpt !!}
                     </a>
@@ -94,9 +94,9 @@
       <div class="newsroom__blog-footer">
         <div class="grid grid-cols-1 sm:grid-cols-3 w-full">
           <div class="newsroom__blog-link">
-            <a href="/blog" class="text-point block py-4 max:sm:pb-30px">블로그 바로가기</a>
+            <a href="/blog" class="text-point block py-4 max:sm:pb-[30px]">블로그 바로가기</a>
           </div>
-          <ul class="flex flex-wrap gap-x-30px sm:gap-x-12 gap-y-14px sm:gap-y-8 sm:col-span-2 sm:justify-end">
+          <ul class="flex flex-wrap gap-x-[30px] sm:gap-x-12 gap-y-[14px] sm:gap-y-8 sm:col-span-2 sm:justify-end">
             @foreach ($blog_cat as $term)
               <li class="self-center">
                 <a href="{!! $term->link !!}">{!! $term->name !!}</a>
@@ -110,7 +110,7 @@
   <div class="newsroom__section-2 max:sm:pb-0">
     <div class="newsroom__media">
       <div class="container mx-auto max:sm:px-0">
-        <div class="newsroom__media-header max:sm:px-32px">
+        <div class="newsroom__media-header max:sm:px-[32px]">
           <div class="newsroom__media-header-title">미디어</div>
           <div class="newsroom__media-header-arrow @if (count($media_posts) === 1) hidden @endif">
             <a href="javascript:;" class="btn-arrow prev"></a>
@@ -121,7 +121,7 @@
           <div class="swiper-wrapper">
             @foreach ($media_posts as $post)
               <div class="swiper-slide newsroom__media-body grid grid-cols-1 sm:grid-cols-2">
-                <div class="p-30px sm:p-20 newsroom__media-content flex flex-col justify-between">
+                <div class="p-[30px] sm:p-20 newsroom__media-content flex flex-col justify-between">
                   <div class="card-def-main">
                     @if (!empty($post->category))
                       <ul class="card-def-cat">
@@ -148,7 +148,7 @@
                   </div>
                 </div>
                 <div class="newsroom__media-thumbnail-wrap max:sm:aspect-h-9 max:sm:aspect-w-16 max:sm:order-first">
-                  <div class="newsroom__media-thumbnail sm:transform sm:translate-y-100px">
+                  <div class="newsroom__media-thumbnail sm:transform sm:translate-y-[100px]">
                     <img src="{!! $post->thumbnail !!}" alt="">
                   </div>
                 </div>
@@ -156,7 +156,7 @@
             @endforeach
           </div>
         </div>
-        <div class="newsroom__media-row grid grid-cols-1 sm:grid-cols-2 max:sm:px-32px sm:gap-x-140px">
+        <div class="newsroom__media-row grid grid-cols-1 sm:grid-cols-2 max:sm:px-[32px] sm:gap-x-[140px]">
           <div class="@if (empty($media_cat_featured)) sm:col-span-2 @endif">
             <div class="newsroom__media-header">
               <div class="newsroom__media-header-title">보도자료</div>
@@ -167,7 +167,7 @@
                   <ul class="swiper-slide">
                     @php($index = 1)
                     @foreach ($media_cat_release_col as $key => $post)
-                      <li class="mb-30px sm:mb-16 list-none @if ($index < count($media_cat_release_col)) max:sm:border-b max:sm:border-orochimaru max:sm:pb-30px @endif">
+                      <li class="mb-[30px] sm:mb-16 list-none @if ($index < count($media_cat_release_col)) max:sm:border-b max:sm:border-orochimaru max:sm:pb-[30px] @endif">
                         @include('partials.card.__def2', [
                           'thumbnail' => $post->thumbnail,
                           'permalink' => $post->permalink,
@@ -194,7 +194,7 @@
                   <ul class="swiper-slide">
                     @php($index = 1)
                     @foreach ($media_cat_featured_col as $post)
-                    <li class="mb-30px sm:mb-16 list-none @if ($index < count($media_cat_release_col)) max:sm:border-b max:sm:border-orochimaru max:sm:pb-30px @endif">
+                    <li class="mb-[30px] sm:mb-16 list-none @if ($index < count($media_cat_release_col)) max:sm:border-b max:sm:border-orochimaru max:sm:pb-[30px] @endif">
                         @include('partials.card.__def2', [
                           'thumbnail' => $post->thumbnail,
                           'permalink' => $post->permalink,
@@ -215,7 +215,7 @@
       </div>
     </div>
     <div class="newsroom__newsletter">
-      {{-- <div class="container mx-auto mb-30px">
+      {{-- <div class="container mx-auto mb-[30px]">
         <x-Newsletter />
       </div> --}}
       <div class="container mx-auto max:sm:px-0">

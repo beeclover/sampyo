@@ -1,10 +1,10 @@
 <main class="page__layout">
 <div class="container xl:max-w-screen-xl mx-auto">
-  <div class="page__level-title mb-30px sm:mb-11">
+  <div class="page__level-title mb-[30px] sm:mb-11">
     세계 최고 수준의 시멘트 생산/공급 능력을 갖추고, <br class="hidden sm:block" />
     국내 시멘트 산업을 선도하고 있습니다
   </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 mb-30px sm:mb-20">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 mb-[30px] sm:mb-20">
     <div>
       <p>
         대한민국 최초의 시멘트 기업으로 출발한 삼표시멘트는 연간 1,100만톤의 시멘트 생산능력을 보유한 삼척공장(강원도 삼척시 소재)에서 시멘트를 생산하여, 전국 16개 출하기지를 통해 시멘트 및 2차 제품을 판매하고 있습니다.
@@ -20,17 +20,17 @@
     </div>
   </div>
   @include('partials.img', ['ex' => 'jpg', 'name' => 'business-cement-0'])
-  <div class="mb-70px sm:mb-32"></div>
-  <div class="coverbox-full left pb-32 pt-24 mb-60px sm:mb-28">
-    <div class="page__level-title mb-30px sm:mb-11">
+  <div class="mb-[70px] sm:mb-32"></div>
+  <div class="coverbox-full left pb-32 pt-24 mb-[60px] sm:mb-28">
+    <div class="page__level-title mb-[30px] sm:mb-11">
       사회적, 환경적 책임을 존중합니다
     </div>
-    <div class="mb-30px sm:mb-16">
+    <div class="mb-[30px] sm:mb-16">
       <p>
         삼표시멘트는 제품과 서비스를 넘어 지속가능한 미래를 만들기 위하여 기업의 혁신문화를 촉진하고 있으며, 긍정적인 사회적, 환경적 성과를 달성하기 위해 노력을 아끼지 않습니다. 삼표시멘트는 1980년 에너지 파동 시 국내 최초로 소성로의 연료를 벙커C유에서 유연탄으로 대체하였으며, 2004년에는 소성로의 폐열을 이용하여 전기를 생산하는 폐열발전소를 가동하였습니다.
       </p>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 max:sm:gap-y-30px">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 max:sm:gap-y-[30px]">
       <div class="max:sm:justify-self-center">
         @include('partials.img', ['ex' => 'jpg', 'name' => 'business-cement-1'])
       </div>
@@ -44,10 +44,10 @@
       </div>
     </div>
   </div>
-  <div class="page__level-title mb-30px sm:mb-11">
+  <div class="page__level-title mb-[30px] sm:mb-11">
     지속가능한 미래를 위한 기술 개발
   </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 mb-30px sm:mb-20">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 mb-[30px] sm:mb-20">
     <div>
       <p>
         삼표시멘트 기술연구소는 시멘트 공정개선 및 생산기술 개발, 특수시멘트와 특수콘크리트 등의 차세대 건설재료 개발, 각종 고기능·고성능 신소재의 개발에 이르기까지 종합적인 연구개발 활동을 추진하여 시멘트 산업의 기술을 선도하였고, 향후 국내 건자재 분야의 선진화를 위해 신기술의 실용화에 박차를 가하고 있습니다.
@@ -60,7 +60,7 @@
     </div>
   </div>
   @include('partials.img', ['ex' => 'jpg', 'name' => 'tip-249-t-014163-1'])
-  <div class="pb-30px sm:pb-20"></div>
+  <div class="pb-[30px] sm:pb-20"></div>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12">
     <div>
       <p>

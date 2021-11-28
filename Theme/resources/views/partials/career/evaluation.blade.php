@@ -1,6 +1,6 @@
 <main class="career__page page__layout">
 <div class="container xl:max-w-screen-xl mx-auto">
-  <div class="page__level-title mb-30px sm:mb-8">
+  <div class="page__level-title mb-[30px] sm:mb-8">
     평가 및 보상
   </div>
   <div class="flex -mx-6">
@@ -15,14 +15,14 @@
       </p>
     </div>
   </div>
-  <div class="pb-30px sm:pb-20"></div>
+  <div class="pb-[30px] sm:pb-20"></div>
   <div class="font-black underline power text-2xl mb-5">
     성과관리 프로세스
   </div>
   <div class="mb-16"></div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10px">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[10px]">
     <div>
-      <div class="card__house bg-mistyLawn right mb-10px sm:mb-10" style="--triangle: 28px">
+      <div class="card__house bg-mistyLawn right mb-[10px] sm:mb-10" style="--triangle: 28px">
         <div class="card__house-inner h-24 flex flex-col items-center justify-center p-8">
           <div class="text-xl font-normal">
             목표수립
@@ -36,7 +36,7 @@
       </div>
     </div>
     <div>
-      <div class="card__house bg-hospitalGreen right text-white mb-10px sm:mb-10" style="--triangle: 28px">
+      <div class="card__house bg-hospitalGreen right text-white mb-[10px] sm:mb-10" style="--triangle: 28px">
         <div class="card__house-inner h-24 flex flex-col items-center justify-center p-8">
           <div class="text-xl font-bold">
             중간점검/코칭
@@ -50,7 +50,7 @@
       </div>
     </div>
     <div>
-      <div class="card__house bg-bermudagrass right text-white mb-10px sm:mb-10" style="--triangle: 28px">
+      <div class="card__house bg-bermudagrass right text-white mb-[10px] sm:mb-10" style="--triangle: 28px">
         <div class="card__house-inner h-24 flex flex-col items-center justify-center p-8">
           <div class="text-xl font-bold">
             평가
@@ -62,7 +62,7 @@
       </div>
     </div>
     <div>
-      <div class="flex flex-col items-center justify-center p-8 bg-bermudagrass h-24 text-white mb-10px sm:mb-10">
+      <div class="flex flex-col items-center justify-center p-8 bg-bermudagrass h-24 text-white mb-[10px] sm:mb-10">
         <div class="text-xl font-bold">
           Feedback
         </div>
@@ -72,11 +72,11 @@
       </div>
     </div>
   </div>
-  <div class="pb-70px sm:pb-24"></div>
+  <div class="pb-[70px] sm:pb-24"></div>
   <div class="font-black underline power text-2xl mb-16">
     평가 및 보상 체계
   </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 mb-30px sm:mb-14">
+  <div class="grid grid-cols-1 sm:grid-cols-2 mb-[30px] sm:mb-14">
     <div class="relative sm:justify-self-end">
       @include('partials.img', ['ex' => 'png', 'name' => 'career-evaluation-0'])
       <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white prose text-center w-full px-4">
@@ -145,6 +145,6 @@
       </div>
     </div>
   </div>
-  <div class="pb-70px sm:pb-24"></div>
+  <div class="pb-[70px] sm:pb-24"></div>
 </div>
 </main>

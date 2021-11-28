@@ -8,7 +8,7 @@
   </time>
 DATE;
 @endphp
-<li class="post-item my-40px sm:my-50px pb-40px sm:pb-50px">
+<li class="post-item my-[40px] sm:my-[50px] pb-[40px] sm:pb-[50px]">
   @include('partials.card.__def', [
     'thumbnail' => $thumbnail,
     'permalink' => $permalink,

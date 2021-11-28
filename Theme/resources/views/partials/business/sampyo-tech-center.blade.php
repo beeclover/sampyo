@@ -1,10 +1,10 @@
 <main class="page__layout">
 <div class="container xl:max-w-screen-xl mx-auto">
-  <section class="mb-70px sm:mb-32">
-    <div class="page__level-title mb-30px sm:mb-11">
+  <section class="mb-[70px] sm:mb-32">
+    <div class="page__level-title mb-[30px] sm:mb-11">
       삼표기술연구소는 업계 최초의 건설기초자재 전문 기술연구소입니다
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px sm:gap-y-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px] sm:gap-y-16">
       <div class="prose">
         <p>
           연구개발 전문부서로 시작해 2004년 경기도 광주에 독립건물로 자리를 옮겼으며, 2017년 4월 별동을 신축하여 총 2개 연구동을 운영하고 있습니다. 수십여명의 각 분야 석박사급의 우수한 전문연구원들이 4차 산업혁명 시대 트렌드에 맞춘 건설기초자재 및 친환경적인 기술개발에 앞장서고 있습니다. 
@@ -31,8 +31,8 @@
       </div>
     </div>
   </section>
-  <section class="mb-70px sm:mb-32">
-    <div class="page__level-title mb-30px sm:mb-11">
+  <section class="mb-[70px] sm:mb-32">
+    <div class="page__level-title mb-[30px] sm:mb-11">
       주요 연구성과
     </div>
     <div class="prose">
@@ -44,12 +44,12 @@
       </ul>
     </div>
   </section>
-  <section class="mb-70px sm:mb-32">
-    <div class="coverbox-full-fixedHeight left max:sm:py-30px sm:pt-24 mb-20" style="--h: 658px">
-      <div class="page__level-title mb-30px sm:mb-11">
+  <section class="mb-[70px] sm:mb-32">
+    <div class="coverbox-full-fixedHeight left max:sm:py-[30px] sm:pt-24 mb-20" style="--h: 658px">
+      <div class="page__level-title mb-[30px] sm:mb-11">
         연구분야
       </div>
-      <h3 class="text-2xl font-black mb-30px sm:mb-12">
+      <h3 class="text-2xl font-black mb-[30px] sm:mb-12">
         <span class="underline power">
           콘크리트 분야
         </span>
@@ -71,8 +71,8 @@
         </div>
       </div>
     </div>
-    <div class="mb-30px sm:mb-20">
-      <div class="text-2xl mb-30px sm:mb-12">
+    <div class="mb-[30px] sm:mb-20">
+      <div class="text-2xl mb-[30px] sm:mb-12">
         <span class="pointUnderLine">
           블루콘 시리즈
         </span>
@@ -87,7 +87,7 @@
         </div>
       </div>
     </div>
-    <div class="mb-30px sm:mb-20">
+    <div class="mb-[30px] sm:mb-20">
       <div class="text-2xl mb-8">
         <span class="pointUnderLine">
           UHPC(Ultra High Performance Concrete)
@@ -100,8 +100,8 @@
         </p>
       </div>
     </div>
-    <div class="mb-60px sm:mb-28">
-      <div class="text-20px mb-8 font-bold">
+    <div class="mb-[60px] sm:mb-28">
+      <div class="text-[20px] mb-8 font-bold">
         특히, 삼표는 이 분야에서 특허를 다수 보유하고 있습니다.
       </div>
       <div class="prose">
@@ -112,13 +112,13 @@
         </ul>
       </div>
     </div>
-    <div class="mb-60px sm:mb-28">
-      <h3 class="text-2xl font-black mb-30px sm:mb-12">
+    <div class="mb-[60px] sm:mb-28">
+      <h3 class="text-2xl font-black mb-[30px] sm:mb-12">
         <span class="underline power">
           분체 분야
         </span>
       </h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px sm:gap-y-16">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px] sm:gap-y-16">
         <div class="prose">
           <p>
             분체 연구조직은 시멘트, 고로슬래그 미분말 및 플라이애시와 같은 콘크리트용 결합재 관련 제품을 개발하고, 지속적인 성능향상을 위한 업무를 수행하고 있습니다.<br/>
@@ -154,13 +154,13 @@
         </div>
       </div>
     </div>
-    <div class="mb-60px sm:mb-28">
+    <div class="mb-[60px] sm:mb-28">
       <h3 class="text-2xl font-black underline power mb-12">
         <span class="underline power">
           몰탈 분야
         </span>
       </h3>
-      <div class="mb-30px sm:mb-16">
+      <div class="mb-[30px] sm:mb-16">
         <div class="prose">
           <p>
             몰탈에 대한 기초적인 연구부터 일반적으로 사용되는 제품(미장, 조적)과 기능성 제품(타일용, 그라우트, 보수재)개발 및 고객 니즈를 반영한 제품을 개발하기 위해 노력하고 있습니다. 

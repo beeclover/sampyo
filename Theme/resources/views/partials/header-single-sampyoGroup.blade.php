@@ -10,11 +10,11 @@
           @endif
         </div>
         <div class="header-archive-content max:labtop:px-8 max:labtop:w-full">
-          <div x-data="select({label: '{!! $title !!}'})" class="w-full relative mb-30px labtop:hidden flex">
+          <div x-data="select({label: '{!! $title !!}'})" class="w-full relative mb-[30px] labtop:hidden flex">
             <button class="flex items-center justify-between w-full px-3 py-3 text-left border focus:outline-none"
               @click="toggle()"
               @click.away="close()">
-              <span x-text="label" class="text-16px"></span>
+              <span x-text="label" class="text-[16px]"></span>
               <svg width="11.107" height="11.107">
                 <path d="M0 .067 7.345 0l-.068 7.345" transform="rotate(135 4.297 4.826)" style="fill:none;stroke:#fff"/>
               </svg>
@@ -34,7 +34,7 @@
               @endforeach
             </ul>
           </div>
-          <h1 class="header-archive-title text-36px sm:text-70px mb-5px sm:mb-18px">{!! $title !!}</h1>
+          <h1 class="header-archive-title text-[36px] sm:text-[70px] mb-[5px] sm:mb-[18px]">{!! $title !!}</h1>
           <span class="header-archive-description">{!! $excerpt !!}</span>
         </div>
       </div>

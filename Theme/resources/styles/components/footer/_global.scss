@@ -64,7 +64,7 @@
 
     visibility: hidden;
 
-    @media (min-width: theme('screens.2xl')) {
+    @media (min-width: theme('screens.xxl')) {
       /* stylelint-disable */
       transform: translateX(
         calc(

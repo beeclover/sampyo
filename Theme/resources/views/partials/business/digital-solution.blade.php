@@ -1,11 +1,11 @@
 <main class="page__layout">
 <div class="container xl:max-w-screen-xl mx-auto">
-  <section class="mb-70px sm:mb-32">
-    <div class="page__level-title mb-30px sm:mb-11">
+  <section class="mb-[70px] sm:mb-32">
+    <div class="page__level-title mb-[30px] sm:mb-11">
       디지털 신기술을 통한 Operation Excellence 확보로<br class="hidden sm:block" />
       그룹의 사업 경쟁우위 지속
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px mb-40px sm:mb-24">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px] mb-[40px] sm:mb-24">
       <div class="prose">
         <p>
           디지털 솔루션 부문은 수직계열화를 통한 비즈니스 운영 및 공장 자동화 노하우를 바탕으로 국내 건설기초소재 산업의 디지털 혁신을 이끌고 있습니다. 
@@ -23,7 +23,7 @@
         </p>
       </div>
     </div>
-    <div class="prose mb-30px sm:mb-14">
+    <div class="prose mb-[30px] sm:mb-14">
       <div class="text-2xl mb-8">
         <span class="pointUnderLine ">
           Smart Factory
@@ -33,7 +33,7 @@
         제조현장의 데이터 수집/활용, 설비 제어, 자동화 시스템 설계/구축, 공장 전기 시스템 설계/제어 등 통합 자동화 솔루션을 제공하며 업계 최초 무인 출하 자동화 및 권역별 통합 출하실 구축/운영 등 제조 전체 프로세스 혁신에 앞장서고 있습니다.
       </p>
     </div>
-    <div class="prose mb-30px sm:mb-14">
+    <div class="prose mb-[30px] sm:mb-14">
       <div class="text-2xl mb-8">
         <span class="pointUnderLine">
           Smart Business
@@ -43,7 +43,7 @@
         제품의 생산부터 고객에게 전달되기까지의 가치사슬 전반에 걸처 디지털 역량을 투입하여 업무 프로세스 최적화를 지원하고 고객 만족 및 임직원의 업무 생산성을 향상시킵니다.
       </p>
     </div>
-    <div class="prose mb-30px sm:mb-14">
+    <div class="prose mb-[30px] sm:mb-14">
       <div class="text-2xl mb-8">
         <span class="pointUnderLine">
           Smart Workplace
@@ -54,11 +54,11 @@
       </p>
     </div>
   </section>
-  <section class="mb-60px sm:mb-28">
-    <div class="page__level-title mb-30px sm:mb-11">
+  <section class="mb-[60px] sm:mb-28">
+    <div class="page__level-title mb-[30px] sm:mb-11">
       사업 및 제품 상세소개
     </div>
-    <div class="prose mb-30px sm:mb-70px">
+    <div class="prose mb-[30px] sm:mb-[70px]">
       <h3 class="text-2xl font-black underline power mb-8">
         무인 입출 시스템
       </h3>
@@ -87,9 +87,9 @@
       </div>
     </div>
   </section>
-  <section class="mb-60px sm:mb-28">
-    <div class="coverbox-full-fixedHeight left max:sm:py-30px sm:pt-28 mb-30px sm:mb-14" style="--h: 740px">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-30px">
+  <section class="mb-[60px] sm:mb-28">
+    <div class="coverbox-full-fixedHeight left max:sm:py-[30px] sm:pt-28 mb-[30px] sm:mb-14" style="--h: 740px">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-[30px]">
         <div>
           <div class="mb-16">
             <h3 class="text-2xl font-black underline power mb-8">레미콘 통합 출하 센터</h3>
@@ -115,7 +115,7 @@
         @include('partials.img', ['ex' => 'png', 'name' => 'business-'. get_post()->post_name .'-3'])
       </div>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px mb-60px sm:mb-28">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px] mb-[60px] sm:mb-28">
       <div class="coverbox-label">
         @include('partials.img', ['ex' => 'jpg', 'name' => 'business-'. get_post()->post_name .'-4'])
         <span class="label text-white">
@@ -130,12 +130,12 @@
     </div>
     <div>
       <h3 class="text-2xl font-black underline power mb-8">프리케스트 콘트리트 재고 이력관리 시스템</h3>
-      <div class="prose mb-30px sm:mb-70px">
+      <div class="prose mb-[30px] sm:mb-[70px]">
         <p>
           프리캐스트 콘크리트 부재 생산 과정에서 제품에 QR코드를 마킹한 뒤 부재가 있는 위치 정보를 저장하여 넓은 야적장에서 정확하게 부재의 위치를 파악할 수 있습니다. 이를 통해 다양한 규격으로 생산된 프리케스트 부재의 재고 관리를 용이하게 할 수 있으며 해당 부재의 이력, 검사 결과와 같은 정보를 작업자가 함께 확인할 수 있어 업무 효율을 극대화 할 수 있는 시스템입니다.
         </p>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-30px mb-30px sm:mb-50px">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-[30px] mb-[30px] sm:mb-[50px]">
         <div class="coverbox-label">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'business-'. get_post()->post_name .'-6'])
           <span class="label text-white">
@@ -148,7 +148,7 @@
           </span>
         </div>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-30px">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-[30px]">
         <div class="coverbox-label">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'business-'. get_post()->post_name .'-8'])
           <span class="label text-white">

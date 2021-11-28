@@ -10,7 +10,7 @@
           @endif
         </div>
         <div class="header-archive-content max:labtop:px-8 max:labtop:w-full">
-          <h1 class="header-archive-title text-36px sm:text-70px @if ($excerpt == '') sm:mb-0 leading-tight @else mb-5px sm:mb-18px @endif">{!! $title !!}</h1>
+          <h1 class="header-archive-title text-[36px] sm:text-[70px] @if ($excerpt == '') sm:mb-0 leading-tight @else mb-[5px] sm:mb-[18px] @endif">{!! $title !!}</h1>
           <span class="header-archive-description">{!! $excerpt !!}</span>
         </div>
       </div>

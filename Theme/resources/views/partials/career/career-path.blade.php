@@ -7,13 +7,13 @@
     삼표는 우수한 인재를 육성하기 위한 직급체계를 통해 경력 개발의 기회를 제공합니다.
   </p>
   <div class="mb-14"></div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px]">
     <div>
       <div class="h-44 flex items-center justify-center border-t-2 border-b-2 py-5 mb-10 border-blackout">
         <span class="font-bold text-2xl">사무직</span>
       </div>
       <ul>
-        <li class="mb-10px">
+        <li class="mb-[10px]">
           <div class="card__house bg-bermudagrass bottom text-white" style="--triangle: 33px">
             <div class="card__house-inner flex flex-col items-center justify-items-center p-8 pb-4">
               <div class="text-xl font-bold">
@@ -22,7 +22,7 @@
             </div>
           </div>
         </li>
-        <li class="mb-10px">
+        <li class="mb-[10px]">
           <div class="card__house bg-hospitalGreen bottom text-white" style="--triangle: 33px">
             <div class="card__house-inner flex flex-col items-center justify-items-center p-8 pb-4">
               <div class="text-xl font-bold">
@@ -31,7 +31,7 @@
             </div>
           </div>
         </li>
-        <li class="mb-10px">
+        <li class="mb-[10px]">
           <div class="card__house bg-hospitalGreen bottom text-white" style="--triangle: 33px">
             <div class="card__house-inner flex flex-col items-center justify-items-center p-8 pb-4">
               <div class="text-xl font-bold">
@@ -40,7 +40,7 @@
             </div>
           </div>
         </li>
-        <li class="mb-10px">
+        <li class="mb-[10px]">
           <div class="card__house bg-mistyLawn bottom mb-2.5" style="--triangle: 33px">
             <div class="card__house-inner flex flex-col items-center justify-items-center p-8 pb-4">
               <div class="text-xl font-normal">
@@ -49,7 +49,7 @@
             </div>
           </div>
         </li>
-        <li class="mb-10px">
+        <li class="mb-[10px]">
           <div class="flex flex-col items-center justify-center p-8 bg-mistyLawn h-20">
             <div class="text-xl font-normal">
               사원
@@ -63,7 +63,7 @@
         <span class="font-bold text-2xl">생산직</span>
       </div>
       <ul>
-        <li class="mb-10px">
+        <li class="mb-[10px]">
           <div class="card__house bg-bermudagrass bottom text-white" style="--triangle: 33px">
             <div class="card__house-inner flex flex-col items-center justify-items-center p-8 pb-4">
               <div class="text-xl font-bold">
@@ -72,7 +72,7 @@
             </div>
           </div>
         </li>
-        <li class="mb-10px">
+        <li class="mb-[10px]">
           <div class="card__house bg-hospitalGreen bottom text-white" style="--triangle: 33px">
             <div class="card__house-inner flex flex-col items-center justify-items-center p-8 pb-4">
               <div class="text-xl font-bold">
@@ -81,7 +81,7 @@
             </div>
           </div>
         </li>
-        <li class="mb-10px">
+        <li class="mb-[10px]">
           <div class="card__house bg-mistyLawn bottom mb-2.5" style="--triangle: 33px">
             <div class="card__house-inner flex flex-col items-center justify-items-center p-8 pb-4">
               <div class="text-xl font-normal">
@@ -90,7 +90,7 @@
             </div>
           </div>
         </li>
-        <li class="mb-10px">
+        <li class="mb-[10px]">
           <div class="flex flex-col items-center justify-center p-8 bg-mistyLawn h-20">
             <div class="text-xl font-normal">
               사원

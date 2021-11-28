@@ -1,7 +1,7 @@
 <main class="sampyoGroup__page page__layout">
 <div class="container xl:max-w-screen-xl mx-auto">
   <section>
-    <div class="page__level-title mb-30px sm:mb-16 pb-1.5">
+    <div class="page__level-title mb-[30px] sm:mb-16 pb-1.5">
       삼표그룹, 지속가능한 미래의 기초가 됩니다
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 mb-16 pb-1.5 gap-x-12">
@@ -20,14 +20,14 @@
       </div>
     </div>
     @include('partials.img', ['ex' => 'png', 'name' => '5515'])
-    <div class="mb-70px sm:mb-32"></div>
+    <div class="mb-[70px] sm:mb-32"></div>
   </section>
   <section>
-    <div class="page__level-title mb-30px sm:mb-16 pb-1.5">
+    <div class="page__level-title mb-[30px] sm:mb-16 pb-1.5">
       사람 ∙ 사회 ∙ 세상을 위해 새로운 기초를 창조하고<br class="hidden sm:block" />
       지속가능한 사회에 공헌하는 선도 기업
     </div>
-    @include('partials.img', ['ex' => 'jpg', 'name' => 'sampyo-purpose-0', 'class' => 'mb-60px sm:mb-28'])
+    @include('partials.img', ['ex' => 'jpg', 'name' => 'sampyo-purpose-0', 'class' => 'mb-[60px] sm:mb-28'])
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-16 gap-x-16">
       <div class="card__s1 max-w-none">
         <div class="card__s1-thumbnail_">
@@ -74,7 +74,7 @@
         </div>
       </div>
     </div>
-    <div class="mb-70px sm:mb-32"></div>
+    <div class="mb-[70px] sm:mb-32"></div>
   </section>
 </div>
 </main>

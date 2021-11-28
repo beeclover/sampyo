@@ -4,67 +4,46 @@ const colorReset = {
   color: null,
 };
 
-function px(min, max) {
-  let result = {};
-  for (let i = min; i < max + 1; i++) {
-    const key = i < 0 ? `-${i}px` : `${i}px`;
-    result[key] = `${i}px`;
-  }
-  return result;
-}
-
 const colors = {
-  mistyLawn: 'var(--misty-lawn, #DEF7E0)',
-  hospitalGreen: 'var(--hospital-green, #9AE3A1)',
-  bermudagrass: 'var(--bermudagrass, #64CC6E)',
-  lighthouse: 'var(--lighthouse, #F4F4F4)',
-  artificialTurf: 'var(--artificial-turf, #47B951)',
-  atmosphere: 'var(--atmosphere, #009ddf)',
-  winterWizard: 'var(--winter-wizard, #9de2ff)',
-  glitterLake: 'var(--glitter-lake, #4AC1F2)',
-  blackout: 'var(--black-out, #222222)',
-  snowflake: 'var(--snowflake, #f0f0f0)',
-  dugong: 'var(--dugong, #707070)',
-  orochimaru: 'var(--orochimaru, #d9d9d9)',
-  superSilver: 'var(--super-silver, #eeeeee)',
-  point: 'var(--atmosphere, #009ddf)',
-  funnelCloud: 'var(--funnel-cloud, #113a66)',
-  squant: `var(--squant)`,
-  kiwiSqueeze: `var(--kiwi-squeeze, #d3eccc)`,
-  gardenDawn: `var(--garden-dawn, #eff7ed)`,
+  mistyLawn: `#DEF7E0`,
+  hospitalGreen: `#9AE3A1`,
+  bermudagrass: `#64CC6E`,
+  lighthouse: `#F4F4F4`,
+  artificialTurf: `#47B951`,
+  atmosphere: `#009ddf`,
+  winterWizard: `#9de2ff`,
+  glitterLake: `#4AC1F2`,
+  blackout: `#222222`,
+  snowflake: `#f0f0f0`,
+  dugong: `#707070`,
+  orochimaru: `#d9d9d9`,
+  superSilver: `#eeeeee`,
+  point: `#009ddf`,
+  funnelCloud: `#113a66`,
+  squant: `#666666`,
+  kiwiSqueeze: `#d3eccc`,
+  gardenDawn: `#eff7ed`,
 };
 
 module.exports = {
+  mode: 'jit',
   purge: {
     content: ['./app/**/*.php', './resources/**/*.{php,vue,js}'],
   },
   theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      labtop: '1440px',
+      xxl: '1536px',
+    },
     extend: {
-      screens: {
-        xxl: '1536px',
-        labtop: '1440px',
-        'max:labtop': { max: '1439px' },
-        'max:xxl': { max: '1535px' },
-        'max:xl': { max: '1279px' },
-        'max:lg': { max: '1023px' },
-        'max:md': { max: '767px' },
-        'max:sm': { max: '639px' },
-      },
-      // pixel token
-      height: px(0, 300),
-      width: px(0, 1000),
-      margin: px(0, 300),
-      fontSize: px(0, 120),
       padding: {
         'container-x': 'var(--container-px)',
         'container-y': 'var(--container-py)',
-        ...px(0, 300),
       },
-      gap: px(0, 300),
-      maxWidth: px(0, 1000),
-      maxHeight: px(0, 1000),
-      translate: px(0, 300),
-      minWidth: px(0, 1000),
       inset: {
         'container-x': 'var(--container-px)',
         '-container-x': 'calc(var(--container-px) * -1)',
@@ -81,7 +60,7 @@ module.exports = {
           sm: '2rem',
           lg: '4rem',
           xl: '5rem',
-          '2xl': '7.1875rem',
+          xxl: '7.1875rem',
         },
       },
       colors,
@@ -114,7 +93,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['"Noto Sans KR"', ...defaultTheme.fontFamily.sans],
       },
       gridTemplateColumns: {
         'l1-h-left': '300px minmax(0, 1fr)',

@@ -1,7 +1,7 @@
 <main class="page__layout">
 <div class="container xl:max-w-screen-xl mx-auto">
-  <section class="mb-70px sm:mb-32">
-    <div class="page__level-title mb-30px sm:mb-11">
+  <section class="mb-[70px] sm:mb-32">
+    <div class="page__level-title mb-[30px] sm:mb-11">
       환경을 품다. 미래를 담다.<br class="hidden sm:block" />
       자원부족 해결과 환경보전을 위하여 환경자원 사업을 확대합니다
     </div>
@@ -11,17 +11,17 @@
       </p>
     </div>
   </section>
-  <section class="mb-70px sm:mb-32">
-    <div class="page__level-title mb-30px sm:mb-11">
+  <section class="mb-[70px] sm:mb-32">
+    <div class="page__level-title mb-[30px] sm:mb-11">
       철스크랩 사업
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px sm:gap-y-40px">
-      <div class="prose max:sm:order-1 sm:mb-30px">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px] sm:gap-y-[40px]">
+      <div class="prose max:sm:order-1 sm:mb-[30px]">
         <p>
           삼표는 철강산업의 중요 원료인 철스크랩을 수집·가공·판매하면서 철스크랩을 안정적으로 제강사에 공급함으로써 철강산업 발전에 기여하고 있으며 자원 순환을 통한 환경보전에 앞장서고 있습니다.
         </p>
       </div>
-      <div class="prose max:sm:order-2 sm:mb-30px">
+      <div class="prose max:sm:order-2 sm:mb-[30px]">
         <p>
           국내 최대 규모의 슈레더(Shredder)로 폐자동차를 철과 비철금속으로 선별하고, 길로틴(Guillotine) 설비 3기 및 압축기 1기를 활용하여 노폐 스크랩을 가공하는 등 기계화 공정을 통한 대량 일괄 생산체계를 구축하여 연간 70만톤 이상의 철스크랩을 제강사에 원료로 공급합니다.
         </p>
@@ -62,12 +62,12 @@
       </div>
     </div>
   </section>
-  <section class="mb-70px sm:mb-32">
-    <div class="coverbox-full-fixedHeight left max:sm:py-30px sm:pt-24" style="--h: 460px">
+  <section class="mb-[70px] sm:mb-32">
+    <div class="coverbox-full-fixedHeight left max:sm:py-[30px] sm:pt-24" style="--h: 460px">
       <div class="page__level-title mb-10">
         경제가치와 지속가능성
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px sm:gap-y-70px">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px] sm:gap-y-[70px]">
         <div class="prose">
           <p>
             철스크랩은 철강산업의 중요 원료로써 전기로 투입원의 95% 이상을 차지하며 철강재 제조원가의 약 50% 이상을 차지하고 있어 안정적인 공급이 중요합니다.
@@ -87,11 +87,11 @@
       </div>
     </div>
   </section>
-  <section class="mb-70px sm:mb-32">
-    <div class="page__level-title mb-30px sm:mb-11">
+  <section class="mb-[70px] sm:mb-32">
+    <div class="page__level-title mb-[30px] sm:mb-11">
       철강부산물 사업
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px sm:gap-y-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px] sm:gap-y-12">
       <div class="prose">
         <p>
           제강사 및 제철소 공정 중 발생하는 부산물(지금, 밀스케일, 슬래그, 슬러지, 분진 등)을 파쇄·선별·가공하여 철강산업 및 시멘트산업의 원부재료와 건설공사 기초재료로 재활용하는 사업입니다. 
@@ -134,13 +134,13 @@
       </div>
     </div>
   </section>
-  <section class="mb-70px sm:mb-32">
-    <div class="page__level-title mb-30px sm:mb-11">
+  <section class="mb-[70px] sm:mb-32">
+    <div class="page__level-title mb-[30px] sm:mb-11">
       소각 사업
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px sm:gap-y-12 mb-30px sm:mb-70px">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px] sm:gap-y-12 mb-[30px] sm:mb-[70px]">
       <div>
-        <div class="coverbox-label sm:h-500px">
+        <div class="coverbox-label sm:h-[500px]">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'business-recycling-8', 'class' => 'object-cover h-full'])
           <span class="label text-white nonFixed">
             소각설비
@@ -162,11 +162,11 @@
       </div>
     </div>
   </section>
-  <section class="mb-70px sm:mb-32">
-    <div class="page__level-title mb-30px sm:mb-11">
+  <section class="mb-[70px] sm:mb-32">
+    <div class="page__level-title mb-[30px] sm:mb-11">
       건조 사업
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px mb-30px sm:mb-70px">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px] mb-[30px] sm:mb-[70px]">
       <div class="prose">
         <p>
           소각 처리과정에서 발생하는 소각열을 이용해 각종 슬러지류를 건조해 폐기물의 양을 최소화합니다. 이를 통해 폐기물 처리비용을 절감하고 환경보전에 기여하고 있습니다.
@@ -187,12 +187,12 @@
       </div>
     </div>
   </section>
-  <section class="mb-70px sm:mb-32">
-    <div class="coverbox-full-fixedHeight right max:sm:py-30px sm:pt-24" style="--h: 750px">
+  <section class="mb-[70px] sm:mb-32">
+    <div class="coverbox-full-fixedHeight right max:sm:py-[30px] sm:pt-24" style="--h: 750px">
       <div class="page__level-title mb-10">
         항만하역사업
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px sm:gap-y-70px mb-30px sm:mb-80px">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px] sm:gap-y-[70px] mb-[30px] sm:mb-[80px]">
         <div class="prose">
           <p>
             당사는 수출입 산업을 지원하는 물류의 최첨병으로 항만하역장비의 대형화와 기계화의 선두주자이며, 첨단장비와 숙련된 기술 축적으로 전문 항만하역업체로서의 독보적인 위치를 차지하고 있습니다.
@@ -204,8 +204,8 @@
           </p>
         </div>
       </div>
-      <div class="mb-50px">
-        <div class="text-20px sm:text-2xl mb-20px font-bold">
+      <div class="mb-[50px]">
+        <div class="text-[20px] sm:text-2xl mb-[20px] font-bold">
           주요 취급 화물
         </div>
         <div class="prose">

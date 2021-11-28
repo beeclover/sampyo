@@ -12,6 +12,7 @@ import SwiperCore, {
   Autoplay,
   Controller,
 } from 'swiper/core';
+import 'swiper/css/bundle';
 SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay, Controller]);
 gsap.registerPlugin(ScrollTrigger);
 

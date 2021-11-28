@@ -28,10 +28,10 @@
     </header>
   
     <div class="entry-content prose font-normal">
-      <div class="mx-auto max-w-820px">
+      <div class="mx-auto max-w-[820px]">
         @php(the_content())
         @isset($tags)
-          <div class="tags text-point mt-50px">
+          <div class="tags text-point mt-[50px]">
             @php($index = 1)
             @foreach ($tags as $tag)
               {!! $tag->name !!}@if (count($tags) > $index)<span>,</span> @endif

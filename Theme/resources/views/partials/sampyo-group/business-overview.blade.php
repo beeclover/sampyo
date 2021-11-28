@@ -2,7 +2,7 @@
 <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
 <main class="sampyoGroup__page page__layout">
 <div class="container xl:max-w-screen-xl mx-auto">
-  <div class="page__level-title mb-30px sm:mb-16 pb-1.5">
+  <div class="page__level-title mb-[30px] sm:mb-16 pb-1.5">
     삼표는 삶을 영위하는 공간 창조에 필요한 <br class="hidden sm:block" />
     기본적인 재료를 공급합니다
   </div>
@@ -29,7 +29,7 @@
     </div>
   </div>
   <div class="mb-11 sm:mb-36 border-t border-dugong"></div>
-  <h2 class="text-point text-lg sm:text-2xl text-center mb-30px sm:mb-20">
+  <h2 class="text-point text-lg sm:text-2xl text-center mb-[30px] sm:mb-20">
     자원의 순환을 통해 새로운 가치를 계속 창출함으로써 지속 가능한 세상의 실현을 앞당깁니다
   </h2>
   <img

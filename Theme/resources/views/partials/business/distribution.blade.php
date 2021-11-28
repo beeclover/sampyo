@@ -1,11 +1,11 @@
 <main class="page__layout">
 <div class="container xl:max-w-screen-xl mx-auto">
-  <section class="mb-70px sm:mb-32">
-    <div class="page__level-title mb-30px sm:mb-16 pb-1.5">
+  <section class="mb-[70px] sm:mb-32">
+    <div class="page__level-title mb-[30px] sm:mb-16 pb-1.5">
       선진화된 물류시스템으로 신속하고 정확한 <br class="hidden sm:block" />
       물류서비스를 제공합니다
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-50px gap-y-70px">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-[50px] gap-y-[70px]">
       <div class="prose">
         <p>
           삼표는 최고의 건설복합물류서비스 전문기업으로 1966년 창업 이래 끊임없는 개발과 혁신으로 전국에 물류 네트워크를 구축했습니다. 선진화된 물류시스템을 기반으로 전 운송과정을 체계적으로 관리합니다.
@@ -28,20 +28,20 @@
       </div>
     </div>
   </section>
-  <section class="mb-130px">
-    <div class="coverbox-full left pt-30px sm:py-28">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-50px max:sm:mb-30px">
+  <section class="mb-[130px]">
+    <div class="coverbox-full left pt-[30px] sm:py-28">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-[50px] max:sm:mb-[30px]">
         <div>
           <div class="page__level-title mb-7">
             고객 맞춤형 물류인프라
           </div>
-          <div class="prose mb-30px sm:mb-80px">
+          <div class="prose mb-[30px] sm:mb-[80px]">
             <p>
               수도권을 중심으로 전국에 걸친 거점 시설을 확보하고, 다양하고 안정적인 차량확보로 고객이 원하는 최적의 서비스를 제공하고 있습니다.
             </p>
           </div>
           <div class="mb-7">
-            <div class="font-bold mb-3 text-20px">
+            <div class="font-bold mb-3 text-[20px]">
               <span class="pointUnderLine">
                 물류 거점 및 위치도
               </span>
@@ -53,19 +53,19 @@
             </div>
           </div>
           <div>
-            <ul class="mb-24px">
+            <ul class="mb-[24px]">
               <li class="li__single-s1">육송거점 : 26개소 (양주, 화성, 천안 등)</li>
               <li class="li__single-s1 atmosphere">해송거점 : 13개소 (삼척, 부산, 제주 등)</li>
               <li class="li__single-s1 bermudagrass">철송거점 : 3개소 (부곡, 대전, 도안)</li>
             </ul>
-            <div class="flex gap-x-20px w-full">
-              <div class="flex gap-x-5px items-center">
+            <div class="flex gap-x-[20px] w-full">
+              <div class="flex gap-x-[5px] items-center">
                 @include('partials.img', ['ex' => 'png', 'name' => 'business-distribution-3'])
                 <span>
                   골재석산
                 </span>
               </div>
-              <div class="flex gap-x-5px items-center">
+              <div class="flex gap-x-[5px] items-center">
                 @include('partials.img', ['ex' => 'png', 'name' => 'business-distribution-4'])
                 <span>
                   발파석
@@ -74,17 +74,17 @@
             </div>
           </div>
         </div>
-        <div class="relative max:sm:transform max:sm:translate-y-100px">
+        <div class="relative max:sm:transform max:sm:translate-y-[100px]">
           @include('partials.img', ['ex' => 'png', 'name' => 'business-distribution-2', 'class' => 'sm:absolute w-full'])
         </div>
       </div>
     </div>
   </section>
-  <section class="mb-70px sm:mb-32">
-    <div class="page__level-title mb-30px sm:mb-40px">
+  <section class="mb-[70px] sm:mb-32">
+    <div class="page__level-title mb-[30px] sm:mb-[40px]">
       운용 차량
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-50px mb-30px sm:mb-70px">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-[50px] mb-[30px] sm:mb-[70px]">
       <div class="prose">
         <p>
           직영차(자차/지입/직계약) 기준 덤프트럭 400대, BCT 100대를 비롯하여 총 600대가량의 차량을 확보하여 안정적인 운송구조를 구축하고, 200여개 운송 협력업체와의 계약을 통해 차량 수급여건에 따라 효율적인 차량운영을 하고 있습니다. 
@@ -97,16 +97,16 @@
         </p>
       </div>
     </div>
-    <div class="border-t border-b border-squant py-60px mb-70px sm:mb-110px">
+    <div class="border-t border-b border-squant py-[60px] mb-[70px] sm:mb-[110px]">
       <div id="swiper" class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="card__s4 w-auto">
-              <div class="card__s4-thumbnail border w-210px h-210px">
+              <div class="card__s4-thumbnail border w-[210px] h-[210px]">
                 @include('partials.img', ['ex' => 'jpg', 'name' => 'business-distribution-5'])
               </div>
               <div class="card__s4-body">
-                <div class="card__s4-title text-16px text-center font-bold">
+                <div class="card__s4-title text-[16px] text-center font-bold">
                   BCT부문<br/>
                   (벌크시멘트트레일러)
                 </div>
@@ -115,11 +115,11 @@
           </div>
           <div class="swiper-slide">
             <div class="card__s4 w-auto">
-              <div class="card__s4-thumbnail border w-210px h-210px">
+              <div class="card__s4-thumbnail border w-[210px] h-[210px]">
                 @include('partials.img', ['ex' => 'jpg', 'name' => 'business-distribution-6'])
               </div>
               <div class="card__s4-body">
-                <div class="card__s4-title text-16px text-center font-bold">
+                <div class="card__s4-title text-[16px] text-center font-bold">
                   M/T 부문<br/>
                   (믹서트럭)
                 </div>
@@ -128,11 +128,11 @@
           </div>
           <div class="swiper-slide">
             <div class="card__s4 w-auto">
-              <div class="card__s4-thumbnail border w-210px h-210px">
+              <div class="card__s4-thumbnail border w-[210px] h-[210px]">
                 @include('partials.img', ['ex' => 'jpg', 'name' => 'business-distribution-8'])
               </div>
               <div class="card__s4-body">
-                <div class="card__s4-title text-16px text-center font-bold">
+                <div class="card__s4-title text-[16px] text-center font-bold">
                   D/T 부문<br/>
                   (덤프트럭)
                 </div>
@@ -141,11 +141,11 @@
           </div>
           <div class="swiper-slide">
             <div class="card__s4 w-auto">
-              <div class="card__s4-thumbnail border w-210px h-210px">
+              <div class="card__s4-thumbnail border w-[210px] h-[210px]">
                 @include('partials.img', ['ex' => 'jpg', 'name' => 'business-distribution-7'])
               </div>
               <div class="card__s4-body">
-                <div class="card__s4-title text-16px text-center font-bold">
+                <div class="card__s4-title text-[16px] text-center font-bold">
                   F/C 부문<br/>
                   (평판트레일러)
                 </div>
@@ -155,15 +155,15 @@
         </div>
       </div>
     </div>
-    <div class="page__level-title mb-30px sm:mb-40px">
+    <div class="page__level-title mb-[30px] sm:mb-[40px]">
       해상 및 철도 운송
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-50px gap-y-30px mb-30px sm:mb-70px">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-[50px] gap-y-[30px] mb-[30px] sm:mb-[70px]">
       <div>
-        <h3 class="underline power mb-30px font-bold text-24px">
+        <h3 class="underline power mb-[30px] font-bold text-[24px]">
           해상운송/하역 부문
         </h3>
-        @include('partials.img', ['ex' => 'jpg', 'name' => 'business-distribution-9', 'class' => 'mb-30px'])
+        @include('partials.img', ['ex' => 'jpg', 'name' => 'business-distribution-9', 'class' => 'mb-[30px]'])
         <div class="prose">
           <p>
             해안지역에 생산공장을 운영하고 있는 삼표시멘트는 전용선박 11척, 일반 화물선박 3척을 활용하여 국내 시멘트 해상 운송 시장을 선도하고 있습니다. 또한, 제철소에서 생산되는 슬래그 등을 선박을 이용해 전국에 신속하게 공급하며, 건설기초재료인 바닷모래를 채취해 수도권에 안정적인 모래 공급을 하고 있습니다.
@@ -171,10 +171,10 @@
         </div>
       </div>
       <div>
-        <h3 class="underline power mb-30px font-bold text-24px">
+        <h3 class="underline power mb-[30px] font-bold text-[24px]">
           철도 운송 부문
         </h3>
-        @include('partials.img', ['ex' => 'jpg', 'name' => 'business-distribution-10', 'class' => 'mb-30px'])
+        @include('partials.img', ['ex' => 'jpg', 'name' => 'business-distribution-10', 'class' => 'mb-[30px]'])
         <div class="prose">
           <p>
             당사는 230량의 시멘트 화차와 기관차 2대를 보유하고 있으며, 철도를 활용하여 내륙 공장인 부곡, 대전, 도안으로 시멘트를 수송하고 있습니다. 친환경 수단이면서 적기에 납품이 가능한 철도 운송은 삼표시멘트의 중요한 운송수단으로 자리 잡고 있습니다.
@@ -184,10 +184,10 @@
     </div>
   </section>
   <section>
-    <div class="page__level-title mb-30px sm:mb-40px">
+    <div class="page__level-title mb-[30px] sm:mb-[40px]">
       첨단기술의 물류시스템
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-50px gap-y-30px sm:gap-y-60px mb-30px sm:mb-70px">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-[50px] gap-y-[30px] sm:gap-y-[60px] mb-[30px] sm:mb-[70px]">
       <div class="prose">
         <p>
           삼표는 전국 운송 네트워크와 인프라를 비롯해 다양한 건자재 화물에 최적화된 차량 및 장비로 건자재 물류 서비스를 제공하고 있습니다. 최근에는 운송 시장 변화에 대한 선제적 대응과 서비스 질 향상을 위해 IT 기반 관리 체계 구축 및 전문 인력 역량 강화 추진에 힘쓰고 있습니다.
@@ -237,7 +237,7 @@ EOD
         ],
       ] as $item)
         <div class="prose">
-          <h3 class="underline power mb-30px font-bold text-24px">
+          <h3 class="underline power mb-[30px] font-bold text-[24px]">
             {!! $item['title'] !!}
           </h3>
           <p>

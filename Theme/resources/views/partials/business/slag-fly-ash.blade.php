@@ -1,10 +1,10 @@
 <main class="page__layout">
 <div class="container xl:max-w-screen-xl mx-auto">
-  <div class="page__level-title mb-30px sm:mb-11">
+  <div class="page__level-title mb-[30px] sm:mb-11">
     자원을 리사이클하여 환경을 보존하고<br class="hidden sm:block" />
     순환경제를 이끌고 갑니다
   </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px sm:gap-y-16">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px] sm:gap-y-16">
     <div class="prose">
       <p>
         제철소에서 발생하는 부산물인 고로슬래그(Blast Furnace Slag)와 석탄화력발전소에서 발생하는 부산물인 플라이애시(Fly Ash)는 그 화학적 특성 때문에 미분말 형태로 가공하여 시멘트 대체재로 활용할 수 있습니다.
@@ -33,11 +33,11 @@
       </span>
     </div>
   </div>
-  <div class="mb-70px sm:mb-32"></div>
-  <div class="page__level-title mb-30px sm:mb-11">
+  <div class="mb-[70px] sm:mb-32"></div>
+  <div class="page__level-title mb-[30px] sm:mb-11">
     환경을 보전하는 건설기초소재
   </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px sm:gap-y-16">
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px] sm:gap-y-16">
     <div class="prose">
       <p>
         제철소의 고로에서 선철을 제조하는 과정에서 발생하는 비금속 부산물인 고로슬래그와 석탄화력발전소에서 미분탄을 연소후 발생하는 부산물을 집진기로 포집하여 얻는 플라이애시는 화학성분이 석회석과 규사로 시멘트의 대체재로 사용할 수 있습니다. 
@@ -65,11 +65,11 @@
       </div>
     </div>
   </div>
-  <div class="mb-70px sm:mb-32"></div>
-  <div class="coverbox-full-fixedHeight left py-30px sm:pt-20 max:sm:mb-70px" style="--h:740px">
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-30px">
+  <div class="mb-[70px] sm:mb-32"></div>
+  <div class="coverbox-full-fixedHeight left py-[30px] sm:pt-20 max:sm:mb-[70px]" style="--h:740px">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px]">
       <div>
-        <div class="page__level-title mb-30px sm:mb-11">
+        <div class="page__level-title mb-[30px] sm:mb-11">
           국내 최대 생산 능력 보유
         </div>
         <div class="prose mb-16 pb-1.5">
@@ -96,7 +96,7 @@
       </div>
     </div>
   </div>
-  <div class="page__level-title mb-30px sm:mb-11">
+  <div class="page__level-title mb-[30px] sm:mb-11">
     우수한 기술력과 노하우
   </div>
   <div class="prose mb-12">
@@ -106,7 +106,7 @@
       그 성과를 대외적으로 인정받고 있습니다. 또한 제품과 생산설비에 관련된 다수의 특허를 보유하고 있습니다
     </p>
   </div>
-  <div class="flex gap-x-8 sm:gap-x-56 mb-30px sm:mb-20">
+  <div class="flex gap-x-8 sm:gap-x-56 mb-[30px] sm:mb-20">
     <div>
       <h3 class="text-xl mb-8 font-bold">녹색 인증</h3>
       @include('partials.img', ['ex' => 'png', 'name' => 'business-slag-7'])

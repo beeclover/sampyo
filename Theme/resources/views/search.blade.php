@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
   <main class="page__layout" style="--absolute-margin-left: 0px">
-    <div class="pb-70px sm:pb-24"></div>
+    <div class="pb-[70px] sm:pb-24"></div>
     <div class="container xl:max-w-screen-xl mx-auto">
       <div class="bg-atmosphere text-white mb-16">
         {!! get_search_form(false) !!}

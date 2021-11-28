@@ -36,11 +36,11 @@
 <div class="section home__s1  overflow-hidden">
   <div class="container mx-auto relative">
     <div class="absolute w-screen h-full transform left-1/2 -translate-x-1/2">
-      @include('partials.img', ['ex' => 'png', 'name' => 'txt-business-03-hover', 'class' => 'absolute top-150px left-1/2 hidden sm:block'])
+      @include('partials.img', ['ex' => 'png', 'name' => 'txt-business-03-hover', 'class' => 'absolute top-[150px] left-1/2 hidden sm:block'])
       @include('partials.img', ['ex' => 'png', 'name' => 'label', 'class' => 'absolute bottom-0 hidden sm:block'])
     </div>
     <div class="home__s1-header">
-      <div class="home__s1-title text-36px sm:text-6xl font-black mb-15px">비즈니스</div>
+      <div class="home__s1-title text-[36px] sm:text-6xl font-black mb-[15px]">비즈니스</div>
       <p class="home__s1-header-content break-words">끊임없는 도전과 창조적인 혁신을 통해 지속가능한 Building Materials의 기초를 만들어갑니다.</p>
     </div>
     <div id="macy-container">
@@ -132,7 +132,7 @@
           </div>
         </div>
         <div class="w-full order-1 lg:order-2 lg:w-1/2 xl:w-2/5 relative">
-          <div class="box-content py-8 lg:py-16 px-40px lg:px-20 bg-white lg:bg-transparent">
+          <div class="box-content py-8 lg:py-16 px-[40px] lg:px-20 bg-white lg:bg-transparent">
             <div class="box-content-inner">
               <ul id="tab" class="flex tab-wrap">
                 <li data-id="blog" class="tab-item active">
@@ -186,7 +186,7 @@
   </div>
   <div class="section home__s3 relative overflow-hidden">
     <div class="absolute top-0 w-full h-full left-0">
-      @include('partials.img', ['ex' => 'png', 'name' => 'main-s3-01', 'class' => 'absolute top-0 transform -translte-y-50px hidden sm:block'])
+      @include('partials.img', ['ex' => 'png', 'name' => 'main-s3-01', 'class' => 'absolute top-0 transform -translte-y-[50px] hidden sm:block'])
     </div>
     <div class="container mx-auto relative">
       <div class="home__s3-header">
@@ -282,14 +282,14 @@
 </div>
 <div class="section home__s45">
   <div class="section home__s4 sm:mb-32">
-    <div class="container mx-auto flex flex-wrap lg:block lg:mb-150px">
+    <div class="container mx-auto flex flex-wrap lg:block lg:mb-[150px]">
       <ul id="originalS4" class="home__s4-container hidden lg:flex relative z-10">
         @foreach ($career as $item)
           <li data-scrollreveal id="cardWrap" class="w-1/3">
             <a href="{!! $item->permalink !!}">
               <div class="card__s2">
                 <div class="card__s2-header">
-                  <div class="arrow max:lg:w-52px">
+                  <div class="arrow w-[52px] lg:w-auto">
                     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMi4wMDkgNTEyLjAwOSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PHNjcmlwdD48L3NjcmlwdD4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxwYXRoIGQ9Ik01MDguNjI1LDI0Ny44MDFMNTA4LjYyNSwyNDcuODAxTDM5Mi4yNjIsMTMxLjQzN2MtNC4xOC00Ljg4MS0xMS41MjYtNS40NS0xNi40MDctMS4yNjkgICAgYy00Ljg4MSw0LjE4LTUuNDUsMTEuNTI2LTEuMjY5LDE2LjQwN2MwLjM5LDAuNDU1LDAuODE0LDAuODgsMS4yNjksMS4yNjlsOTYuNDY1LDk2LjU4MkgxMS42MzZDNS4yMSwyNDQuNDI2LDAsMjQ5LjYzNiwwLDI1Ni4wNjMgICAgczUuMjEsMTEuNjM2LDExLjYzNiwxMS42MzZINDcyLjMybC05Ni40NjUsOTYuNDY1Yy00Ljg4MSw0LjE4LTUuNDUsMTEuNTI2LTEuMjY5LDE2LjQwN3MxMS41MjYsNS40NSwxNi40MDcsMS4yNjkgICAgYzAuNDU1LTAuMzksMC44OC0wLjgxNCwxLjI2OS0xLjI2OWwxMTYuMzY0LTExNi4zNjRDNTEzLjEzNywyNTkuNjcsNTEzLjEzNywyNTIuMzQsNTA4LjYyNSwyNDcuODAxeiIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4="/>
                   </div>
                 </div>
@@ -306,28 +306,28 @@
         @endforeach
       </ul>
       <div id="swipercontainerS4" class="block lg:hidden order-2 w-full z-10 relative"></div>
-      <div class="home__s4-content text-white order-1 static lg:absolute z-50 text-center lg:text-left mb-60px lg:mb-0 max:lg:mx-auto">
-        <div class="home__s4-title text-36px lg:text-56px">인재채용</div>
-        <div class="home__s4-description text-14px lg:text-22px">
+      <div class="home__s4-content text-white order-1 static lg:absolute z-50 text-center lg:text-left mb-[60px] lg:mb-0 mx-auto">
+        <div class="home__s4-title text-[36px] lg:text-[56px]">인재채용</div>
+        <div class="home__s4-description text-[14px] lg:text-[22px]">
           변화를 주도하며 창의적인 사고를 가진 삼표인과 함께<br/>
           더 큰 미래를 향해 성장해나갑니다.
         </div>
       </div>
     </div>
   </div>
-  <div class="section home__s5 mt-10px sm:mt-0 max:sm:pb-2.5">
+  <div class="section home__s5 mt-[10px] sm:mt-0 pb-2.5 sm:pb-0">
     <div class="newsroom__newsletter">
-      <div class="container mx-auto mb-30px">
+      <div class="container mx-auto mb-[30px]">
         <x-Newsletter />
       </div>
     </div>
     <div class="container mx-auto mt-14 max:sm:px-0">
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
         <a href="https://smart.sampyo.co.kr/main/group/introduction" target="_blank" rel="noopener noreferrer">
-          <div class="card__s3 max:sm:py-54px max:sm:px-30px h-full">
+          <div class="card__s3 max:sm:py-[54px] max:sm:px-[30px] h-full">
             <div class="card__s3-body">
-              <div class="card__s3-title text-2xl sm:text-32px">사업장 정보</div>
-              <div class="card__s3-content text-12px sm:text-base">삼표그룹 계열사들의 사업장 정보를 조회하실 수 있습니다.</div>
+              <div class="card__s3-title text-2xl sm:text-[32px]">사업장 정보</div>
+              <div class="card__s3-content text-[12px] sm:text-base">삼표그룹 계열사들의 사업장 정보를 조회하실 수 있습니다.</div>
             </div>
             <div class="card__s3-bg nonDim">
               @include('partials.img', ['ex' => 'jpg', 'name' => '3340'])
@@ -335,10 +335,10 @@
           </div>
         </a>
         <a href="https://smart.sampyo.co.kr/" target="_blank" rel="noopener noreferrer">
-          <div class="card__s3 max:sm:py-54px max:sm:px-30px h-full">
+          <div class="card__s3 max:sm:py-[54px] max:sm:px-[30px] h-full">
             <div class="card__s3-body">
-              <div class="card__s3-title text-2xl sm:text-32px">스마트오더</div>
-              <div class="card__s3-content text-12px sm:text-base">자체시험성적표/제품 주문 등 다양한 자료와 정보를 제공합니다.</div>
+              <div class="card__s3-title text-2xl sm:text-[32px]">스마트오더</div>
+              <div class="card__s3-content text-[12px] sm:text-base">자체시험성적표/제품 주문 등 다양한 자료와 정보를 제공합니다.</div>
             </div>
             <div class="card__s3-bg nonDim">
               @include('partials.img', ['ex' => 'jpg', 'name' => '3341'])

@@ -7,9 +7,9 @@
     삼표의 인재육성 비전은 개인의 전문성 강화 그리고 조직의 시너지 창출입니다. 삼표는 리더십과 전문성을 함께 배양하는 인재육성 체계를 운영합니다. 
     구성원은 각자의 역량 수준에 따라 개인별로 차별화된 육성계획을 세우고, 각자의 성장경로에 맞는 교육에 참여합니다.
   </p>
-  <div class="pb-30px sm:pb-20"></div>
+  <div class="pb-[30px] sm:pb-20"></div>
   <div class="relative">
-    <div id="tdOriginal" class="grid grid-cols-3 gap-x-18 z-0 sm:z-10 invisible sm:visible absolute left-0 top-0 w-full gap-x-20px">
+    <div id="tdOriginal" class="grid grid-cols-3 gap-x-18 z-0 sm:z-10 invisible sm:visible absolute left-0 top-0 w-full gap-x-[20px]">
       <div class="card__s1 gap-9">
         <div class="card__s1-thumbnail_">
             @include('partials.img', ['ex' => 'png', 'name' => 'career-training-1'])
@@ -63,7 +63,7 @@
       <div class="swiper-pagination pagination__s1 static mt-7 pt-0.5"></div>
     </div>
   </div>
-  <div class="mb-30px sm:mb-16"></div>
+  <div class="mb-[30px] sm:mb-16"></div>
   <div class="coverbox-full-fixedHeight left pt-16" style="--h: 291px">
     <div class="font-bold underline power text-2xl mb-5">
       삼표연수원
@@ -76,7 +76,7 @@
       <div>
         @include('partials.img', ['ex' => 'jpg', 'name' => 'career-training-4'])
       </div>
-      <div class="flex flex-col justify-end pb-30px sm:pb-12 prose">
+      <div class="flex flex-col justify-end pb-[30px] sm:pb-12 prose">
         <div class="font-bold text-xl">
           교육시설
         </div>
@@ -87,7 +87,7 @@
       <div>
         @include('partials.img', ['ex' => 'jpg', 'name' => 'career-training-5'])
       </div>
-      <div class="flex flex-col justify-end pb-30px sm:pb-12 prose">
+      <div class="flex flex-col justify-end pb-[30px] sm:pb-12 prose">
         <div class="font-bold text-xl">
           연수시설
         </div>
@@ -98,7 +98,7 @@
       <div>
         @include('partials.img', ['ex' => 'jpg', 'name' => 'career-training-6'])
       </div>
-      <div class="flex flex-col justify-end pb-30px sm:pb-12 prose">
+      <div class="flex flex-col justify-end pb-[30px] sm:pb-12 prose">
         <div class="font-bold text-xl">
           부대시설
         </div>
@@ -108,16 +108,16 @@
       </div>
     </div>
   </div>
-  <div class="mb-70px sm:mb-32"></div>
+  <div class="mb-[70px] sm:mb-32"></div>
   <div class="font-bold underline power text-2xl mb-5">
     삼표 사이버연수원
   </div>
   <p>
     삼표는 사이버연수원을 통해 시간과 공간의 제약없이 학습할 수 있는 온라인 교육 시스템을 운영하고 있습니다.
   </p>
-  <div class="mb-30px sm:mb-16"></div>
+  <div class="mb-[30px] sm:mb-16"></div>
   @include('partials.img', ['ex' => 'jpg', 'name' => 'career-training-7'])
-  <div class="mb-30px sm:mb-16"></div>
+  <div class="mb-[30px] sm:mb-16"></div>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
     <div>
       <div class="font-bold text-xl mb-2.5">
@@ -171,6 +171,6 @@
       </div>
     </div>
   </div>
-  <div class="pb-70px sm:pb-24"></div>
+  <div class="pb-[70px] sm:pb-24"></div>
 </div>
 </main>

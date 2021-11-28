@@ -6,7 +6,7 @@
     <p>
       삼표는 직원들의 안정적이고 풍요로운 생활을 보장하기 위해 다양한 복리후생 제도를 시행하고 있습니다.
     </p>
-    <div class="pb-30px sm:pb-20"></div>
+    <div class="pb-[30px] sm:pb-20"></div>
     @php
       $benefits = [
         [
@@ -54,7 +54,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-16 gap-x-12">
       @foreach ($benefits as $key => $item)
         <div class="flex gap-x-7 max:sm:flex-wrap">
-          @include('partials.img', ['ex' => 'png', 'name' => 'career-perks-' . $key, 'class' => 'w-112px h-112px'])
+          @include('partials.img', ['ex' => 'png', 'name' => 'career-perks-' . $key, 'class' => 'w-[112px] h-[112px]'])
           <div class="prose py-1.5">
             <h3 class="text-lg">{{ $item['title'] }}</h3>
             <p>{{ $item['content'] }}</p>
