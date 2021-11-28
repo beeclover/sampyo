@@ -55,5 +55,6 @@
     "macy": "^2.5.1",
     "scrollreveal": "^4.0.9",
     "swiper": "^6.8.1"
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }
