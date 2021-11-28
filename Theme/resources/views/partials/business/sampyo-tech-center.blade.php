@@ -45,7 +45,7 @@
     </div>
   </section>
   <section class="mb-[70px] sm:mb-32">
-    <div class="coverbox-full-fixedHeight left max:sm:py-[30px] sm:pt-24 mb-20" style="--h: 658px">
+    <div class="coverbox-full-fixedHeight left m_sm:py-[30px] sm:pt-24 mb-20" style="--h: 658px">
       <div class="page__level-title mb-[30px] sm:mb-11">
         연구분야
       </div>

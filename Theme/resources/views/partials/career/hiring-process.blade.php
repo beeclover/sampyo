@@ -4,7 +4,7 @@
     신입사원 채용 프로세스
   </div>
   <div class="mb-14"></div>
-  <div class="max:sm:overflow-x-scroll max:sm:pb-[16px]" no-scrollbar>
+  <div class="m_sm:overflow-x-scroll m_sm:pb-[16px]" no-scrollbar>
     <ul class="flex gap-x-2.5">
       @foreach (['지원서 접수', '서류전형', '인성검사', '면접전형', '건강검진', '최종합격'] as $key => $item)
       <li class="flex-1 min-w-[100px]">

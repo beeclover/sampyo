@@ -19,12 +19,12 @@
       <div id="csrOriginal" class="grid grid-cols-3 gap-x-[72px] z-0 sm:z-10 invisible sm:visible absolute left-0 top-0">
         <div id="cardWrap" class="flex items-center justify-center">
           <div class="card__s1">
-            <div class="card__s1-thumbnail_ max:sm:flex max:sm:justify-center">
+            <div class="card__s1-thumbnail_ m_sm:flex m_sm:justify-center">
                 @include('partials.img', ['ex' => 'png', 'name' => 'sampyo-group-csr-1'])
             </div>
             <div class="card__s1-body sm:items-start text-left gap-2.5">
               <div class="card__s1-title text-xl font-bold">인재 육성</div>
-              <div class="card__s1-content max:sm:text-center">
+              <div class="card__s1-content m_sm:text-center">
                 인재를 발굴하고 육성합니다. 인재에 대한 교육 기회를 부여하고, 성장을 향한 그들의 꿈을 응원합니다.
               </div>
             </div>
@@ -32,12 +32,12 @@
         </div>
         <div id="cardWrap" class="flex items-center justify-center">
           <div class="card__s1">
-            <div class="card__s1-thumbnail_ max:sm:flex max:sm:justify-center">
+            <div class="card__s1-thumbnail_ m_sm:flex m_sm:justify-center">
                 @include('partials.img', ['ex' => 'png', 'name' => 'sampyo-group-csr-2'])
             </div>
             <div class="card__s1-body sm:items-start text-left gap-2.5">
               <div class="card__s1-title text-xl font-bold">지역 나눔</div>
-              <div class="card__s1-content max:sm:text-center">
+              <div class="card__s1-content m_sm:text-center">
                 진정성을 가지고 지역 사회와 지속적으로 소통합니다. 공동체에 기여하고 따뜻하고 밝은 사회를 추구합니다. 
               </div>
             </div>
@@ -45,12 +45,12 @@
         </div>
         <div id="cardWrap" class="flex items-center justify-center">
           <div class="card__s1">
-            <div class="card__s1-thumbnail_ max:sm:flex max:sm:justify-center">
+            <div class="card__s1-thumbnail_ m_sm:flex m_sm:justify-center">
                 @include('partials.img', ['ex' => 'png', 'name' => 'sampyo-group-csr-3'])
             </div>
             <div class="card__s1-body sm:items-start text-left gap-2.5">
               <div class="card__s1-title text-xl font-bold">환경 보호</div>
-              <div class="card__s1-content max:sm:text-center">
+              <div class="card__s1-content m_sm:text-center">
                 미래 세대에게 물려줄 아름다운 환경을 보호합니다. 자연이 그 자체로서 가지는 가치와 의미를 소중히 여깁니다. 
               </div>
             </div>
@@ -80,8 +80,8 @@
     </div>
   </div>
   <div class="relative mb-[20px] sm:mb-16">
-    <div class="max:sm:aspect-w-16 max:sm:aspect-h-9">
-      @include('partials.img', ['ex' => 'jpg', 'name' => 'sampyo-group-csr-4', 'class' => 'max:sm:object-cover'])
+    <div class="m_sm:aspect-w-16 m_sm:aspect-h-9">
+      @include('partials.img', ['ex' => 'jpg', 'name' => 'sampyo-group-csr-4', 'class' => 'm_sm:object-cover'])
     </div>
     <a href="{!! $asf !!}" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 font-bold absolute right-0 bottom-0 bg-white transform -translate-x-11 -translate-y-11">학술장학재단 바로가기</a>
   </div>
@@ -111,8 +111,8 @@
     <div>
       <p>삼표시멘트는 ‘1사 1하천’ 운동의 일환으로 매년 삼척시 오십천 일대에서 하천 정화활동을 펼칩니다. 오십천 강변의 쓰레기와 생태교란 외래식물을 제거하는 등 자연 보전 활동에 앞장섭니다.</p>
     </div>
-    <div class="max:sm:aspect-w-16 max:sm:aspect-h-9 max:sm:order-first">
-      @include('partials.img', ['ex' => 'jpg', 'name' => 'sampyo-group-csr-7', 'class' => 'mx-auto max:sm:object-cover'])
+    <div class="m_sm:aspect-w-16 m_sm:aspect-h-9 m_sm:order-first">
+      @include('partials.img', ['ex' => 'jpg', 'name' => 'sampyo-group-csr-7', 'class' => 'mx-auto m_sm:object-cover'])
     </div>
   </div>
   <div class="pb-[70px] sm:pb-24"></div>

@@ -10,7 +10,7 @@
         삼표는 프리캐스트 콘크리트(Precast Concrete) 분야에서 국내 최고 수준의 생산 설비와 우수한 기술력을 바탕으로 국내 건설산업의 새로운 영역을 개척해 왔습니다. 우리는 현재에 안주하지 않고 미래를 향한 끊임없는 기술개발과 생산시스템의 패러다임 혁신을 통해 고객 만족 실현과 국내 프리캐스트 콘크리트 산업의 미래를 선도해 나갈 것을 약속합니다.
       </p>
     </div>
-    <div class="coverbox-full-fixedHeight right max:sm:py-[30px] pt-28" style="--h: 400px">
+    <div class="coverbox-full-fixedHeight right m_sm:py-[30px] pt-28" style="--h: 400px">
       <div class="text-2xl font-bold mb-6">
         <span class="pointUnderLine" style="--h: 0.5em">
           프리캐스트 콘크리트(Precast Concrete)란?

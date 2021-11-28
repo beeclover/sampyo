@@ -88,7 +88,7 @@
     </div>
   </section>
   <section class="mb-[60px] sm:mb-28">
-    <div class="coverbox-full-fixedHeight left max:sm:py-[30px] sm:pt-28 mb-[30px] sm:mb-14" style="--h: 740px">
+    <div class="coverbox-full-fixedHeight left m_sm:py-[30px] sm:pt-28 mb-[30px] sm:mb-14" style="--h: 740px">
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-[30px]">
         <div>
           <div class="mb-16">

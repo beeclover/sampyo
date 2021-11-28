@@ -33,7 +33,7 @@
     </div>
   </section>
   <section class="mb-[70px] sm:mb-32">
-    <div class="coverbox-full-fixedHeight left max:sm:py-[30px] sm:pt-24 mb-[40px] sm:mb-24" style="--h: 669px">
+    <div class="coverbox-full-fixedHeight left m_sm:py-[30px] sm:pt-24 mb-[40px] sm:mb-24" style="--h: 669px">
       <div class="page__level-title mb-[30px] sm:mb-12">
         최고의 철도궤도 제품 및 서비스
       </div>

@@ -16,17 +16,17 @@
       철스크랩 사업
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px] sm:gap-y-[40px]">
-      <div class="prose max:sm:order-1 sm:mb-[30px]">
+      <div class="prose m_sm:order-1 sm:mb-[30px]">
         <p>
           삼표는 철강산업의 중요 원료인 철스크랩을 수집·가공·판매하면서 철스크랩을 안정적으로 제강사에 공급함으로써 철강산업 발전에 기여하고 있으며 자원 순환을 통한 환경보전에 앞장서고 있습니다.
         </p>
       </div>
-      <div class="prose max:sm:order-2 sm:mb-[30px]">
+      <div class="prose m_sm:order-2 sm:mb-[30px]">
         <p>
           국내 최대 규모의 슈레더(Shredder)로 폐자동차를 철과 비철금속으로 선별하고, 길로틴(Guillotine) 설비 3기 및 압축기 1기를 활용하여 노폐 스크랩을 가공하는 등 기계화 공정을 통한 대량 일괄 생산체계를 구축하여 연간 70만톤 이상의 철스크랩을 제강사에 원료로 공급합니다.
         </p>
       </div>
-      <div class="max:sm:order-3">
+      <div class="m_sm:order-3">
         <div class="coverbox-label">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'business-recycling-0'])
           <span class="label text-white">
@@ -35,7 +35,7 @@
           </span>
         </div>
       </div>
-      <div class="max:sm:order-4">
+      <div class="m_sm:order-4">
         <div class="coverbox-label">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'business-recycling-1'])
           <span class="label text-white">
@@ -44,7 +44,7 @@
           </span>
         </div>
       </div>
-      <div class="max:sm:order-5">
+      <div class="m_sm:order-5">
         <h3 class="font-bold text-2xl mb-5">
           슈레더 플랜트(Shredder Plant)
         </h3>
@@ -52,7 +52,7 @@
           폐자동차, 폐가전제품 등을 파쇄(shredding) 하여 슈레더 제품을 생산하고 파쇄 공정에서 발생한 비철금속을 선별하는 설비입니다.
         </p>
       </div>
-      <div class="max:sm:order-7">
+      <div class="m_sm:order-7">
         <h3 class="font-bold text-2xl mb-5">
           길로틴 시어(Guillotine Shear)
         </h3>
@@ -63,7 +63,7 @@
     </div>
   </section>
   <section class="mb-[70px] sm:mb-32">
-    <div class="coverbox-full-fixedHeight left max:sm:py-[30px] sm:pt-24" style="--h: 460px">
+    <div class="coverbox-full-fixedHeight left m_sm:py-[30px] sm:pt-24" style="--h: 460px">
       <div class="page__level-title mb-10">
         경제가치와 지속가능성
       </div>
@@ -102,7 +102,7 @@
           슬래그는 천연 암석과 동일한 성분으로 구성되어 있는 철강 부산물입니다. 철강 슬래그에는 수분과 장기간 접촉 시 경화되는 수경성 특징이 있으므로 도로 기초공사, 건물 기초공사, 공유수면 매립재, 항만 케이슨 채움재 등 기초공사의 유용한 재료가 됩니다. 철강 슬래그 골재는 천연 골재를 경제적으로 대체할 수 있어 자원 훼손을 줄일 수 있습니다.
         </p>
       </div>
-      <div class="sm:col-span-2 max:sm:order-first">
+      <div class="sm:col-span-2 m_sm:order-first">
         <div class="coverbox-label">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'business-recycling-5'])
           <span class="label text-white">
@@ -188,7 +188,7 @@
     </div>
   </section>
   <section class="mb-[70px] sm:mb-32">
-    <div class="coverbox-full-fixedHeight right max:sm:py-[30px] sm:pt-24" style="--h: 750px">
+    <div class="coverbox-full-fixedHeight right m_sm:py-[30px] sm:pt-24" style="--h: 750px">
       <div class="page__level-title mb-10">
         항만하역사업
       </div>

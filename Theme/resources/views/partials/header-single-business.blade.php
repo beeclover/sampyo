@@ -1,7 +1,7 @@
 <div class="labtop:overflow-x-hidden header-archive-root2">
   <div class="labtop:overflow-hidden header-archive-root">
     <header class="header-archive">
-      <div class="container xl:max-w-screen-xl mx-auto max:labtop:px-0 @isset($acf['outlink']) max:sm:mb-[60px] max:labtop:mb-[150px] @endisset">
+      <div class="container xl:max-w-screen-xl mx-auto m_labtop:px-0 @isset($acf['outlink']) m_sm:mb-[60px] m_labtop:mb-[150px] @endisset">
         <div class="header-archive-imgRow">
           @if (!empty($thumbnail))
               {!! $thumbnail !!}
@@ -9,7 +9,7 @@
               <img src="https://picsum.photos/1920?random=10" alt="" class="header-archive-img">
           @endif
         </div>
-        <div class="header-archive-content max:labtop:px-8 max:labtop:w-full @if(empty($acf['outlink'])) top-1/2 @endif">
+        <div class="header-archive-content m_labtop:px-8 m_labtop:w-full @if(empty($acf['outlink'])) top-1/2 @endif">
           <div x-data="select({label: '{!! $fixedMenuLabel !!}', selected: {!! $selected !!}})" class="w-full relative mb-[30px] labtop:hidden flex">
             <div class="depth-1 relative flex-1">
               <button class="flex items-center justify-between w-full px-3 py-3 text-left border focus:outline-none border-r-0"
@@ -89,9 +89,9 @@
         </div>
         @isset($acf['outlink'])
           @if ($acf['outlink'] !== '')
-            <div class="header-archive-nav bg-transparent labtop:translate-y-1/2 max:labtop:top-full max:labtop:bottom-auto">
+            <div class="header-archive-nav bg-transparent labtop:translate-y-1/2 m_labtop:top-full m_labtop:bottom-auto">
               <ul>
-                <li class="items-block-item-2 max:sm:w-full">
+                <li class="items-block-item-2 m_sm:w-full">
                   <a href="{!! $acf['outlink'] !!}" target="_blank" rel="noopener noreferrer" class="text-white">홈페이지 바로가기</a>
                 </li>
               </ul>

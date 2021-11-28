@@ -53,7 +53,7 @@
     @endphp
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-16 gap-x-12">
       @foreach ($benefits as $key => $item)
-        <div class="flex gap-x-7 max:sm:flex-wrap">
+        <div class="flex gap-x-7 m_sm:flex-wrap">
           @include('partials.img', ['ex' => 'png', 'name' => 'career-perks-' . $key, 'class' => 'w-[112px] h-[112px]'])
           <div class="prose py-1.5">
             <h3 class="text-lg">{{ $item['title'] }}</h3>

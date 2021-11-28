@@ -20,7 +20,7 @@
     background-color: var(--lighthouse);
     overflow-x: hidden;
     padding-top: 40px;
-    padding-bottom: 60px;
+
     @media (min-width: theme('screens.sm')) {
       padding-top: 130px;
       padding-bottom: 150px;
@@ -40,6 +40,11 @@
   &-thumbnail {
     position: relative;
     height: 100%;
+
+    @media (max-width: theme('screens.sm')) {
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
 
     img {
       aspect-ratio: 3/2;
@@ -143,6 +148,10 @@
 .newsroom__media {
   @include arrowHeader;
 
+  @media (max-width: theme('screens.sm')) {
+    @apply px-[32px];
+  }
+
   &-body {
     .card-def-cat-item {
       color: var(--atmosphere);
@@ -174,6 +183,9 @@
       flex: 1;
       align-self: stretch;
       position: relative;
+      @media (max-width: theme('screens.sm')) {
+        @apply aspect-h-9 aspect-w-16 order-first;
+      }
     }
   }
 
@@ -217,6 +229,10 @@
   }
 
   &-row {
+    @media (max-width: theme('screens.sm')) {
+      @apply px-[32px];
+    }
+
     &-body {
       overflow: hidden;
     }

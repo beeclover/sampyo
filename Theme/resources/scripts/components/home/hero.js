@@ -10,7 +10,7 @@ class Slideshow {
         delay: 3000,
         pagination: {
           duration: 3,
-          el: '.hero-slide-pagination.swiper-pagination',
+          el: '.hero-slide-pagination',
           clickable: true,
         },
       },

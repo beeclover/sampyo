@@ -30,8 +30,8 @@
         삼표시멘트는 제품과 서비스를 넘어 지속가능한 미래를 만들기 위하여 기업의 혁신문화를 촉진하고 있으며, 긍정적인 사회적, 환경적 성과를 달성하기 위해 노력을 아끼지 않습니다. 삼표시멘트는 1980년 에너지 파동 시 국내 최초로 소성로의 연료를 벙커C유에서 유연탄으로 대체하였으며, 2004년에는 소성로의 폐열을 이용하여 전기를 생산하는 폐열발전소를 가동하였습니다.
       </p>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 max:sm:gap-y-[30px]">
-      <div class="max:sm:justify-self-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 m_sm:gap-y-[30px]">
+      <div class="m_sm:justify-self-center">
         @include('partials.img', ['ex' => 'jpg', 'name' => 'business-cement-1'])
       </div>
       <div class="self-center prose">

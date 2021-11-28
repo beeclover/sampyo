@@ -30,7 +30,7 @@
   </section>
   <section class="mb-[130px]">
     <div class="coverbox-full left pt-[30px] sm:py-28">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-[50px] max:sm:mb-[30px]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-[50px] m_sm:mb-[30px]">
         <div>
           <div class="page__level-title mb-7">
             고객 맞춤형 물류인프라
@@ -74,7 +74,7 @@
             </div>
           </div>
         </div>
-        <div class="relative max:sm:transform max:sm:translate-y-[100px]">
+        <div class="relative m_sm:transform m_sm:translate-y-[100px]">
           @include('partials.img', ['ex' => 'png', 'name' => 'business-distribution-2', 'class' => 'sm:absolute w-full'])
         </div>
       </div>

@@ -45,11 +45,13 @@
       width: auto;
       left: auto;
       right: 0;
-      bottom: 0;
+      bottom: 0 !important;
       display: flex;
       max-width: 100vw;
 
       .swiper-pagination-bullet {
+        --swiper-pagination-bullet-horizontal-gap: 0;
+
         width: 170px;
         height: var(--hero-bullet-height);
         display: flex;

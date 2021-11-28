@@ -274,7 +274,7 @@
           </div>
         </div>
         <div id="swipercontainerS3" class="block sm:hidden overflow-hidden">
-          <div class="swiper-pagination s3 pagination__s1 static mt-7 pt-0.5"></div>
+          <div class="swiper-pagination s3 pagination__s1 !static mt-7 pt-0.5"></div>
         </div>
       </div>
     </div>
@@ -321,10 +321,10 @@
         <x-Newsletter />
       </div>
     </div>
-    <div class="container mx-auto mt-14 max:sm:px-0">
+    <div class="sm:container mx-auto mt-14">
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
         <a href="https://smart.sampyo.co.kr/main/group/introduction" target="_blank" rel="noopener noreferrer">
-          <div class="card__s3 max:sm:py-[54px] max:sm:px-[30px] h-full">
+          <div class="card__s3">
             <div class="card__s3-body">
               <div class="card__s3-title text-2xl sm:text-[32px]">사업장 정보</div>
               <div class="card__s3-content text-[12px] sm:text-base">삼표그룹 계열사들의 사업장 정보를 조회하실 수 있습니다.</div>
@@ -335,7 +335,7 @@
           </div>
         </a>
         <a href="https://smart.sampyo.co.kr/" target="_blank" rel="noopener noreferrer">
-          <div class="card__s3 max:sm:py-[54px] max:sm:px-[30px] h-full">
+          <div class="card__s3">
             <div class="card__s3-body">
               <div class="card__s3-title text-2xl sm:text-[32px]">스마트오더</div>
               <div class="card__s3-content text-[12px] sm:text-base">자체시험성적표/제품 주문 등 다양한 자료와 정보를 제공합니다.</div>

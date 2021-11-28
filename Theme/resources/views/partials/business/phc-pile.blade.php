@@ -40,8 +40,8 @@
         <div class="card__house-inner flex flex-col items-center justify-items-center p-[30px] sm:p-8 mt-0">
           <div class="grid grid-cols-1 sm:grid-cols-2 w-full gap-7">
             <div>
-              <div class="card__house bg-gradient-to-r from-atmosphere to-hospitalGreen max:sm:bottom sm:right h-full">
-                <div class="card__house-inner flex flex-col items-center justify-center p-8 sm:h-full max:sm:mt-0">
+              <div class="card__house bg-gradient-to-r from-atmosphere to-hospitalGreen m_sm:bottom sm:right h-full">
+                <div class="card__house-inner flex flex-col items-center justify-center p-8 sm:h-full m_sm:mt-0">
                   <div class="text-xl font-bold text-center">
                     가치공학<br/>
                     (Value Engineering) 
@@ -62,7 +62,7 @@
           </div>
         </div>
       </div>
-      <div class="p-[30px] sm:py-16 max:sm:bg-lighthouse">
+      <div class="p-[30px] sm:py-16 m_sm:bg-lighthouse">
         <div class="text-center mb-[30px] sm:mb-12">
           <div class="text-[16px] sm:text-2xl font-black">
             <span class="pointUnderLine ">
@@ -73,7 +73,7 @@
         <div class="grid grid-cols-3 w-full mx-auto gap-x-12">
           <div class="flex items-center justify-center">
             <div id="cardWrap" class="card__s1 gap-y-5 w-[260px] h-[260px] rounded-full sm:bg-gardenDawn justify-center justify-self-center">
-              <div class="card__s1-thumbnail_ flex justify-center max:sm:w-[48px] mx-auto">
+              <div class="card__s1-thumbnail_ flex justify-center m_sm:w-[48px] mx-auto">
                   @include('partials.img', ['ex' => 'svg', 'name' => 'business-phc-3'])
               </div>
               <div class="card__s1-body text-center">
@@ -83,7 +83,7 @@
           </div>
           <div class="flex items-center justify-center">
             <div id="cardWrap" class="card__s1 gap-y-5 w-[260px] sm: h-[260px] rounded-full sm:bg-gardenDawn justify-center justify-self-center">
-              <div class="card__s1-thumbnail_ flex justify-center max:sm:w-[48px] mx-auto">
+              <div class="card__s1-thumbnail_ flex justify-center m_sm:w-[48px] mx-auto">
                   @include('partials.img', ['ex' => 'svg', 'name' => 'business-phc-4'])
               </div>
               <div class="card__s1-body text-center">
@@ -93,7 +93,7 @@
           </div>
           <div class="flex items-center justify-center">
             <div id="cardWrap" class="card__s1 gap-y-5 w-[260px] h-[260px] rounded-full sm:bg-gardenDawn justify-center justify-self-center">
-              <div class="card__s1-thumbnail_ flex justify-center max:sm:w-[48px] mx-auto">
+              <div class="card__s1-thumbnail_ flex justify-center m_sm:w-[48px] mx-auto">
                   @include('partials.img', ['ex' => 'svg', 'name' => 'business-phc-5'])
               </div>
               <div class="card__s1-body text-center">

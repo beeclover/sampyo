@@ -1,11 +1,11 @@
 <div class="labtop:overflow-x-hidden header-archive-root2">
   <div class="labtop:overflow-hidden header-archive-root">
     <header class="header-archive">
-      <div class="container xl:max-w-screen-xl mx-auto max:labtop:px-0 max:labtop:mb-[70px]">
+      <div class="container xl:max-w-screen-xl mx-auto m_labtop:px-0 m_labtop:mb-[70px]">
         <div class="header-archive-imgRow">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'header-'.get_post_type(), 'class' => 'header-archive-img'])
         </div>
-        <div class="header-archive-content max:labtop:px-8 max:labtop:w-full">
+        <div class="header-archive-content m_labtop:px-8 m_labtop:w-full">
           <div x-data="select({label: '{!! $fixedMenuLabel !!}', selected: {!! $selected !!}})" class="w-full relative mb-[30px] labtop:hidden flex">
             <div class="depth-1 relative flex-1">
               <button class="flex items-center justify-between w-full px-3 py-3 text-left border focus:outline-none @if (get_post_type() !== 'notice-board') border-r-0 @endif"
@@ -77,7 +77,7 @@
           <span class="header-archive-description">{!! $description !!}</span>
         </div>
         @if (get_post_type() !== 'notice-board')
-          <div class="header-archive-nav max:labtop:overflow-x-scroll overflow-hidden max:labtop:whitespace-nowrap" no-scrollbar>
+          <div class="header-archive-nav m_labtop:overflow-x-scroll overflow-hidden m_labtop:whitespace-nowrap" no-scrollbar>
             <x-Items label="{!! $category_label !!}" type="block" />
           </div>
         @endif

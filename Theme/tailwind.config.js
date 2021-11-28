@@ -32,6 +32,12 @@ module.exports = {
   },
   theme: {
     screens: {
+      m_sm: { max: '639px' },
+      m_md: { max: '767px' },
+      m_lg: { max: '1023px' },
+      m_xl: { max: '1279px' },
+      m_xxl: { max: '1535px' },
+      m_labtop: { max: '1439px' },
       sm: '640px',
       md: '768px',
       lg: '1024px',

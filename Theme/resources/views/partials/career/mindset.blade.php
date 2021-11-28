@@ -10,8 +10,8 @@
   <div class="relative">
     <div id="mindsetOriginal" class="grid grid-cols-3 gap-x-[18px] invisible md:visible absolute left-0 top-0">
       <div id="cardWrap">
-        <div class="card__s1 gap-9 max:lg:mx-auto">
-          <div class="card__s1-thumbnail_ max:lg:flex max:lg:justify-center">
+        <div class="card__s1 gap-9 m_lg:mx-auto">
+          <div class="card__s1-thumbnail_ m_lg:flex m_lg:justify-center">
               @include('partials.img', ['ex' => 'png', 'name' => 'career-mindset-1'])
           </div>
           <div class="card__s1-body lg:items-start text-center lg:text-left gap-5">
@@ -26,8 +26,8 @@
         </div>
       </div>
       <div id="cardWrap">
-        <div class="card__s1 gap-9 max:lg:mx-auto">
-          <div class="card__s1-thumbnail_ max:lg:flex max:lg:justify-center">
+        <div class="card__s1 gap-9 m_lg:mx-auto">
+          <div class="card__s1-thumbnail_ m_lg:flex m_lg:justify-center">
               @include('partials.img', ['ex' => 'png', 'name' => 'career-mindset-2'])
           </div>
           <div class="card__s1-body lg:items-start text-center lg:text-left gap-5">
@@ -42,8 +42,8 @@
         </div>
       </div>
       <div id="cardWrap">
-        <div class="card__s1 gap-9 max:lg:mx-auto">
-          <div class="card__s1-thumbnail_ max:lg:flex max:lg:justify-center">
+        <div class="card__s1 gap-9 m_lg:mx-auto">
+          <div class="card__s1-thumbnail_ m_lg:flex m_lg:justify-center">
               @include('partials.img', ['ex' => 'png', 'name' => 'career-mindset-3'])
           </div>
           <div class="card__s1-body lg:items-start text-center lg:text-left gap-5">
@@ -70,7 +70,7 @@
   <div class="mb-[30px] sm:mb-14"></div>
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-x-18 gap-y-[30px]">
     <div class="sm:col-span-2">
-      <div class="card__house-root max:sm:mb-[30px]" data-label="지향가치">
+      <div class="card__house-root m_sm:mb-[30px]" data-label="지향가치">
         <div class="card__house bg-mistyLawn sm:mb-4">
           <div class="card__house-inner flex flex-col items-center p-8 sm:h-52">
             <div class="text-[16px] sm:text-2xl font-black">
@@ -98,7 +98,7 @@
           </div>
         </div>
         <div class="card__house-root" data-label="행동가치" style="--triangle: 50px">
-          <div class="card__house bg-hospitalGreen text-white max:sm:rootless" style="--triangle: 50px">
+          <div class="card__house bg-hospitalGreen text-white m_sm:rootless" style="--triangle: 50px">
             <div class="card__house-inner sm:h-52 flex flex-col items-center p-8">
               <div class="text-[16px] sm:text-2xl font-black">
                 전문성

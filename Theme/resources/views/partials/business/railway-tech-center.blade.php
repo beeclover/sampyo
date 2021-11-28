@@ -19,7 +19,7 @@
     </div>
   </section>
   <section class="mb-[70px] sm:mb-32">
-    <div class="coverbox-full-fixedHeight left mb-[60px] sm:mb-28 max:sm:py-[30px] sm:pt-24" style="--h: 550px">
+    <div class="coverbox-full-fixedHeight left mb-[60px] sm:mb-28 m_sm:py-[30px] sm:pt-24" style="--h: 550px">
       <div class="page__level-title mb-12">
         연구분야
       </div>
@@ -81,7 +81,7 @@
     </div>
   </section>
   <section class="mb-[70px] sm:mb-32">
-    <div class="coverbox-full-fixedHeight right mb-[60px] sm:mb-28 max:sm:py-[30px]" style="--h:628px">
+    <div class="coverbox-full-fixedHeight right mb-[60px] sm:mb-28 m_sm:py-[30px]" style="--h:628px">
       <div class="page__level-title mb-12">
         연구분야
       </div>

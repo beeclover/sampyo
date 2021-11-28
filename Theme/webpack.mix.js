@@ -12,7 +12,7 @@ require('@tinypixelco/laravel-mix-wp-blocks');
   |
   **/
 
-mix.setPublicPath('./public').browserSync('hyeon.local:40009');
+mix.setPublicPath('./public').browserSync('sampyo.demo.beeclover.pro');
 
 mix
   .sass('resources/styles/app.scss', 'styles')

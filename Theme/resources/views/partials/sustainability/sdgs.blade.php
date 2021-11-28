@@ -20,10 +20,10 @@
     기업 활동을 통해 지속가능한 발전에 기여합니다
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px] sm:gap-y-28 mb-20">
-    <div class="max:sm:order-1">
+    <div class="m_sm:order-1">
       @include('partials.img', ['ex' => 'jpg', 'name' => 'sampyo-group-sustainability-1'])
     </div>
-    <div class="prose max:sm:order-2">
+    <div class="prose m_sm:order-2">
       <div class="font-black text-2xl underline power mb-[26px] sm:mb-11">풍요로운 사회의 유지와 발전에 기여</div>
       <p>
         삼표는 지속가능한 사회 인프라 구축에 기여하고 있습니다. 
@@ -35,7 +35,7 @@
         국가 물류의 핵심인 철도 인프라 구축에도 기여합니다. 철도 궤도의 생산 및 유지 보수 등 철도 궤도 사업의 효율과 혁신을 선도하고 있습니다. 
       </p>
     </div>
-    <div class="prose max:sm:order-4">
+    <div class="prose m_sm:order-4">
       <div class="font-black text-2xl underline power mb-[26px] sm:mb-11">지구 환경에 대한 배려</div>
       <p>
         환경 부하가 적은 생산, 발전, 물류를 추구하여 지구의 환경 보호와 복원을 응원합니다. 자원 개발을 위해 훼손된 석산의 자연 복원을 추진하고, 공장과 사업장에서 에너지를 효율적으로 이용하고 온실가스 배출을 줄이며 대기, 물, 토양의 오염을 방지합니다. 
@@ -44,12 +44,12 @@
         삼표는 시멘트 산업에서도 오랫동안 친환경적 에너지 사용을 적극 추진해 왔습니다. 벙커C유를 유연탄으로 대체하고, 순환자원인 폐플라스틱을 연료로 사용하여 자원 낭비와 이산화탄소 배출을 줄였습니다. 폐열 발전 설비를 가동하고 공정에서 배출되는 열에너지를 친환경적으로 사용하여 기후 변화에도 대응하고 있습니다.
       </p>
     </div>
-    <div class="flex items-center justify-center max:sm:order-3">
-      @include('partials.img', ['ex' => 'png', 'name' => 'sampyo-group-sustainability-2', 'class' => 'max:sm:max-w-[130px] max-auto max:sm:mt-[60px] max:sm:mb-[20px]'])
+    <div class="flex items-center justify-center m_sm:order-3">
+      @include('partials.img', ['ex' => 'png', 'name' => 'sampyo-group-sustainability-2', 'class' => 'm_sm:max-w-[130px] max-auto m_sm:mt-[60px] m_sm:mb-[20px]'])
     </div>
   </div>
   <div class="pb-[70px] sm:pb-24"></div>
-  <div class="coverbox-full right py-[70px] sm:py-20 bg nonOverWidth max:sm:px-0" style="--bg-image: url('@php echo get_theme_file_uri('resources/images/sampyo-group-sustainability-3.jpg') @endphp')">
+  <div class="coverbox-full right py-[70px] sm:py-20 bg nonOverWidth m_sm:px-0" style="--bg-image: url('@php echo get_theme_file_uri('resources/images/sampyo-group-sustainability-3.jpg') @endphp')">
     <div class="flex sm:-mx-6">
       <div class="hidden sm:block w-1/2 px-6"></div>
       <div class="w-full sm:w-1/2 px-6 prose text-white">
@@ -74,7 +74,7 @@
         또한 각 사업장에서 안전을 최우선으로 생각하며, 인권을 존중하고 직원이 심신 모두 건강하게 일할 수 있는 일터 환경을 만들어 갑니다.
       </p>
     </div>
-    <div class="max:sm:order-first">
+    <div class="m_sm:order-first">
       @include('partials.img', ['ex' => 'jpg', 'name' => 'sampyo-group-sustainability-4'])
     </div>
   </div>

@@ -1,4 +1,4 @@
-<main class="sampyoGroup__page page__layout pb-0 max:sm:pt-0">
+<main class="sampyoGroup__page page__layout pb-0 m_sm:pt-0">
 <div class="container xl:max-w-screen-xl mx-auto">
   <div class="coverbox-full left py-10 sm:py-24 mb-[40px] sm:mb-24">
     <div class="page__level-title mb-[30px] sm:mb-8">

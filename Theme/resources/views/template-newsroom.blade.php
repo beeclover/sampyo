@@ -10,7 +10,7 @@
     <div class="container mx-auto flex">
       <div class="grid grid-cols-1 sm:grid-cols-2">
         <div>
-          <div class="newsroom__pin_blog-thumbnail max:sm:pt-[40px] max:sm:pb-[30px]">
+          <div class="newsroom__pin_blog-thumbnail">
             <img src="{!! $pin_blog->thumbnail !!}" alt="">
           </div>
         </div>
@@ -94,7 +94,7 @@
       <div class="newsroom__blog-footer">
         <div class="grid grid-cols-1 sm:grid-cols-3 w-full">
           <div class="newsroom__blog-link">
-            <a href="/blog" class="text-point block py-4 max:sm:pb-[30px]">블로그 바로가기</a>
+            <a href="/blog" class="text-point block py-4 pb-[30px] sm:pb-0">블로그 바로가기</a>
           </div>
           <ul class="flex flex-wrap gap-x-[30px] sm:gap-x-12 gap-y-[14px] sm:gap-y-8 sm:col-span-2 sm:justify-end">
             @foreach ($blog_cat as $term)
@@ -107,10 +107,10 @@
       </div>
     </div>
   </div>
-  <div class="newsroom__section-2 max:sm:pb-0">
+  <div class="newsroom__section-2">
     <div class="newsroom__media">
-      <div class="container mx-auto max:sm:px-0">
-        <div class="newsroom__media-header max:sm:px-[32px]">
+      <div class="sm:container mx-auto">
+        <div class="newsroom__media-header">
           <div class="newsroom__media-header-title">미디어</div>
           <div class="newsroom__media-header-arrow @if (count($media_posts) === 1) hidden @endif">
             <a href="javascript:;" class="btn-arrow prev"></a>
@@ -147,7 +147,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="newsroom__media-thumbnail-wrap max:sm:aspect-h-9 max:sm:aspect-w-16 max:sm:order-first">
+                <div class="newsroom__media-thumbnail-wrap">
                   <div class="newsroom__media-thumbnail sm:transform sm:translate-y-[100px]">
                     <img src="{!! $post->thumbnail !!}" alt="">
                   </div>
@@ -156,7 +156,7 @@
             @endforeach
           </div>
         </div>
-        <div class="newsroom__media-row grid grid-cols-1 sm:grid-cols-2 max:sm:px-[32px] sm:gap-x-[140px]">
+        <div class="newsroom__media-row grid grid-cols-1 sm:grid-cols-2 sm:gap-x-[140px]">
           <div class="@if (empty($media_cat_featured)) sm:col-span-2 @endif">
             <div class="newsroom__media-header">
               <div class="newsroom__media-header-title">보도자료</div>
@@ -167,7 +167,7 @@
                   <ul class="swiper-slide">
                     @php($index = 1)
                     @foreach ($media_cat_release_col as $key => $post)
-                      <li class="mb-[30px] sm:mb-16 list-none @if ($index < count($media_cat_release_col)) max:sm:border-b max:sm:border-orochimaru max:sm:pb-[30px] @endif">
+                      <li class="mb-[30px] sm:mb-16 list-none @if ($index < count($media_cat_release_col)) border-b sm:border-none border-orochimaru pb-[30px] sm:pb-0 @endif">
                         @include('partials.card.__def2', [
                           'thumbnail' => $post->thumbnail,
                           'permalink' => $post->permalink,
@@ -194,7 +194,7 @@
                   <ul class="swiper-slide">
                     @php($index = 1)
                     @foreach ($media_cat_featured_col as $post)
-                    <li class="mb-[30px] sm:mb-16 list-none @if ($index < count($media_cat_release_col)) max:sm:border-b max:sm:border-orochimaru max:sm:pb-[30px] @endif">
+                    <li class="mb-[30px] sm:mb-16 list-none @if ($index < count($media_cat_release_col)) border-b sm:border-none border-orochimaru pb-[30px] sm:pb-0 @endif">
                         @include('partials.card.__def2', [
                           'thumbnail' => $post->thumbnail,
                           'permalink' => $post->permalink,
@@ -218,13 +218,13 @@
       {{-- <div class="container mx-auto mb-[30px]">
         <x-Newsletter />
       </div> --}}
-      <div class="container mx-auto max:sm:px-0">
+      <div class="sm:container mx-auto">
         <div class="newsroom__newsletter-notice">
           <div class="swiper-wrapper">
             @foreach ($notice_posts as $post)
-              <div class="newsroom__newsletter-notice-item swiper-slide max:sm:flex-col max:sm:items-start">
+              <div class="newsroom__newsletter-notice-item swiper-slide flex-col sm:flex-row items-start">
                 <a href="{!! get_the_permalink($post->ID) !!}" class="newsroom__newsletter-notice-label">
-                  <div class="icon-wrap max:sm:flex-col max:sm:items-start">
+                  <div class="icon-wrap flex-col sm:flex-row items-start">
                     <div class="icon-notice"></div>
                     <div class="icon-label">{!! $post->post_title !!}</div>
                   </div>

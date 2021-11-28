@@ -16,7 +16,7 @@
         인프라 건설의 기초가 되는 건설 소재 사업의 수직 계열화를 완성함으로써, 국내 유일의 건설 소재 종합 솔루션 공급자(Total Solution Provider)로 자리매김했습니다. 나아가 철도 궤도 및 물류 분야에서도 탄탄한 입지를 구축했습니다. 자원 재활용을 통한 자원부족 해결과 환경보존을 실천하는 환경자원 사업을 확대해왔습니다. 
       </p>
     </div>
-    <div class="max:sm:order-first">
+    <div class="m_sm:order-first">
       @include('partials.img', ['ex' => 'jpg', 'name' => 'chairman_message-1'])
     </div>
     <div>

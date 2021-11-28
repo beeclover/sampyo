@@ -95,7 +95,7 @@
   </div>
   <div class="mb-[70px] sm:mb-32"></div>
   <div class="coverbox-full left pt-[30px] sm:py-28">
-    <div class="grid grid-cols-1 sm:grid-cols-12 gap-x-8 max:sm:mb-[30px]">
+    <div class="grid grid-cols-1 sm:grid-cols-12 gap-x-8 m_sm:mb-[30px]">
       <div class="col-span-1 sm:col-span-7">
         <div class="page__level-title mb-7">
           수도권 최고의 레미콘 생산 능력과<br/>
@@ -134,7 +134,7 @@
           </div>
         </div>
       </div>
-      <div class="col-span-1 sm:col-span-5 relative max:sm:transform max:sm:translate-y-[100px]">
+      <div class="col-span-1 sm:col-span-5 relative m_sm:transform m_sm:translate-y-[100px]">
         @include('partials.img', ['ex' => 'png', 'name' => 'ready-mix-4', 'class' => 'sm:absolute w-full'])
       </div>
     </div>
@@ -159,7 +159,7 @@
   </div>
   <div class="coverbox-label">
     @include('partials.img', ['ex' => 'jpg', 'name' => 'ready-mix-5'])
-    <span class="label text-white max:sm:relative nonFixed">삼표 콘크리트 시험평가원</span>
+    <span class="label text-white m_sm:relative nonFixed">삼표 콘크리트 시험평가원</span>
   </div>
   <div class="mb-[70px] sm:mb-32"></div>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 mb-36 gap-y-[30px]">

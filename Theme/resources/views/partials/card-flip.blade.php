@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="card-flip-back">
-      <ul class="card-flip-cat max:sm:text-[16px] max:sm:text-bold max:sm:gap-[12px]">
+      <ul class="card-flip-cat">
         @foreach($cat->children as $businessCat)
           <li>
             <a href="{!! $businessCat->permalink !!}">{!! $businessCat->post_title !!}</a>

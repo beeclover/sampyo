@@ -80,7 +80,7 @@
               sm:top-auto
               sm:bottom-full
               sm:w-56
-              max:sm:max-w-full
+              m_sm:max-w-full
             " role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" style="display: none">
             <div @click.away="famMenuOpen = false" class="text-gray-700 block text-sm" role="none">
               {!! wp_nav_menu(['menu' => 'Famaily site', 'container' => null, 'menu_class' => 'footer-global-navFam', 'echo' => false]) !!}
@@ -106,8 +106,8 @@
 </footer>
 <button id="scrollTop" 
   class="
-    max:sm:hidden sm:flex
-    fixed max:xxl:right-0 xxl:left-1/2
+    m_sm:hidden sm:flex
+    fixed m_xxl:right-0 xxl:left-1/2
     w-[90px] h-[90px] bg-blackout text-white flex-col items-center justify-center
   "
   :class="{'absolute bottom-72': footerShown, 'bottom-0 xxl:bottom-10': !footerShown, '-z-10': famMenuOpen, 'z-50': !famMenuOpen}"

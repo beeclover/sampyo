@@ -1,6 +1,6 @@
 <div class="card-def grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-none sm:grid-flow-col gap-x-[24px] lg:gap-x-[48px] gap-y-[30px]">
   @if ($thumbnail)
-    <div class="sm:col-span-1 lg:col-auto max:sm:aspect-w-16 max:sm:aspect-h-9">
+    <div class="sm:col-span-1 lg:col-auto m_sm:aspect-w-16 m_sm:aspect-h-9">
       <div class="card-def-thumbnail lg:min-w-[350px] h-full">
         @if(preg_match("#^[http|https]?://.+#",$thumbnail))
           <img src="{!! $thumbnail !!}" alt="" />

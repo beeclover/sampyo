@@ -1,7 +1,4 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
-@tailwind variants;
 
 @import 'functions/*';
 @import 'common/var';
@@ -27,3 +24,7 @@
 @import 'page/business';
 @import 'page/sampyo-group';
 @import 'page/search';
+
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;

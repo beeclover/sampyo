@@ -66,7 +66,7 @@
     </div>
   </div>
   <div class="mb-[70px] sm:mb-32"></div>
-  <div class="coverbox-full-fixedHeight left py-[30px] sm:pt-20 max:sm:mb-[70px]" style="--h:740px">
+  <div class="coverbox-full-fixedHeight left py-[30px] sm:pt-20 m_sm:mb-[70px]" style="--h:740px">
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-[30px]">
       <div>
         <div class="page__level-title mb-[30px] sm:mb-11">

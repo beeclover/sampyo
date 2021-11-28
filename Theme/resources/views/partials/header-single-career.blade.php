@@ -1,7 +1,7 @@
 <div class="labtop:overflow-x-hidden header-archive-root2">
   <div class="labtop:overflow-hidden header-archive-root">
     <header class="header-archive">
-      <div class="container xl:max-w-screen-xl mx-auto max:labtop:px-0">
+      <div class="container xl:max-w-screen-xl mx-auto m_labtop:px-0">
         <div class="header-archive-imgRow">
           @if (!empty($thumbnail))
               {!! $thumbnail !!}
@@ -9,7 +9,7 @@
               <img src="https://picsum.photos/1920?random=10" alt="" class="header-archive-img">
           @endif
         </div>
-        <div class="header-archive-content max:labtop:px-8 max:labtop:w-full">
+        <div class="header-archive-content m_labtop:px-8 m_labtop:w-full">
           <div x-data="select({label: '{!! $fixedMenuLabel !!}', selected: {!! $selected !!}})" class="w-full relative mb-[30px] labtop:hidden flex">
             <div class="depth-1 relative flex-1">
               <button class="flex items-center justify-between w-full px-3 py-3 text-left border focus:outline-none" :class="{'border-r-0': selected === 50}"
@@ -93,7 +93,7 @@
           @endif
         </div>
         @if ($queriedCat)
-          <div class="header-archive-nav max:labtop:overflow-x-scroll overflow-hidden max:labtop:whitespace-nowrap" no-scrollbar style="--atmosphere: var(--bermudagrass)">
+          <div class="header-archive-nav m_labtop:overflow-x-scroll overflow-hidden m_labtop:whitespace-nowrap" no-scrollbar style="--atmosphere: var(--bermudagrass)">
             <ul class="items-block">
               @foreach ($queriedCat as $item)
                 <li class="items-block-item">
