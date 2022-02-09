@@ -75,11 +75,9 @@
           <h1 class="header-archive-title text-[36px] sm:text-[70px] mb-[5px] sm:mb-[18px]">@if (is_archive()) {!! $title !!} @else {!! $title !!} @endif</h1>
           <span class="header-archive-description">{!! $description !!}</span>
         </div>
-        @if ($path !== 'notice-board' || get_post_type() !== 'notice-board')
-          <div class="header-archive-nav m_labtop:overflow-x-scroll overflow-hidden m_labtop:whitespace-nowrap" no-scrollbar>
-            <x-Items label="{!! $category_label !!}" type="block" />
-          </div>
-        @endif
+        <div class="header-archive-nav m_labtop:overflow-x-scroll overflow-hidden m_labtop:whitespace-nowrap" no-scrollbar>
+          <x-Items label="{!! $useFilterCatLabel !!}" type="block" />
+        </div>
       </div>
     </header>
   </div>
