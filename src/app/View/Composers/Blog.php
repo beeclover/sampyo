@@ -31,6 +31,7 @@ class Blog extends Composer
         return [
             'categories' => $this->categories(),
             'category_label' => $this->category_label(),
+            'useFilterCatLabel' => $this->useFilterCatLabel(),
             'fixedMenu' => $this->fixedMenu(),
             'fixedMenuLabel' => $this->getFixedMenuLabel(),
             'selected' => $this->selected(),
@@ -52,17 +53,30 @@ class Blog extends Composer
         return get_post_type().'_category';
     }
 
+    public function useFilterCatLabel()
+    {
+        if (isset(get_queried_object()->taxonomy) && !empty($title = get_queried_object()->taxonomy)) {
+            return 'test';
+        }
+        $title = get_post_type().'_category';
+        if ($title === 'notice-board_category') {
+            $title = 'noticeboard_category';
+        }
+        return $title;
+    }
+
     public function nameToObject($name)
     {
         $result = get_post_type_object($name);
         $result->term_taxonomy_id = 0;
         $result->permalink = get_post_type_archive_link($name);
-        if ($name !== 'notice-board') {
-            $result->children = Newsroom::get_category($name);
+        if ($name === 'notice-board') {
+            $name = 'noticeboard';
         }
+        $result->children = Newsroom::get_category($name);
         return $result;
     }
-    
+
     public function fixedMenu()
     {
         $menu = [
@@ -95,7 +109,7 @@ class Blog extends Composer
         }
         return 0;
     }
-    
+
     public static function title()
     {
         if (is_archive()) {
