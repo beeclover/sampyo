@@ -32,12 +32,29 @@ class Archive extends Composer
         ];
     }
 
+    // 리팩토링 가능
+    public function archiveData($taxonomyTitle)
+    {
+        $titleSlice = explode("_", $taxonomyTitle);
+        $postType = $titleSlice[0];
+        if ($postType === 'noticeboard') {
+            $postType = 'notice-board';
+        }
+        $taxonomyType = $titleSlice[1];
+
+        return [
+            'postType' => $postType,
+            'taxonomyType' => $taxonomyType,
+        ];
+    }
+
     public function title()
     {
         if (isset(get_queried_object()->taxonomy) && !empty($title = get_queried_object()->taxonomy)) {
-            $post_type = explode("_", $title);
-            $post_type_data = get_post_type_object($post_type[0]);
-            return $post_type_data->label;
+            $postType = $this->archiveData($title)['postType'];
+            $taxonomyType = $this->archiveData($title)['taxonomyType'];
+            $post_type_data = get_post_type_object($postType);
+            return $post_type_data?->label;
         }
         return get_the_archive_title();
     }
@@ -45,9 +62,10 @@ class Archive extends Composer
     public function description()
     {
         if (isset(get_queried_object()->taxonomy) && !empty($title = get_queried_object()->taxonomy)) {
-            $post_type = explode("_", $title);
-            $post_type_data = get_post_type_object($post_type[0]);
-            return $post_type_data->description;
+            $postType = $this->archiveData($title)['postType'];
+            $taxonomyType = $this->archiveData($title)['taxonomyType'];
+            $post_type_data = get_post_type_object($postType);
+            return $post_type_data?->description;
         }
         return get_the_archive_description();
     }
