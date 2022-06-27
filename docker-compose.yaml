@@ -24,8 +24,7 @@ services:
     labels:
       - traefik.enable=true
       ## HTTP Routers
-      - traefik.http.routers.svc__sampyo.rule=Host(`${PROJECT_NAME}.co.kr`,
-        `www.${PROJECT_NAME}.co.kr`)
+      - traefik.http.routers.svc__sampyo.rule=Host(`${PROJECT_NAME}.co.kr`, `www.${PROJECT_NAME}.co.kr`)
       - traefik.http.routers.svc__sampyo.entrypoints=web
       - traefik.http.routers.svc__sampyo.entrypoints=websecure
       - traefik.http.routers.svc__sampyo.tls.certresolver=leresolver
